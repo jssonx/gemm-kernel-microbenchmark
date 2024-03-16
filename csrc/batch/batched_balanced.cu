@@ -219,7 +219,7 @@ int main()
   int const m = 12;
   int const n = 768 * 4;
   int const k = 768;
-  int const batch_count = 8;
+  int const batch_count = 8; // The 'batch_count' represents the number of experts in SparseMLP
 
   int const count_A = batch_count * m * k;
   int const count_B = batch_count * k * n;
