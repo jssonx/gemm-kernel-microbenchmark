@@ -65,7 +65,6 @@ struct HashGemmCoord
 struct Options
 {
 
-  bool help;
   bool error;
   bool reference_check;
   bool profile_initialization;
@@ -84,7 +83,6 @@ struct Options
   int problem_count;
   int iterations;
   int cuda_streams;
-  bool verbose;
   float alpha;
   float beta;
   std::string benchmark_path;
@@ -119,8 +117,7 @@ struct Options
   // Methods
   //
 
-  Options() : help(false),
-              error(false),
+  Options() : error(false),
               alignment(8),
               reference_check(true),
               profile_initialization(false),
@@ -128,9 +125,8 @@ struct Options
               problem_count(15),
               iterations(20),
               cuda_streams(0),
-              verbose(false),
               alpha(1),
-              beta(),
+              beta(0),
               scheduler_modes({GroupScheduleMode::kDeviceOnly})
   {
   }
@@ -138,20 +134,6 @@ struct Options
   // Parses the command line
   void parse()
   {
-    help = false;
-    error = false;
-    alignment = 8;
-    reference_check = true;
-    profile_initialization = false;
-    sort_problems = false;
-    problem_count = 8;
-    iterations = 20;
-    cuda_streams = 0;
-    verbose = false;
-    alpha = 1.0f;
-    beta = 0.0f;
-    scheduler_modes = {GroupScheduleMode::kDeviceOnly};
-
     // Initialize the problems
     randomize_problems();
 
@@ -161,10 +143,10 @@ struct Options
 
   void randomize_problems()
   {
-    // 默认的m, n, k值，如果你想要它们有特定的默认值，可以在这里设置
-    int default_m = 256; // 仅示例
-    int default_n = 256; // 仅示例
-    int default_k = 256; // 仅示例
+    // Default problem size
+    int default_m = 256;
+    int default_n = 256;
+    int default_k = 256;
 
     problem_sizes.reserve(problem_count);
 
@@ -174,7 +156,7 @@ struct Options
       int n = default_n;
       int k = default_k;
 
-      // 生成随机的m, n, k值
+      // Generate random problem sizes
       m = alignment * ((rand() % 256) + 1);
       n = alignment * ((rand() % 256) + 1);
       k = alignment * ((rand() % 256) + 1);
