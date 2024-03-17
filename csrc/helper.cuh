@@ -145,8 +145,8 @@ struct Options
   {
     // Default problem size
     int default_m = 256;
-    int default_n = 256;
-    int default_k = 256;
+    int default_n = 768 * 4;
+    int default_k = 768;
 
     problem_sizes.reserve(problem_count);
 
@@ -158,8 +158,8 @@ struct Options
 
       // Generate random problem sizes
       m = alignment * ((rand() % 256) + 1);
-      n = alignment * ((rand() % 256) + 1);
-      k = alignment * ((rand() % 256) + 1);
+      n = default_n;
+      k = default_k;
 
       cutlass::gemm::GemmCoord problem(m, n, k);
 

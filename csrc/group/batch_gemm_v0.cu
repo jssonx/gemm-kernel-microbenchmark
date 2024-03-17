@@ -387,11 +387,6 @@ Result TestbedBatched<Gemm>::profile()
   this->allocate();
   this->initialize();
 
-  if (this->options.verbose)
-  {
-    print_problem_sizes();
-  }
-
   //
   // Prepare batched GEMM environment
   //
@@ -746,12 +741,6 @@ Result TestbedBatched<Gemm>::profile()
             << "Batched  GFLOPs: " << result.gflops << std::endl;
 
   std::string provider = "CUTLASS";
-
-  if (this->options.output_file.good())
-  {
-    this->options.output_file << this->options.output_tag << "," << provider << ",batched,"
-                              << this->options.problem_count << "," << result.runtime_ms << "," << result.gflops << std::endl;
-  }
 
   result.passed = true;
   return result;
