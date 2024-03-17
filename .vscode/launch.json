@@ -8,7 +8,7 @@
             "name": "CUDA C++: Launch",
             "type": "cuda-gdb",
             "request": "launch",
-            "program": "${workspaceFolder}/batched_gemm_v1",
+            "program": "${workspaceFolder}/csrc/group/batch_gemm_v0",
             "stopAtEntry": true
         },
         {

@@ -1,4 +1,4 @@
-CC_FILES=$(shell find ./csrc/ -name "*.cu")
+CC_FILES=$(shell find ./csrc/group/ -name "*.cu")
 EXE_FILES=$(CC_FILES:.cu=)
 
 all:$(EXE_FILES)
