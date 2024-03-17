@@ -761,12 +761,7 @@ int main(int argc, char const **args)
 {
   // Parse options
   Options options;
-  options.parse(argc, args);
-  if (options.error)
-  {
-    std::cerr << "Aborting execution." << std::endl;
-    return -1;
-  }
+  options.parse();
 
   // Define the types
   // Gemm operator cutlass_tensorop_f16_s16816gemm_f16_128x128_32x4_nt_align8
