@@ -8,8 +8,15 @@
             "name": "CUDA C++: Launch",
             "type": "cuda-gdb",
             "request": "launch",
-            "program": "${workspaceFolder}/csrc/group/batch_gemm_v0",
-            "stopAtEntry": true
+            "program": "${workspaceFolder}/csrc/group/grouped_gemm",
+            "stopAtEntry": true,
+            "args": [
+                "--groups=1",
+                "--m=8",
+                "--n=8",
+                "--k=8",
+                "--iterations=1",
+            ],
         },
         {
             "name": "CUDA C++: Attach",
