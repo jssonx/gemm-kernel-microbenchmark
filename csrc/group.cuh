@@ -42,7 +42,7 @@ public:
     std::cout << std::endl;
 
     // Print groups
-    std::cout << this->problem_count() << " groups:\n";
+    // std::cout << this->problem_count() << " groups:\n";
 
     int32_t idx = 0;
     int64_t total_tiles = 0;

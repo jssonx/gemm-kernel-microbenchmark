@@ -2,6 +2,7 @@
 #include "../batch.cuh"
 #include "../group.cuh"
 #include "../nopadding.cuh"
+#include "../padding.cuh"
 
 int main(int argc, char const **args) {
 
@@ -118,9 +119,14 @@ int main(int argc, char const **args) {
     return 1;
   }
 
-
   TestbedBatched_NP<GemmBatched> testbed_batched_np(options);
   result = testbed_batched_np.profile();
+  if (result.error) {
+    return 1;
+  }
+
+  TestbedBatched_P<GemmBatched> testbed_batched_p(options);
+  result = testbed_batched_p.profile();
   if (result.error) {
     return 1;
   }
