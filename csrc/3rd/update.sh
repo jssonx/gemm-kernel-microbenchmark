@@ -11,6 +11,6 @@ mkdir -p cutlass/tools/util/include/cutlass
 cp -r cutlass.origin/include cutlass
 cp -r cutlass.origin/tools/util/include/cutlass/util cutlass/tools/util/include/cutlass
 
-git -C cutlass.origin/ rev-parse HEAD > cutlass/readme
+git -C cutlass.origin/ rev-parse HEAD > cutlass/readme.md
 
 rm -rf cutlass.origin

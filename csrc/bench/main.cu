@@ -1,8 +1,8 @@
-#include "../helper.cuh"
-#include "../batch.cuh"
-#include "../group.cuh"
-#include "../nopadding.cuh"
-#include "../padding.cuh"
+#include "helper.cuh"
+#include "grouped.cuh"
+#include "batched_bin.cuh"
+#include "batched_nopadding.cuh"
+#include "batched_padding.cuh"
 
 int main(int argc, char const **args) {
 
