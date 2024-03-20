@@ -312,10 +312,23 @@ struct Options {
       int n = cmd_line_n;
       int k = cmd_line_k;
 
-      if (m < 1) {
-        m = alignment * ((rand() % 256) + 1);
-      }
+      // if (m < 1) {
+      //   m = alignment * ((rand() % 256) + 1);
+      // }
 
+      // if (m < 1) {
+      //   int possibleValues[3] = {64, 128, 256};
+      //   int index = rand() % 3;
+      //   m = possibleValues[index];
+      // }
+
+      if (m < 1) {
+        int maxMultiple = 10000 / 128;
+        int randomIndex = rand() % maxMultiple;
+        m = 128 * (randomIndex + 1);
+      }
+    
+    
       if (n < 1) {
         n = alignment * ((rand() % 256) + 1);
       }

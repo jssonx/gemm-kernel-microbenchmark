@@ -47,24 +47,40 @@ public:
         block_C_padded.reset(padded_m * padded_n * this->problem_count());
         block_D_padded.reset(padded_m * padded_n * this->problem_count());
 
+        cudaMemset(block_A_padded.get(), 0, sizeof(ElementA) * padded_m * padded_k * this->problem_count());
+        cudaMemset(block_B_padded.get(), 0, sizeof(ElementB) * padded_k * padded_n * this->problem_count());
+        cudaMemset(block_C_padded.get(), 0, sizeof(ElementC) * padded_m * padded_n * this->problem_count());
+        cudaMemset(block_D_padded.get(), 0, sizeof(ElementC) * padded_m * padded_n * this->problem_count());
+
         for (int i = 0; i < this->problem_count(); ++i)
         {
             auto const &problem = this->options.problem_sizes.at(i);
             int m = problem.m(), n = problem.n(), k = problem.k();
 
-            cutlass::device_memory::copy_to_device(block_A_padded.get() + i * padded_m * padded_k,
-                                                   this->block_A.get() + this->offset_A.at(i), m * k);
+            ElementA *src_ptr_A = this->block_A.get() + this->offset_A.at(i);
+            ElementA *dst_ptr_A = block_A_padded.get() + i * padded_m * padded_k;
 
-            cutlass::device_memory::copy_to_device(block_B_padded.get() + i * padded_k * padded_n,
-                                                   this->block_B.get() + this->offset_B.at(i), k * n);
+            ElementB *src_ptr_B = this->block_B.get() + this->offset_B.at(i);
+            ElementB *dst_ptr_B = block_B_padded.get() + i * padded_k * padded_n;
 
-            cutlass::device_memory::copy_to_device(block_C_padded.get() + i * padded_m * padded_n,
-                                                   this->block_C.get() + this->offset_C.at(i), m * n);
+            ElementC *src_ptr_C = this->block_C.get() + this->offset_C.at(i);
+            ElementC *dst_ptr_C = block_C_padded.get() + i * padded_m * padded_n;
+
+            for (int row = 0; row < m; ++row)
+            {
+                cudaMemcpy(dst_ptr_A + row * padded_k, src_ptr_A + row * k, sizeof(ElementA) * k, cudaMemcpyDeviceToDevice);
+            }
+
+            for (int row = 0; row < k; ++row)
+            {
+                cudaMemcpy(dst_ptr_B + row * padded_n, src_ptr_B + row * n, sizeof(ElementB) * n, cudaMemcpyDeviceToDevice);
+            }
+
+            for (int row = 0; row < m; ++row)
+            {
+                cudaMemcpy(dst_ptr_C + row * padded_n, src_ptr_C + row * n, sizeof(ElementC) * n, cudaMemcpyDeviceToDevice);
+            }
         }
-
-        //
-        // Prepare batched GEMM arguments
-        //
 
         std::vector<ElementA const *> ptr_A_array;
         std::vector<ElementB const *> ptr_B_array;

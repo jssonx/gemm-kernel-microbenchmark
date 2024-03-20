@@ -19,7 +19,7 @@ public:
     /// Executes a batched kernel and measures runtime
     Result profile()
     {
-        std::cout << "\nBatched GEMM:\n"
+        std::cout << "\nBatched GEMM without padding:\n"
                   << "====================================================" << std::endl;
 
         Result result;

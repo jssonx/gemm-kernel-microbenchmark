@@ -41,7 +41,7 @@ public:
     /// Executes a batched kernel and measures runtime
     Result profile()
     {
-        std::cout << "Batched GEMM:\n"
+        std::cout << "Batched GEMM with bins:\n"
                   << "====================================================" << std::endl;
 
         Result result;
