@@ -49,7 +49,7 @@ int main(int argc, char const **args) {
   // Define the Grouped and Batched GEMM types
   //
 
-  using ElementA = cutlass::half_t;
+  using ElementA = cutlass::half_t; // FP16
   using ElementB = cutlass::half_t;
   using ElementOutput = cutlass::half_t;
   using ElementAccumulator = float;

@@ -8,14 +8,14 @@
             "name": "CUDA C++: Launch",
             "type": "cuda-gdb",
             "request": "launch",
-            "program": "${workspaceFolder}/csrc/group/grouped_gemm",
+            "program": "${workspaceFolder}/csrc/bench/main",
             "stopAtEntry": true,
             "args": [
-                "--groups=1",
+                "--groups=3",
                 "--m=8",
                 "--n=8",
                 "--k=8",
-                "--iterations=1",
+                "--iterations=3",
             ],
         },
         {
