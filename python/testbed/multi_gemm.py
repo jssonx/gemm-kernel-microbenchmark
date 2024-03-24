@@ -59,16 +59,20 @@ class TestModule(torch.nn.Module):
             a_b_avg_time = (a_b_end_time - a_b_start_time) / iterations
             
             # bmm
+            stack_states = stack_or_pad(hidden_states_list)
+            stack_weights = torch.stack(weights, dim=0)
             bmm_start_time = time.time()
             for _ in range(iterations):
-                C4 = torch.bmm(stack_or_pad(hidden_states_list), torch.stack(weights, dim=0))
+                C4 = torch.bmm(stack_states, stack_weights)
                 torch.cuda.synchronize()
             bmm_end_time = time.time()
             bmm_avg_time = (bmm_end_time - bmm_start_time) / iterations
             
             print(f"Iterations: {iterations}")
+            print(f"Max memory allocated: {torch.cuda.max_memory_allocated() / 1024**2:.2f} MB")
+            print(f"Max memory reserved: {torch.cuda.max_memory_reserved() / 1024**2:.2f} MB")
             print(f"Average grouped_gemm time: {grouped_avg_time * 1e6:.3f} μs")
-            print("======================")
+            print("\n======================")
             print(f"Average nn.Linear time: {linear_avg_time * 1e6:.3f} μs")
             print(f"Average a @ b time: {a_b_avg_time * 1e6:.3f} μs")
             print(f"Average bmm time: {bmm_avg_time * 1e6:.3f} μs")
@@ -92,18 +96,9 @@ class TestModule(torch.nn.Module):
         
             return C1, C2, C3, C4
 
-def benchmark():
-    batch_size = 64
-    sequence_length = 4096
-    hidden_size = 4096
-    ffn_dim = 14336
+def benchmark(batch_size, sequence_length, hidden_size, ffn_dim):
     num_hidden_states = 8
     iterations = 100
-    
-    # batch_size = [1, 2, 4, 8, 16, 32, 64, 128, 256, 512]
-    # sequence_length = [32, 64, 128, 256, 512, 1024, 2048, 4096]
-    # hidden_size = [128, 256, 768, 1024, 2048, 4096, 8192, 16384]
-    # ffn_dim = [256, 512, 1024, 2048, 4096, 8192, 14336, 32768]
 
     hidden_states_list = [torch.randn(random.randint(1, batch_size * sequence_length), hidden_size, device='cuda', dtype=torch.float16) for _ in range(num_hidden_states)]    
     initial_weight = torch.randn(hidden_size, ffn_dim, device='cuda', dtype=torch.float16)
@@ -113,4 +108,29 @@ def benchmark():
     test_module.wi.weight.data = initial_weight.t()
     test_module(hidden_states_list, weights, iterations)
 
-benchmark()
+def search_space():
+
+    batch_sizes = [1]
+    sequence_lengths = [32, 64, 128, 256, 512, 1024, 2048, 4096, 8192, 16384, 32768]
+    hidden_sizes = [768, 4096]
+    ffn_dims = [256, 512, 1024, 2048, 4096, 8192, 14336]
+    
+    for batch_size in batch_sizes:
+        for sequence_length in sequence_lengths:
+            for hidden_size in hidden_sizes:
+                for ffn_dim in ffn_dims:
+                    print(f"Parameters: batch_size={batch_size}, sequence_length={sequence_length}, hidden_size={hidden_size}, ffn_dim={ffn_dim}")
+                    benchmark(batch_size, sequence_length, hidden_size, ffn_dim)
+                    print("\n" + "-" * 50 + "\n")
+
+search_space()
+
+# batch_size = [1, 2, 4, 8, 16, 32, 64, 128, 256, 512]
+# sequence_length = [32, 64, 128, 256, 512, 1024, 2048, 4096]
+# hidden_size = [128, 256, 768, 1024, 2048, 4096, 8192, 16384]
+# ffn_dim = [256, 512, 1024, 2048, 4096, 8192, 14336, 32768]
+
+# batch_sizes = [2]
+# sequence_lengths = [32768]
+# hidden_sizes = [4096]
+# ffn_dims = [14336]
