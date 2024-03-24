@@ -25,8 +25,8 @@ void* device_memory_allocation(size_t size, int device_id=0) {
 #include "cutlass/gemm/device/gemm_grouped.h"
 
 
-// Gemm operator cutlass_tensorop_h16816gemm_grouped_256x128_32x3_tt_align8
-using cutlass_tensorop_h16816gemm_grouped_256x128_32x3_tt_align8_base =
+// Gemm operator cutlass_tensorop_h16816gemm_grouped_256x128_64x3_tt_align8
+using cutlass_tensorop_h16816gemm_grouped_256x128_64x3_tt_align8_base =
   typename cutlass::gemm::kernel::DefaultGemmGrouped<
     cutlass::half_t, cutlass::layout::RowMajor, cutlass::ComplexTransform::kNone, 8,
     cutlass::half_t, cutlass::layout::RowMajor, cutlass::ComplexTransform::kNone, 8,
@@ -34,8 +34,8 @@ using cutlass_tensorop_h16816gemm_grouped_256x128_32x3_tt_align8_base =
     cutlass::half_t,
     cutlass::arch::OpClassTensorOp,
     cutlass::arch::Sm80,
-    cutlass::gemm::GemmShape<256, 128, 32>,
-    cutlass::gemm::GemmShape<64, 64, 32>,
+    cutlass::gemm::GemmShape<256, 128, 64>,
+    cutlass::gemm::GemmShape<64, 64, 64>,
     cutlass::gemm::GemmShape<16, 8, 16>,
     cutlass::epilogue::thread::LinearCombination<cutlass::half_t, 8, cutlass::half_t, cutlass::half_t>,
     cutlass::gemm::threadblock::GemmIdentityThreadblockSwizzle<1>,
@@ -45,10 +45,10 @@ using cutlass_tensorop_h16816gemm_grouped_256x128_32x3_tt_align8_base =
 >::GemmKernel;
 
 // Define named type
-struct cutlass_tensorop_h16816gemm_grouped_256x128_32x3_tt_align8_type :
-  public cutlass_tensorop_h16816gemm_grouped_256x128_32x3_tt_align8_base { };
+struct cutlass_tensorop_h16816gemm_grouped_256x128_64x3_tt_align8_type :
+  public cutlass_tensorop_h16816gemm_grouped_256x128_64x3_tt_align8_base { };
 
-using DeviceKernel = cutlass::gemm::device::GemmGrouped<cutlass_tensorop_h16816gemm_grouped_256x128_32x3_tt_align8_base>;
+using DeviceKernel = cutlass::gemm::device::GemmGrouped<cutlass_tensorop_h16816gemm_grouped_256x128_64x3_tt_align8_base>;
 
 
 using ElementCompute = typename DeviceKernel::EpilogueOutputOp::ElementCompute;

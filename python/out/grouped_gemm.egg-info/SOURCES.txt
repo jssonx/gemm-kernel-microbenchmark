@@ -1,7 +1,0 @@
-grouped_gemm.cpp
-grouped_gemm_kernel.cu
-setup.py
-grouped_gemm.egg-info/PKG-INFO
-grouped_gemm.egg-info/SOURCES.txt
-grouped_gemm.egg-info/dependency_links.txt
-grouped_gemm.egg-info/top_level.txt

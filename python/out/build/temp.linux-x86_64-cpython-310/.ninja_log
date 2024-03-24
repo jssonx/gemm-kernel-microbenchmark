@@ -1,3 +1,0 @@
-# ninja log v5
-0	18378	1711151540469498347	/home/paperspace/pg/moe/python/out/build/temp.linux-x86_64-cpython-310/grouped_gemm.o	b82b873d2c453c2c
-1	62343	1711151584451035172	/home/paperspace/pg/moe/python/out/build/temp.linux-x86_64-cpython-310/grouped_gemm_kernel.o	cf7fdecb3fef33b4
