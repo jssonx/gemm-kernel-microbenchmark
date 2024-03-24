@@ -93,12 +93,17 @@ class TestModule(torch.nn.Module):
             return C1, C2, C3, C4
 
 def benchmark():
-    batch_size = 32
-    sequence_length = 512
+    batch_size = 64
+    sequence_length = 4096
     hidden_size = 4096
-    ffn_dim = 512
+    ffn_dim = 14336
     num_hidden_states = 8
     iterations = 100
+    
+    # batch_size = [1, 2, 4, 8, 16, 32, 64, 128, 256, 512]
+    # sequence_length = [32, 64, 128, 256, 512, 1024, 2048, 4096]
+    # hidden_size = [128, 256, 768, 1024, 2048, 4096, 8192, 16384]
+    # ffn_dim = [256, 512, 1024, 2048, 4096, 8192, 14336, 32768]
 
     hidden_states_list = [torch.randn(random.randint(1, batch_size * sequence_length), hidden_size, device='cuda', dtype=torch.float16) for _ in range(num_hidden_states)]    
     initial_weight = torch.randn(hidden_size, ffn_dim, device='cuda', dtype=torch.float16)
