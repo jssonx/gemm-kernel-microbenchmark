@@ -34,9 +34,15 @@ using cutlass_tensorop_h16816gemm_grouped_256x128_64x3_tt_align8_base =
     cutlass::half_t,
     cutlass::arch::OpClassTensorOp,
     cutlass::arch::Sm80,
-    cutlass::gemm::GemmShape<256, 128, 64>,
-    cutlass::gemm::GemmShape<64, 64, 64>,
+
+    cutlass::gemm::GemmShape<256, 256, 32>, // 1.054
+    cutlass::gemm::GemmShape<128, 64, 32>,
     cutlass::gemm::GemmShape<16, 8, 16>,
+
+    // cutlass::gemm::GemmShape<256, 128, 64>, // 1.001 official
+    // cutlass::gemm::GemmShape<64, 64, 64>,
+    // cutlass::gemm::GemmShape<16, 8, 16>,
+
     cutlass::epilogue::thread::LinearCombination<cutlass::half_t, 8, cutlass::half_t, cutlass::half_t>,
     cutlass::gemm::threadblock::GemmIdentityThreadblockSwizzle<1>,
     3,

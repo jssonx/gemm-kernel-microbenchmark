@@ -125,12 +125,17 @@ def search_space():
 
 search_space()
 
-# batch_size = [1, 2, 4, 8, 16, 32, 64, 128, 256, 512]
-# sequence_length = [32, 64, 128, 256, 512, 1024, 2048, 4096]
-# hidden_size = [128, 256, 768, 1024, 2048, 4096, 8192, 16384]
-# ffn_dim = [256, 512, 1024, 2048, 4096, 8192, 14336, 32768]
+# batch_sizes = [1]
+# sequence_lengths = [32, 64, 128, 256, 512, 1024, 2048, 4096, 8192, 16384, 32768]
+# hidden_sizes = [128, 768, 4096]
+# ffn_dims = [256, 512, 1024, 2048, 4096, 8192, 14336]
 
 # batch_sizes = [2]
 # sequence_lengths = [32768]
+# hidden_sizes = [4096]
+# ffn_dims = [14336]
+
+# batch_sizes = [1]
+# sequence_lengths = [32, 64, 128, 256, 512, 1024, 2048, 4096, 8192, 12288, 16384, 20480, 24576, 28672, 32768]
 # hidden_sizes = [4096]
 # ffn_dims = [14336]

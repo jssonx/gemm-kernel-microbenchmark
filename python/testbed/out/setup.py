@@ -10,7 +10,7 @@ setup(
             'grouped_gemm.cpp',
             'grouped_gemm_kernel.cu',
         ],
-        include_dirs=['/home/paperspace/miniconda3/envs/deepspeed/lib/python3.10/site-packages/cutlass_library/source/include', '/home/paperspace/miniconda3/envs/deepspeed/lib/python3.10/site-packages/cutlass_library/source/tools/util/include'],
+        include_dirs=['/home/paperspace/.local/lib/python3.10/site-packages/cutlass_library/source/include', '/home/paperspace/.local/lib/python3.10/site-packages/cutlass_library/source/tools/util/include'],
         extra_compile_args=['-std=c++17']
         ),
     ],

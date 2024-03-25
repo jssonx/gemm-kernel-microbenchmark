@@ -1,0 +1,5544 @@
+Parameters: batch_size=1, sequence_length=32, hidden_size=128, ffn_dim=256
+Iterations: 100
+Max memory allocated: 9.58 MB
+Max memory reserved: 22.00 MB
+Average grouped_gemm time: 69.978 μs
+
+======================
+Average nn.Linear time: 152.724 μs
+Average a @ b time: 81.866 μs
+Average bmm time: 19.422 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 2.182
+Speedup (a @ b / grouped_gemm): 1.170
+Speedup (bmm / grouped_gemm): 0.278
+
+======================
+TFLOPS (grouped_gemm): 0.083
+TFLOPS (nn.Linear): 0.038
+TFLOPS (a @ b): 0.071
+TFLOPS (bmm): 0.300
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=32, hidden_size=128, ffn_dim=512
+Iterations: 100
+Max memory allocated: 10.92 MB
+Max memory reserved: 24.00 MB
+Average grouped_gemm time: 66.338 μs
+
+======================
+Average nn.Linear time: 147.078 μs
+Average a @ b time: 81.217 μs
+Average bmm time: 20.335 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 2.217
+Speedup (a @ b / grouped_gemm): 1.224
+Speedup (bmm / grouped_gemm): 0.307
+
+======================
+TFLOPS (grouped_gemm): 0.200
+TFLOPS (nn.Linear): 0.090
+TFLOPS (a @ b): 0.163
+TFLOPS (bmm): 0.651
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=32, hidden_size=128, ffn_dim=1024
+Iterations: 100
+Max memory allocated: 14.19 MB
+Max memory reserved: 26.00 MB
+Average grouped_gemm time: 67.008 μs
+
+======================
+Average nn.Linear time: 155.244 μs
+Average a @ b time: 84.169 μs
+Average bmm time: 21.434 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 2.317
+Speedup (a @ b / grouped_gemm): 1.256
+Speedup (bmm / grouped_gemm): 0.320
+
+======================
+TFLOPS (grouped_gemm): 0.567
+TFLOPS (nn.Linear): 0.245
+TFLOPS (a @ b): 0.452
+TFLOPS (bmm): 1.773
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=32, hidden_size=128, ffn_dim=2048
+Iterations: 100
+Max memory allocated: 20.08 MB
+Max memory reserved: 30.00 MB
+Average grouped_gemm time: 66.218 μs
+
+======================
+Average nn.Linear time: 153.093 μs
+Average a @ b time: 86.124 μs
+Average bmm time: 22.953 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 2.312
+Speedup (a @ b / grouped_gemm): 1.301
+Speedup (bmm / grouped_gemm): 0.347
+
+======================
+TFLOPS (grouped_gemm): 1.006
+TFLOPS (nn.Linear): 0.435
+TFLOPS (a @ b): 0.773
+TFLOPS (bmm): 2.901
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=32, hidden_size=128, ffn_dim=4096
+Iterations: 100
+Max memory allocated: 33.17 MB
+Max memory reserved: 56.00 MB
+Average grouped_gemm time: 81.761 μs
+
+======================
+Average nn.Linear time: 150.597 μs
+Average a @ b time: 80.650 μs
+Average bmm time: 27.618 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 1.842
+Speedup (a @ b / grouped_gemm): 0.986
+Speedup (bmm / grouped_gemm): 0.338
+
+======================
+TFLOPS (grouped_gemm): 2.155
+TFLOPS (nn.Linear): 1.170
+TFLOPS (a @ b): 2.184
+TFLOPS (bmm): 6.378
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=32, hidden_size=128, ffn_dim=8192
+Iterations: 100
+Max memory allocated: 57.96 MB
+Max memory reserved: 72.00 MB
+Average grouped_gemm time: 95.806 μs
+
+======================
+Average nn.Linear time: 148.814 μs
+Average a @ b time: 80.683 μs
+Average bmm time: 33.810 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 1.553
+Speedup (a @ b / grouped_gemm): 0.842
+Speedup (bmm / grouped_gemm): 0.353
+
+======================
+TFLOPS (grouped_gemm): 3.612
+TFLOPS (nn.Linear): 2.325
+TFLOPS (a @ b): 4.289
+TFLOPS (bmm): 10.235
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=32, hidden_size=128, ffn_dim=14336
+Iterations: 100
+Max memory allocated: 91.94 MB
+Max memory reserved: 120.00 MB
+Average grouped_gemm time: 129.032 μs
+
+======================
+Average nn.Linear time: 149.958 μs
+Average a @ b time: 93.791 μs
+Average bmm time: 53.554 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 1.162
+Speedup (a @ b / grouped_gemm): 0.727
+Speedup (bmm / grouped_gemm): 0.415
+
+======================
+TFLOPS (grouped_gemm): 3.698
+TFLOPS (nn.Linear): 3.182
+TFLOPS (a @ b): 5.087
+TFLOPS (bmm): 8.909
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=32, hidden_size=768, ffn_dim=256
+Iterations: 100
+Max memory allocated: 91.94 MB
+Max memory reserved: 120.00 MB
+Average grouped_gemm time: 97.256 μs
+
+======================
+Average nn.Linear time: 172.660 μs
+Average a @ b time: 96.288 μs
+Average bmm time: 21.915 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 1.775
+Speedup (a @ b / grouped_gemm): 0.990
+Speedup (bmm / grouped_gemm): 0.225
+
+======================
+TFLOPS (grouped_gemm): 0.631
+TFLOPS (nn.Linear): 0.355
+TFLOPS (a @ b): 0.637
+TFLOPS (bmm): 2.799
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=32, hidden_size=768, ffn_dim=512
+Iterations: 100
+Max memory allocated: 91.94 MB
+Max memory reserved: 120.00 MB
+Average grouped_gemm time: 96.219 μs
+
+======================
+Average nn.Linear time: 175.319 μs
+Average a @ b time: 99.115 μs
+Average bmm time: 21.915 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 1.822
+Speedup (a @ b / grouped_gemm): 1.030
+Speedup (bmm / grouped_gemm): 0.228
+
+======================
+TFLOPS (grouped_gemm): 1.291
+TFLOPS (nn.Linear): 0.709
+TFLOPS (a @ b): 1.254
+TFLOPS (bmm): 5.670
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=32, hidden_size=768, ffn_dim=1024
+Iterations: 100
+Max memory allocated: 91.94 MB
+Max memory reserved: 120.00 MB
+Average grouped_gemm time: 96.996 μs
+
+======================
+Average nn.Linear time: 145.783 μs
+Average a @ b time: 81.251 μs
+Average bmm time: 25.802 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 1.503
+Speedup (a @ b / grouped_gemm): 0.838
+Speedup (bmm / grouped_gemm): 0.266
+
+======================
+TFLOPS (grouped_gemm): 1.670
+TFLOPS (nn.Linear): 1.111
+TFLOPS (a @ b): 1.994
+TFLOPS (bmm): 6.279
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=32, hidden_size=768, ffn_dim=2048
+Iterations: 100
+Max memory allocated: 91.94 MB
+Max memory reserved: 120.00 MB
+Average grouped_gemm time: 98.164 μs
+
+======================
+Average nn.Linear time: 146.286 μs
+Average a @ b time: 82.669 μs
+Average bmm time: 33.989 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 1.490
+Speedup (a @ b / grouped_gemm): 0.842
+Speedup (bmm / grouped_gemm): 0.346
+
+======================
+TFLOPS (grouped_gemm): 3.397
+TFLOPS (nn.Linear): 2.279
+TFLOPS (a @ b): 4.034
+TFLOPS (bmm): 9.810
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=32, hidden_size=768, ffn_dim=4096
+Iterations: 100
+Max memory allocated: 118.56 MB
+Max memory reserved: 168.00 MB
+Average grouped_gemm time: 144.339 μs
+
+======================
+Average nn.Linear time: 144.520 μs
+Average a @ b time: 91.703 μs
+Average bmm time: 57.335 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 1.001
+Speedup (a @ b / grouped_gemm): 0.635
+Speedup (bmm / grouped_gemm): 0.397
+
+======================
+TFLOPS (grouped_gemm): 7.105
+TFLOPS (nn.Linear): 7.096
+TFLOPS (a @ b): 11.183
+TFLOPS (bmm): 17.886
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=32, hidden_size=768, ffn_dim=8192
+Iterations: 100
+Max memory allocated: 222.21 MB
+Max memory reserved: 300.00 MB
+Average grouped_gemm time: 192.616 μs
+
+======================
+Average nn.Linear time: 151.446 μs
+Average a @ b time: 154.693 μs
+Average bmm time: 84.994 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 0.786
+Speedup (a @ b / grouped_gemm): 0.803
+Speedup (bmm / grouped_gemm): 0.441
+
+======================
+TFLOPS (grouped_gemm): 6.206
+TFLOPS (nn.Linear): 7.893
+TFLOPS (a @ b): 7.727
+TFLOPS (bmm): 14.064
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=32, hidden_size=768, ffn_dim=14336
+Iterations: 100
+Max memory allocated: 389.39 MB
+Max memory reserved: 554.00 MB
+Average grouped_gemm time: 267.410 μs
+
+======================
+Average nn.Linear time: 152.495 μs
+Average a @ b time: 195.727 μs
+Average bmm time: 151.508 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 0.570
+Speedup (a @ b / grouped_gemm): 0.732
+Speedup (bmm / grouped_gemm): 0.567
+
+======================
+TFLOPS (grouped_gemm): 9.223
+TFLOPS (nn.Linear): 16.173
+TFLOPS (a @ b): 12.600
+TFLOPS (bmm): 16.278
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=32, hidden_size=4096, ffn_dim=256
+Iterations: 100
+Max memory allocated: 389.39 MB
+Max memory reserved: 554.00 MB
+Average grouped_gemm time: 246.372 μs
+
+======================
+Average nn.Linear time: 168.173 μs
+Average a @ b time: 97.468 μs
+Average bmm time: 32.418 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 0.683
+Speedup (a @ b / grouped_gemm): 0.396
+Speedup (bmm / grouped_gemm): 0.132
+
+======================
+TFLOPS (grouped_gemm): 1.166
+TFLOPS (nn.Linear): 1.708
+TFLOPS (a @ b): 2.948
+TFLOPS (bmm): 8.863
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=32, hidden_size=4096, ffn_dim=512
+Iterations: 100
+Max memory allocated: 389.39 MB
+Max memory reserved: 554.00 MB
+Average grouped_gemm time: 247.803 μs
+
+======================
+Average nn.Linear time: 163.143 μs
+Average a @ b time: 104.711 μs
+Average bmm time: 39.208 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 0.658
+Speedup (a @ b / grouped_gemm): 0.423
+Speedup (bmm / grouped_gemm): 0.158
+
+======================
+TFLOPS (grouped_gemm): 2.183
+TFLOPS (nn.Linear): 3.317
+TFLOPS (a @ b): 5.167
+TFLOPS (bmm): 13.800
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=32, hidden_size=4096, ffn_dim=1024
+Iterations: 100
+Max memory allocated: 389.39 MB
+Max memory reserved: 554.00 MB
+Average grouped_gemm time: 248.909 μs
+
+======================
+Average nn.Linear time: 164.192 μs
+Average a @ b time: 122.995 μs
+Average bmm time: 64.540 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 0.660
+Speedup (a @ b / grouped_gemm): 0.494
+Speedup (bmm / grouped_gemm): 0.259
+
+======================
+TFLOPS (grouped_gemm): 5.696
+TFLOPS (nn.Linear): 8.634
+TFLOPS (a @ b): 11.526
+TFLOPS (bmm): 21.966
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=32, hidden_size=4096, ffn_dim=2048
+Iterations: 100
+Max memory allocated: 389.39 MB
+Max memory reserved: 554.00 MB
+Average grouped_gemm time: 251.117 μs
+
+======================
+Average nn.Linear time: 165.195 μs
+Average a @ b time: 164.979 μs
+Average bmm time: 110.681 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 0.658
+Speedup (a @ b / grouped_gemm): 0.657
+Speedup (bmm / grouped_gemm): 0.441
+
+======================
+TFLOPS (grouped_gemm): 7.082
+TFLOPS (nn.Linear): 10.765
+TFLOPS (a @ b): 10.779
+TFLOPS (bmm): 16.068
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=32, hidden_size=4096, ffn_dim=4096
+Iterations: 100
+Max memory allocated: 563.41 MB
+Max memory reserved: 874.00 MB
+Average grouped_gemm time: 451.522 μs
+
+======================
+Average nn.Linear time: 194.829 μs
+Average a @ b time: 221.725 μs
+Average bmm time: 185.080 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 0.431
+Speedup (a @ b / grouped_gemm): 0.491
+Speedup (bmm / grouped_gemm): 0.410
+
+======================
+TFLOPS (grouped_gemm): 13.005
+TFLOPS (nn.Linear): 30.139
+TFLOPS (a @ b): 26.483
+TFLOPS (bmm): 31.727
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=32, hidden_size=4096, ffn_dim=8192
+Iterations: 100
+Max memory allocated: 1113.46 MB
+Max memory reserved: 1642.00 MB
+Average grouped_gemm time: 657.995 μs
+
+======================
+Average nn.Linear time: 408.981 μs
+Average a @ b time: 399.816 μs
+Average bmm time: 336.590 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 0.622
+Speedup (a @ b / grouped_gemm): 0.608
+Speedup (bmm / grouped_gemm): 0.512
+
+======================
+TFLOPS (grouped_gemm): 16.012
+TFLOPS (nn.Linear): 25.762
+TFLOPS (a @ b): 26.352
+TFLOPS (bmm): 31.302
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=32, hidden_size=4096, ffn_dim=14336
+Iterations: 100
+Max memory allocated: 1938.05 MB
+Max memory reserved: 2986.00 MB
+Average grouped_gemm time: 1066.921 μs
+
+======================
+Average nn.Linear time: 665.796 μs
+Average a @ b time: 657.752 μs
+Average bmm time: 677.776 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 0.624
+Speedup (a @ b / grouped_gemm): 0.616
+Speedup (bmm / grouped_gemm): 0.635
+
+======================
+TFLOPS (grouped_gemm): 12.769
+TFLOPS (nn.Linear): 20.461
+TFLOPS (a @ b): 20.712
+TFLOPS (bmm): 20.100
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=64, hidden_size=128, ffn_dim=256
+Iterations: 100
+Max memory allocated: 1938.05 MB
+Max memory reserved: 2986.00 MB
+Average grouped_gemm time: 63.112 μs
+
+======================
+Average nn.Linear time: 155.528 μs
+Average a @ b time: 84.326 μs
+Average bmm time: 19.059 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 2.464
+Speedup (a @ b / grouped_gemm): 1.336
+Speedup (bmm / grouped_gemm): 0.302
+
+======================
+TFLOPS (grouped_gemm): 0.310
+TFLOPS (nn.Linear): 0.126
+TFLOPS (a @ b): 0.232
+TFLOPS (bmm): 1.028
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=64, hidden_size=128, ffn_dim=512
+Iterations: 100
+Max memory allocated: 1938.05 MB
+Max memory reserved: 2986.00 MB
+Average grouped_gemm time: 64.166 μs
+
+======================
+Average nn.Linear time: 157.611 μs
+Average a @ b time: 84.398 μs
+Average bmm time: 19.710 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 2.456
+Speedup (a @ b / grouped_gemm): 1.315
+Speedup (bmm / grouped_gemm): 0.307
+
+======================
+TFLOPS (grouped_gemm): 0.560
+TFLOPS (nn.Linear): 0.228
+TFLOPS (a @ b): 0.426
+TFLOPS (bmm): 1.822
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=64, hidden_size=128, ffn_dim=1024
+Iterations: 100
+Max memory allocated: 1938.05 MB
+Max memory reserved: 2986.00 MB
+Average grouped_gemm time: 62.408 μs
+
+======================
+Average nn.Linear time: 152.993 μs
+Average a @ b time: 83.382 μs
+Average bmm time: 20.742 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 2.451
+Speedup (a @ b / grouped_gemm): 1.336
+Speedup (bmm / grouped_gemm): 0.332
+
+======================
+TFLOPS (grouped_gemm): 1.059
+TFLOPS (nn.Linear): 0.432
+TFLOPS (a @ b): 0.792
+TFLOPS (bmm): 3.185
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=64, hidden_size=128, ffn_dim=2048
+Iterations: 100
+Max memory allocated: 1938.05 MB
+Max memory reserved: 2986.00 MB
+Average grouped_gemm time: 64.127 μs
+
+======================
+Average nn.Linear time: 161.529 μs
+Average a @ b time: 87.845 μs
+Average bmm time: 25.082 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 2.519
+Speedup (a @ b / grouped_gemm): 1.370
+Speedup (bmm / grouped_gemm): 0.391
+
+======================
+TFLOPS (grouped_gemm): 2.371
+TFLOPS (nn.Linear): 0.941
+TFLOPS (a @ b): 1.731
+TFLOPS (bmm): 6.062
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=64, hidden_size=128, ffn_dim=4096
+Iterations: 100
+Max memory allocated: 1938.05 MB
+Max memory reserved: 2990.00 MB
+Average grouped_gemm time: 74.897 μs
+
+======================
+Average nn.Linear time: 144.503 μs
+Average a @ b time: 76.945 μs
+Average bmm time: 31.445 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 1.929
+Speedup (a @ b / grouped_gemm): 1.027
+Speedup (bmm / grouped_gemm): 0.420
+
+======================
+TFLOPS (grouped_gemm): 4.032
+TFLOPS (nn.Linear): 2.090
+TFLOPS (a @ b): 3.925
+TFLOPS (bmm): 9.604
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=64, hidden_size=128, ffn_dim=8192
+Iterations: 100
+Max memory allocated: 1938.05 MB
+Max memory reserved: 2994.00 MB
+Average grouped_gemm time: 87.531 μs
+
+======================
+Average nn.Linear time: 146.980 μs
+Average a @ b time: 80.528 μs
+Average bmm time: 31.366 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 1.679
+Speedup (a @ b / grouped_gemm): 0.920
+Speedup (bmm / grouped_gemm): 0.358
+
+======================
+TFLOPS (grouped_gemm): 8.242
+TFLOPS (nn.Linear): 4.908
+TFLOPS (a @ b): 8.959
+TFLOPS (bmm): 23.000
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=64, hidden_size=128, ffn_dim=14336
+Iterations: 100
+Max memory allocated: 1938.05 MB
+Max memory reserved: 2994.00 MB
+Average grouped_gemm time: 116.363 μs
+
+======================
+Average nn.Linear time: 148.070 μs
+Average a @ b time: 88.289 μs
+Average bmm time: 52.106 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 1.272
+Speedup (a @ b / grouped_gemm): 0.759
+Speedup (bmm / grouped_gemm): 0.448
+
+======================
+TFLOPS (grouped_gemm): 7.506
+TFLOPS (nn.Linear): 5.899
+TFLOPS (a @ b): 9.893
+TFLOPS (bmm): 16.763
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=64, hidden_size=768, ffn_dim=256
+Iterations: 100
+Max memory allocated: 1938.05 MB
+Max memory reserved: 2994.00 MB
+Average grouped_gemm time: 93.303 μs
+
+======================
+Average nn.Linear time: 167.720 μs
+Average a @ b time: 97.649 μs
+Average bmm time: 20.998 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 1.798
+Speedup (a @ b / grouped_gemm): 1.047
+Speedup (bmm / grouped_gemm): 0.225
+
+======================
+TFLOPS (grouped_gemm): 1.134
+TFLOPS (nn.Linear): 0.631
+TFLOPS (a @ b): 1.083
+TFLOPS (bmm): 5.038
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=64, hidden_size=768, ffn_dim=512
+Iterations: 100
+Max memory allocated: 1938.05 MB
+Max memory reserved: 2994.00 MB
+Average grouped_gemm time: 91.970 μs
+
+======================
+Average nn.Linear time: 171.456 μs
+Average a @ b time: 98.007 μs
+Average bmm time: 21.691 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 1.864
+Speedup (a @ b / grouped_gemm): 1.066
+Speedup (bmm / grouped_gemm): 0.236
+
+======================
+TFLOPS (grouped_gemm): 2.326
+TFLOPS (nn.Linear): 1.248
+TFLOPS (a @ b): 2.183
+TFLOPS (bmm): 9.862
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=64, hidden_size=768, ffn_dim=1024
+Iterations: 100
+Max memory allocated: 1938.05 MB
+Max memory reserved: 2994.00 MB
+Average grouped_gemm time: 94.469 μs
+
+======================
+Average nn.Linear time: 187.051 μs
+Average a @ b time: 83.945 μs
+Average bmm time: 26.345 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 1.980
+Speedup (a @ b / grouped_gemm): 0.889
+Speedup (bmm / grouped_gemm): 0.279
+
+======================
+TFLOPS (grouped_gemm): 4.778
+TFLOPS (nn.Linear): 2.413
+TFLOPS (a @ b): 5.377
+TFLOPS (bmm): 17.134
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=64, hidden_size=768, ffn_dim=2048
+Iterations: 100
+Max memory allocated: 1938.05 MB
+Max memory reserved: 2994.00 MB
+Average grouped_gemm time: 93.758 μs
+
+======================
+Average nn.Linear time: 153.189 μs
+Average a @ b time: 82.316 μs
+Average bmm time: 34.950 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 1.634
+Speedup (a @ b / grouped_gemm): 0.878
+Speedup (bmm / grouped_gemm): 0.373
+
+======================
+TFLOPS (grouped_gemm): 7.180
+TFLOPS (nn.Linear): 4.394
+TFLOPS (a @ b): 8.178
+TFLOPS (bmm): 19.262
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=64, hidden_size=768, ffn_dim=4096
+Iterations: 100
+Max memory allocated: 1938.05 MB
+Max memory reserved: 2994.00 MB
+Average grouped_gemm time: 138.531 μs
+
+======================
+Average nn.Linear time: 143.816 μs
+Average a @ b time: 88.341 μs
+Average bmm time: 58.558 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 1.038
+Speedup (a @ b / grouped_gemm): 0.638
+Speedup (bmm / grouped_gemm): 0.423
+
+======================
+TFLOPS (grouped_gemm): 11.853
+TFLOPS (nn.Linear): 11.418
+TFLOPS (a @ b): 18.588
+TFLOPS (bmm): 28.042
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=64, hidden_size=768, ffn_dim=8192
+Iterations: 100
+Max memory allocated: 1938.05 MB
+Max memory reserved: 2996.00 MB
+Average grouped_gemm time: 182.934 μs
+
+======================
+Average nn.Linear time: 174.460 μs
+Average a @ b time: 201.697 μs
+Average bmm time: 87.664 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 0.954
+Speedup (a @ b / grouped_gemm): 1.103
+Speedup (bmm / grouped_gemm): 0.479
+
+======================
+TFLOPS (grouped_gemm): 22.699
+TFLOPS (nn.Linear): 23.801
+TFLOPS (a @ b): 20.587
+TFLOPS (bmm): 47.367
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=64, hidden_size=768, ffn_dim=14336
+Iterations: 100
+Max memory allocated: 1938.05 MB
+Max memory reserved: 2996.00 MB
+Average grouped_gemm time: 267.894 μs
+
+======================
+Average nn.Linear time: 166.469 μs
+Average a @ b time: 204.313 μs
+Average bmm time: 159.712 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 0.621
+Speedup (a @ b / grouped_gemm): 0.763
+Speedup (bmm / grouped_gemm): 0.596
+
+======================
+TFLOPS (grouped_gemm): 21.371
+TFLOPS (nn.Linear): 34.392
+TFLOPS (a @ b): 28.022
+TFLOPS (bmm): 35.847
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=64, hidden_size=4096, ffn_dim=256
+Iterations: 100
+Max memory allocated: 1938.05 MB
+Max memory reserved: 2996.00 MB
+Average grouped_gemm time: 246.301 μs
+
+======================
+Average nn.Linear time: 169.697 μs
+Average a @ b time: 96.993 μs
+Average bmm time: 32.940 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 0.689
+Speedup (a @ b / grouped_gemm): 0.394
+Speedup (bmm / grouped_gemm): 0.134
+
+======================
+TFLOPS (grouped_gemm): 2.188
+TFLOPS (nn.Linear): 3.176
+TFLOPS (a @ b): 5.557
+TFLOPS (bmm): 16.362
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=64, hidden_size=4096, ffn_dim=512
+Iterations: 100
+Max memory allocated: 1938.05 MB
+Max memory reserved: 2996.00 MB
+Average grouped_gemm time: 249.004 μs
+
+======================
+Average nn.Linear time: 165.815 μs
+Average a @ b time: 109.775 μs
+Average bmm time: 41.277 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 0.666
+Speedup (a @ b / grouped_gemm): 0.441
+Speedup (bmm / grouped_gemm): 0.166
+
+======================
+TFLOPS (grouped_gemm): 4.127
+TFLOPS (nn.Linear): 6.197
+TFLOPS (a @ b): 9.361
+TFLOPS (bmm): 24.895
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=64, hidden_size=4096, ffn_dim=1024
+Iterations: 100
+Max memory allocated: 1938.05 MB
+Max memory reserved: 2996.00 MB
+Average grouped_gemm time: 248.604 μs
+
+======================
+Average nn.Linear time: 169.110 μs
+Average a @ b time: 127.156 μs
+Average bmm time: 67.220 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 0.680
+Speedup (a @ b / grouped_gemm): 0.511
+Speedup (bmm / grouped_gemm): 0.270
+
+======================
+TFLOPS (grouped_gemm): 9.853
+TFLOPS (nn.Linear): 14.484
+TFLOPS (a @ b): 19.264
+TFLOPS (bmm): 36.440
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=64, hidden_size=4096, ffn_dim=2048
+Iterations: 100
+Max memory allocated: 1938.05 MB
+Max memory reserved: 2996.00 MB
+Average grouped_gemm time: 251.913 μs
+
+======================
+Average nn.Linear time: 164.893 μs
+Average a @ b time: 174.670 μs
+Average bmm time: 116.813 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 0.655
+Speedup (a @ b / grouped_gemm): 0.693
+Speedup (bmm / grouped_gemm): 0.464
+
+======================
+TFLOPS (grouped_gemm): 14.519
+TFLOPS (nn.Linear): 22.181
+TFLOPS (a @ b): 20.939
+TFLOPS (bmm): 31.310
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=64, hidden_size=4096, ffn_dim=4096
+Iterations: 100
+Max memory allocated: 1938.05 MB
+Max memory reserved: 2996.00 MB
+Average grouped_gemm time: 452.132 μs
+
+======================
+Average nn.Linear time: 203.636 μs
+Average a @ b time: 225.246 μs
+Average bmm time: 192.196 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 0.450
+Speedup (a @ b / grouped_gemm): 0.498
+Speedup (bmm / grouped_gemm): 0.425
+
+======================
+TFLOPS (grouped_gemm): 23.303
+TFLOPS (nn.Linear): 51.740
+TFLOPS (a @ b): 46.776
+TFLOPS (bmm): 54.819
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=64, hidden_size=4096, ffn_dim=8192
+Iterations: 100
+Max memory allocated: 1938.05 MB
+Max memory reserved: 2996.00 MB
+Average grouped_gemm time: 660.717 μs
+
+======================
+Average nn.Linear time: 411.658 μs
+Average a @ b time: 404.267 μs
+Average bmm time: 349.603 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 0.623
+Speedup (a @ b / grouped_gemm): 0.612
+Speedup (bmm / grouped_gemm): 0.529
+
+======================
+TFLOPS (grouped_gemm): 30.369
+TFLOPS (nn.Linear): 48.743
+TFLOPS (a @ b): 49.634
+TFLOPS (bmm): 57.395
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=64, hidden_size=4096, ffn_dim=14336
+Iterations: 100
+Max memory allocated: 1967.88 MB
+Max memory reserved: 2996.00 MB
+Average grouped_gemm time: 1069.264 μs
+
+======================
+Average nn.Linear time: 671.530 μs
+Average a @ b time: 665.956 μs
+Average bmm time: 689.764 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 0.628
+Speedup (a @ b / grouped_gemm): 0.623
+Speedup (bmm / grouped_gemm): 0.645
+
+======================
+TFLOPS (grouped_gemm): 26.799
+TFLOPS (nn.Linear): 42.672
+TFLOPS (a @ b): 43.029
+TFLOPS (bmm): 41.544
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=128, hidden_size=128, ffn_dim=256
+Iterations: 100
+Max memory allocated: 1967.88 MB
+Max memory reserved: 2996.00 MB
+Average grouped_gemm time: 63.741 μs
+
+======================
+Average nn.Linear time: 157.905 μs
+Average a @ b time: 86.982 μs
+Average bmm time: 19.491 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 2.477
+Speedup (a @ b / grouped_gemm): 1.365
+Speedup (bmm / grouped_gemm): 0.306
+
+======================
+TFLOPS (grouped_gemm): 0.563
+TFLOPS (nn.Linear): 0.227
+TFLOPS (a @ b): 0.413
+TFLOPS (bmm): 1.843
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=128, hidden_size=128, ffn_dim=512
+Iterations: 100
+Max memory allocated: 1967.88 MB
+Max memory reserved: 2996.00 MB
+Average grouped_gemm time: 63.078 μs
+
+======================
+Average nn.Linear time: 148.098 μs
+Average a @ b time: 79.575 μs
+Average bmm time: 21.234 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 2.348
+Speedup (a @ b / grouped_gemm): 1.262
+Speedup (bmm / grouped_gemm): 0.337
+
+======================
+TFLOPS (grouped_gemm): 1.176
+TFLOPS (nn.Linear): 0.501
+TFLOPS (a @ b): 0.932
+TFLOPS (bmm): 3.494
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=128, hidden_size=128, ffn_dim=1024
+Iterations: 100
+Max memory allocated: 1967.88 MB
+Max memory reserved: 2996.00 MB
+Average grouped_gemm time: 63.806 μs
+
+======================
+Average nn.Linear time: 147.176 μs
+Average a @ b time: 78.330 μs
+Average bmm time: 24.583 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 2.307
+Speedup (a @ b / grouped_gemm): 1.228
+Speedup (bmm / grouped_gemm): 0.385
+
+======================
+TFLOPS (grouped_gemm): 2.141
+TFLOPS (nn.Linear): 0.928
+TFLOPS (a @ b): 1.744
+TFLOPS (bmm): 5.556
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=128, hidden_size=128, ffn_dim=2048
+Iterations: 100
+Max memory allocated: 1967.88 MB
+Max memory reserved: 2996.00 MB
+Average grouped_gemm time: 63.257 μs
+
+======================
+Average nn.Linear time: 146.949 μs
+Average a @ b time: 77.765 μs
+Average bmm time: 31.223 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 2.323
+Speedup (a @ b / grouped_gemm): 1.229
+Speedup (bmm / grouped_gemm): 0.494
+
+======================
+TFLOPS (grouped_gemm): 4.202
+TFLOPS (nn.Linear): 1.809
+TFLOPS (a @ b): 3.418
+TFLOPS (bmm): 8.513
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=128, hidden_size=128, ffn_dim=4096
+Iterations: 100
+Max memory allocated: 1967.88 MB
+Max memory reserved: 2996.00 MB
+Average grouped_gemm time: 74.592 μs
+
+======================
+Average nn.Linear time: 146.224 μs
+Average a @ b time: 77.319 μs
+Average bmm time: 43.595 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 1.960
+Speedup (a @ b / grouped_gemm): 1.037
+Speedup (bmm / grouped_gemm): 0.584
+
+======================
+TFLOPS (grouped_gemm): 5.384
+TFLOPS (nn.Linear): 2.746
+TFLOPS (a @ b): 5.194
+TFLOPS (bmm): 9.212
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=128, hidden_size=128, ffn_dim=8192
+Iterations: 100
+Max memory allocated: 1967.88 MB
+Max memory reserved: 2996.00 MB
+Average grouped_gemm time: 90.666 μs
+
+======================
+Average nn.Linear time: 149.989 μs
+Average a @ b time: 81.825 μs
+Average bmm time: 37.193 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 1.654
+Speedup (a @ b / grouped_gemm): 0.902
+Speedup (bmm / grouped_gemm): 0.410
+
+======================
+TFLOPS (grouped_gemm): 13.069
+TFLOPS (nn.Linear): 7.900
+TFLOPS (a @ b): 14.481
+TFLOPS (bmm): 31.858
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=128, hidden_size=128, ffn_dim=14336
+Iterations: 100
+Max memory allocated: 1967.88 MB
+Max memory reserved: 2996.00 MB
+Average grouped_gemm time: 119.421 μs
+
+======================
+Average nn.Linear time: 150.104 μs
+Average a @ b time: 98.367 μs
+Average bmm time: 61.672 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 1.257
+Speedup (a @ b / grouped_gemm): 0.824
+Speedup (bmm / grouped_gemm): 0.516
+
+======================
+TFLOPS (grouped_gemm): 14.444
+TFLOPS (nn.Linear): 11.491
+TFLOPS (a @ b): 17.535
+TFLOPS (bmm): 27.969
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=128, hidden_size=768, ffn_dim=256
+Iterations: 100
+Max memory allocated: 1967.88 MB
+Max memory reserved: 2996.00 MB
+Average grouped_gemm time: 93.460 μs
+
+======================
+Average nn.Linear time: 170.071 μs
+Average a @ b time: 99.993 μs
+Average bmm time: 21.596 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 1.820
+Speedup (a @ b / grouped_gemm): 1.070
+Speedup (bmm / grouped_gemm): 0.231
+
+======================
+TFLOPS (grouped_gemm): 2.810
+TFLOPS (nn.Linear): 1.544
+TFLOPS (a @ b): 2.627
+TFLOPS (bmm): 12.163
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=128, hidden_size=768, ffn_dim=512
+Iterations: 100
+Max memory allocated: 1967.88 MB
+Max memory reserved: 2996.00 MB
+Average grouped_gemm time: 92.263 μs
+
+======================
+Average nn.Linear time: 166.609 μs
+Average a @ b time: 98.083 μs
+Average bmm time: 25.990 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 1.806
+Speedup (a @ b / grouped_gemm): 1.063
+Speedup (bmm / grouped_gemm): 0.282
+
+======================
+TFLOPS (grouped_gemm): 5.080
+TFLOPS (nn.Linear): 2.813
+TFLOPS (a @ b): 4.779
+TFLOPS (bmm): 18.034
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=128, hidden_size=768, ffn_dim=1024
+Iterations: 100
+Max memory allocated: 1967.88 MB
+Max memory reserved: 2996.00 MB
+Average grouped_gemm time: 92.380 μs
+
+======================
+Average nn.Linear time: 146.868 μs
+Average a @ b time: 81.606 μs
+Average bmm time: 34.811 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 1.590
+Speedup (a @ b / grouped_gemm): 0.883
+Speedup (bmm / grouped_gemm): 0.377
+
+======================
+TFLOPS (grouped_gemm): 8.155
+TFLOPS (nn.Linear): 5.130
+TFLOPS (a @ b): 9.232
+TFLOPS (bmm): 21.642
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=128, hidden_size=768, ffn_dim=2048
+Iterations: 100
+Max memory allocated: 1967.88 MB
+Max memory reserved: 2996.00 MB
+Average grouped_gemm time: 94.128 μs
+
+======================
+Average nn.Linear time: 145.848 μs
+Average a @ b time: 82.011 μs
+Average bmm time: 49.002 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 1.549
+Speedup (a @ b / grouped_gemm): 0.871
+Speedup (bmm / grouped_gemm): 0.521
+
+======================
+TFLOPS (grouped_gemm): 24.163
+TFLOPS (nn.Linear): 15.594
+TFLOPS (a @ b): 27.732
+TFLOPS (bmm): 46.413
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=128, hidden_size=768, ffn_dim=4096
+Iterations: 100
+Max memory allocated: 1967.88 MB
+Max memory reserved: 2996.00 MB
+Average grouped_gemm time: 138.838 μs
+
+======================
+Average nn.Linear time: 143.406 μs
+Average a @ b time: 97.401 μs
+Average bmm time: 77.372 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 1.033
+Speedup (a @ b / grouped_gemm): 0.702
+Speedup (bmm / grouped_gemm): 0.557
+
+======================
+TFLOPS (grouped_gemm): 28.231
+TFLOPS (nn.Linear): 27.332
+TFLOPS (a @ b): 40.242
+TFLOPS (bmm): 50.659
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=128, hidden_size=768, ffn_dim=8192
+Iterations: 100
+Max memory allocated: 1967.88 MB
+Max memory reserved: 2996.00 MB
+Average grouped_gemm time: 182.989 μs
+
+======================
+Average nn.Linear time: 159.080 μs
+Average a @ b time: 168.774 μs
+Average bmm time: 98.641 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 0.869
+Speedup (a @ b / grouped_gemm): 0.922
+Speedup (bmm / grouped_gemm): 0.539
+
+======================
+TFLOPS (grouped_gemm): 39.676
+TFLOPS (nn.Linear): 45.640
+TFLOPS (a @ b): 43.018
+TFLOPS (bmm): 73.604
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=128, hidden_size=768, ffn_dim=14336
+Iterations: 100
+Max memory allocated: 1967.88 MB
+Max memory reserved: 2996.00 MB
+Average grouped_gemm time: 270.209 μs
+
+======================
+Average nn.Linear time: 181.832 μs
+Average a @ b time: 206.771 μs
+Average bmm time: 165.427 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 0.673
+Speedup (a @ b / grouped_gemm): 0.765
+Speedup (bmm / grouped_gemm): 0.612
+
+======================
+TFLOPS (grouped_gemm): 39.117
+TFLOPS (nn.Linear): 58.129
+TFLOPS (a @ b): 51.118
+TFLOPS (bmm): 63.893
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=128, hidden_size=4096, ffn_dim=256
+Iterations: 100
+Max memory allocated: 1967.88 MB
+Max memory reserved: 2996.00 MB
+Average grouped_gemm time: 246.670 μs
+
+======================
+Average nn.Linear time: 168.865 μs
+Average a @ b time: 100.629 μs
+Average bmm time: 34.947 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 0.685
+Speedup (a @ b / grouped_gemm): 0.408
+Speedup (bmm / grouped_gemm): 0.142
+
+======================
+TFLOPS (grouped_gemm): 4.736
+TFLOPS (nn.Linear): 6.917
+TFLOPS (a @ b): 11.608
+TFLOPS (bmm): 33.425
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=128, hidden_size=4096, ffn_dim=512
+Iterations: 100
+Max memory allocated: 1967.88 MB
+Max memory reserved: 2996.00 MB
+Average grouped_gemm time: 248.086 μs
+
+======================
+Average nn.Linear time: 164.666 μs
+Average a @ b time: 113.955 μs
+Average bmm time: 50.657 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 0.664
+Speedup (a @ b / grouped_gemm): 0.459
+Speedup (bmm / grouped_gemm): 0.204
+
+======================
+TFLOPS (grouped_gemm): 6.864
+TFLOPS (nn.Linear): 10.341
+TFLOPS (a @ b): 14.944
+TFLOPS (bmm): 33.616
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=128, hidden_size=4096, ffn_dim=1024
+Iterations: 100
+Max memory allocated: 1967.88 MB
+Max memory reserved: 2996.00 MB
+Average grouped_gemm time: 248.888 μs
+
+======================
+Average nn.Linear time: 164.239 μs
+Average a @ b time: 130.184 μs
+Average bmm time: 90.642 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 0.660
+Speedup (a @ b / grouped_gemm): 0.523
+Speedup (bmm / grouped_gemm): 0.364
+
+======================
+TFLOPS (grouped_gemm): 13.145
+TFLOPS (nn.Linear): 19.919
+TFLOPS (a @ b): 25.130
+TFLOPS (bmm): 36.093
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=128, hidden_size=4096, ffn_dim=2048
+Iterations: 100
+Max memory allocated: 1967.88 MB
+Max memory reserved: 2996.00 MB
+Average grouped_gemm time: 252.891 μs
+
+======================
+Average nn.Linear time: 168.502 μs
+Average a @ b time: 180.776 μs
+Average bmm time: 144.300 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 0.666
+Speedup (a @ b / grouped_gemm): 0.715
+Speedup (bmm / grouped_gemm): 0.571
+
+======================
+TFLOPS (grouped_gemm): 38.412
+TFLOPS (nn.Linear): 57.649
+TFLOPS (a @ b): 53.735
+TFLOPS (bmm): 67.318
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=128, hidden_size=4096, ffn_dim=4096
+Iterations: 100
+Max memory allocated: 1967.88 MB
+Max memory reserved: 2998.00 MB
+Average grouped_gemm time: 455.847 μs
+
+======================
+Average nn.Linear time: 258.055 μs
+Average a @ b time: 252.812 μs
+Average bmm time: 259.945 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 0.566
+Speedup (a @ b / grouped_gemm): 0.555
+Speedup (bmm / grouped_gemm): 0.570
+
+======================
+TFLOPS (grouped_gemm): 45.417
+TFLOPS (nn.Linear): 80.227
+TFLOPS (a @ b): 81.891
+TFLOPS (bmm): 79.644
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=128, hidden_size=4096, ffn_dim=8192
+Iterations: 100
+Max memory allocated: 1967.88 MB
+Max memory reserved: 2998.00 MB
+Average grouped_gemm time: 662.322 μs
+
+======================
+Average nn.Linear time: 448.647 μs
+Average a @ b time: 441.532 μs
+Average bmm time: 375.087 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 0.677
+Speedup (a @ b / grouped_gemm): 0.667
+Speedup (bmm / grouped_gemm): 0.566
+
+======================
+TFLOPS (grouped_gemm): 51.168
+TFLOPS (nn.Linear): 75.538
+TFLOPS (a @ b): 76.755
+TFLOPS (bmm): 90.352
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=128, hidden_size=4096, ffn_dim=14336
+Iterations: 100
+Max memory allocated: 2030.57 MB
+Max memory reserved: 2998.00 MB
+Average grouped_gemm time: 1072.574 μs
+
+======================
+Average nn.Linear time: 784.009 μs
+Average a @ b time: 776.265 μs
+Average bmm time: 665.314 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 0.731
+Speedup (a @ b / grouped_gemm): 0.724
+Speedup (bmm / grouped_gemm): 0.620
+
+======================
+TFLOPS (grouped_gemm): 67.339
+TFLOPS (nn.Linear): 92.124
+TFLOPS (a @ b): 93.043
+TFLOPS (bmm): 108.559
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=256, hidden_size=128, ffn_dim=256
+Iterations: 100
+Max memory allocated: 2030.57 MB
+Max memory reserved: 2998.00 MB
+Average grouped_gemm time: 66.326 μs
+
+======================
+Average nn.Linear time: 150.931 μs
+Average a @ b time: 80.373 μs
+Average bmm time: 21.193 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 2.276
+Speedup (a @ b / grouped_gemm): 1.212
+Speedup (bmm / grouped_gemm): 0.320
+
+======================
+TFLOPS (grouped_gemm): 0.860
+TFLOPS (nn.Linear): 0.378
+TFLOPS (a @ b): 0.709
+TFLOPS (bmm): 2.690
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=256, hidden_size=128, ffn_dim=512
+Iterations: 100
+Max memory allocated: 2030.57 MB
+Max memory reserved: 2998.00 MB
+Average grouped_gemm time: 67.258 μs
+
+======================
+Average nn.Linear time: 157.130 μs
+Average a @ b time: 87.132 μs
+Average bmm time: 25.620 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 2.336
+Speedup (a @ b / grouped_gemm): 1.295
+Speedup (bmm / grouped_gemm): 0.381
+
+======================
+TFLOPS (grouped_gemm): 1.970
+TFLOPS (nn.Linear): 0.843
+TFLOPS (a @ b): 1.521
+TFLOPS (bmm): 5.172
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=256, hidden_size=128, ffn_dim=1024
+Iterations: 100
+Max memory allocated: 2030.57 MB
+Max memory reserved: 2998.00 MB
+Average grouped_gemm time: 64.781 μs
+
+======================
+Average nn.Linear time: 150.285 μs
+Average a @ b time: 79.169 μs
+Average bmm time: 31.407 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 2.320
+Speedup (a @ b / grouped_gemm): 1.222
+Speedup (bmm / grouped_gemm): 0.485
+
+======================
+TFLOPS (grouped_gemm): 3.759
+TFLOPS (nn.Linear): 1.620
+TFLOPS (a @ b): 3.076
+TFLOPS (bmm): 7.754
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=256, hidden_size=128, ffn_dim=2048
+Iterations: 100
+Max memory allocated: 2030.57 MB
+Max memory reserved: 2998.00 MB
+Average grouped_gemm time: 65.305 μs
+
+======================
+Average nn.Linear time: 150.597 μs
+Average a @ b time: 78.497 μs
+Average bmm time: 40.329 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 2.306
+Speedup (a @ b / grouped_gemm): 1.202
+Speedup (bmm / grouped_gemm): 0.618
+
+======================
+TFLOPS (grouped_gemm): 9.313
+TFLOPS (nn.Linear): 4.038
+TFLOPS (a @ b): 7.748
+TFLOPS (bmm): 15.081
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=256, hidden_size=128, ffn_dim=4096
+Iterations: 100
+Max memory allocated: 2030.57 MB
+Max memory reserved: 2998.00 MB
+Average grouped_gemm time: 76.668 μs
+
+======================
+Average nn.Linear time: 146.325 μs
+Average a @ b time: 75.533 μs
+Average bmm time: 58.756 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 1.909
+Speedup (a @ b / grouped_gemm): 0.985
+Speedup (bmm / grouped_gemm): 0.766
+
+======================
+TFLOPS (grouped_gemm): 11.489
+TFLOPS (nn.Linear): 6.020
+TFLOPS (a @ b): 11.661
+TFLOPS (bmm): 14.991
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=256, hidden_size=128, ffn_dim=8192
+Iterations: 100
+Max memory allocated: 2030.57 MB
+Max memory reserved: 2998.00 MB
+Average grouped_gemm time: 93.205 μs
+
+======================
+Average nn.Linear time: 150.268 μs
+Average a @ b time: 88.468 μs
+Average bmm time: 59.347 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 1.612
+Speedup (a @ b / grouped_gemm): 0.949
+Speedup (bmm / grouped_gemm): 0.637
+
+======================
+TFLOPS (grouped_gemm): 21.195
+TFLOPS (nn.Linear): 13.147
+TFLOPS (a @ b): 22.330
+TFLOPS (bmm): 33.287
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=256, hidden_size=128, ffn_dim=14336
+Iterations: 100
+Max memory allocated: 2030.57 MB
+Max memory reserved: 2998.00 MB
+Average grouped_gemm time: 122.337 μs
+
+======================
+Average nn.Linear time: 148.370 μs
+Average a @ b time: 123.131 μs
+Average bmm time: 95.654 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 1.213
+Speedup (a @ b / grouped_gemm): 1.006
+Speedup (bmm / grouped_gemm): 0.782
+
+======================
+TFLOPS (grouped_gemm): 32.759
+TFLOPS (nn.Linear): 27.011
+TFLOPS (a @ b): 32.548
+TFLOPS (bmm): 41.898
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=256, hidden_size=768, ffn_dim=256
+Iterations: 100
+Max memory allocated: 2030.57 MB
+Max memory reserved: 2998.00 MB
+Average grouped_gemm time: 92.654 μs
+
+======================
+Average nn.Linear time: 173.938 μs
+Average a @ b time: 101.609 μs
+Average bmm time: 25.406 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 1.877
+Speedup (a @ b / grouped_gemm): 1.097
+Speedup (bmm / grouped_gemm): 0.274
+
+======================
+TFLOPS (grouped_gemm): 3.684
+TFLOPS (nn.Linear): 1.962
+TFLOPS (a @ b): 3.359
+TFLOPS (bmm): 13.434
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=256, hidden_size=768, ffn_dim=512
+Iterations: 100
+Max memory allocated: 2030.57 MB
+Max memory reserved: 2998.00 MB
+Average grouped_gemm time: 93.925 μs
+
+======================
+Average nn.Linear time: 174.623 μs
+Average a @ b time: 103.042 μs
+Average bmm time: 30.787 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 1.859
+Speedup (a @ b / grouped_gemm): 1.097
+Speedup (bmm / grouped_gemm): 0.328
+
+======================
+TFLOPS (grouped_gemm): 11.504
+TFLOPS (nn.Linear): 6.188
+TFLOPS (a @ b): 10.487
+TFLOPS (bmm): 35.098
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=256, hidden_size=768, ffn_dim=1024
+Iterations: 100
+Max memory allocated: 2030.57 MB
+Max memory reserved: 2998.00 MB
+Average grouped_gemm time: 93.417 μs
+
+======================
+Average nn.Linear time: 148.091 μs
+Average a @ b time: 80.414 μs
+Average bmm time: 44.479 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 1.585
+Speedup (a @ b / grouped_gemm): 0.861
+Speedup (bmm / grouped_gemm): 0.476
+
+======================
+TFLOPS (grouped_gemm): 13.857
+TFLOPS (nn.Linear): 8.741
+TFLOPS (a @ b): 16.098
+TFLOPS (bmm): 29.103
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=256, hidden_size=768, ffn_dim=2048
+Iterations: 100
+Max memory allocated: 2030.57 MB
+Max memory reserved: 2998.00 MB
+Average grouped_gemm time: 95.160 μs
+
+======================
+Average nn.Linear time: 145.276 μs
+Average a @ b time: 86.133 μs
+Average bmm time: 61.240 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 1.527
+Speedup (a @ b / grouped_gemm): 0.905
+Speedup (bmm / grouped_gemm): 0.644
+
+======================
+TFLOPS (grouped_gemm): 28.495
+TFLOPS (nn.Linear): 18.665
+TFLOPS (a @ b): 31.482
+TFLOPS (bmm): 44.278
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=256, hidden_size=768, ffn_dim=4096
+Iterations: 100
+Max memory allocated: 2030.57 MB
+Max memory reserved: 2998.00 MB
+Average grouped_gemm time: 140.841 μs
+
+======================
+Average nn.Linear time: 151.830 μs
+Average a @ b time: 122.609 μs
+Average bmm time: 86.660 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 1.078
+Speedup (a @ b / grouped_gemm): 0.871
+Speedup (bmm / grouped_gemm): 0.615
+
+======================
+TFLOPS (grouped_gemm): 58.161
+TFLOPS (nn.Linear): 53.952
+TFLOPS (a @ b): 66.810
+TFLOPS (bmm): 94.524
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=256, hidden_size=768, ffn_dim=8192
+Iterations: 100
+Max memory allocated: 2030.57 MB
+Max memory reserved: 2998.00 MB
+Average grouped_gemm time: 186.703 μs
+
+======================
+Average nn.Linear time: 187.278 μs
+Average a @ b time: 189.495 μs
+Average bmm time: 132.139 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 1.003
+Speedup (a @ b / grouped_gemm): 1.015
+Speedup (bmm / grouped_gemm): 0.708
+
+======================
+TFLOPS (grouped_gemm): 69.889
+TFLOPS (nn.Linear): 69.674
+TFLOPS (a @ b): 68.859
+TFLOPS (bmm): 98.748
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=256, hidden_size=768, ffn_dim=14336
+Iterations: 100
+Max memory allocated: 2030.57 MB
+Max memory reserved: 2998.00 MB
+Average grouped_gemm time: 280.199 μs
+
+======================
+Average nn.Linear time: 296.738 μs
+Average a @ b time: 302.405 μs
+Average bmm time: 225.513 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 1.059
+Speedup (a @ b / grouped_gemm): 1.079
+Speedup (bmm / grouped_gemm): 0.805
+
+======================
+TFLOPS (grouped_gemm): 108.293
+TFLOPS (nn.Linear): 102.257
+TFLOPS (a @ b): 100.341
+TFLOPS (bmm): 134.554
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=256, hidden_size=4096, ffn_dim=256
+Iterations: 100
+Max memory allocated: 2030.57 MB
+Max memory reserved: 2998.00 MB
+Average grouped_gemm time: 254.946 μs
+
+======================
+Average nn.Linear time: 165.899 μs
+Average a @ b time: 106.316 μs
+Average bmm time: 45.576 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 0.651
+Speedup (a @ b / grouped_gemm): 0.417
+Speedup (bmm / grouped_gemm): 0.179
+
+======================
+TFLOPS (grouped_gemm): 7.741
+TFLOPS (nn.Linear): 11.895
+TFLOPS (a @ b): 18.562
+TFLOPS (bmm): 43.299
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=256, hidden_size=4096, ffn_dim=512
+Iterations: 100
+Max memory allocated: 2030.57 MB
+Max memory reserved: 2998.00 MB
+Average grouped_gemm time: 251.853 μs
+
+======================
+Average nn.Linear time: 164.192 μs
+Average a @ b time: 128.841 μs
+Average bmm time: 81.661 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 0.652
+Speedup (a @ b / grouped_gemm): 0.512
+Speedup (bmm / grouped_gemm): 0.324
+
+======================
+TFLOPS (grouped_gemm): 20.068
+TFLOPS (nn.Linear): 30.782
+TFLOPS (a @ b): 39.228
+TFLOPS (bmm): 61.892
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=256, hidden_size=4096, ffn_dim=1024
+Iterations: 100
+Max memory allocated: 2030.57 MB
+Max memory reserved: 2998.00 MB
+Average grouped_gemm time: 252.190 μs
+
+======================
+Average nn.Linear time: 159.471 μs
+Average a @ b time: 152.335 μs
+Average bmm time: 115.063 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 0.632
+Speedup (a @ b / grouped_gemm): 0.604
+Speedup (bmm / grouped_gemm): 0.456
+
+======================
+TFLOPS (grouped_gemm): 28.373
+TFLOPS (nn.Linear): 44.870
+TFLOPS (a @ b): 46.972
+TFLOPS (bmm): 62.187
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=256, hidden_size=4096, ffn_dim=2048
+Iterations: 100
+Max memory allocated: 2030.57 MB
+Max memory reserved: 2998.00 MB
+Average grouped_gemm time: 255.966 μs
+
+======================
+Average nn.Linear time: 223.348 μs
+Average a @ b time: 221.102 μs
+Average bmm time: 191.534 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 0.873
+Speedup (a @ b / grouped_gemm): 0.864
+Speedup (bmm / grouped_gemm): 0.748
+
+======================
+TFLOPS (grouped_gemm): 80.423
+TFLOPS (nn.Linear): 92.168
+TFLOPS (a @ b): 93.105
+TFLOPS (bmm): 107.478
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=256, hidden_size=4096, ffn_dim=4096
+Iterations: 100
+Max memory allocated: 2030.57 MB
+Max memory reserved: 2998.00 MB
+Average grouped_gemm time: 458.469 μs
+
+======================
+Average nn.Linear time: 276.127 μs
+Average a @ b time: 274.389 μs
+Average bmm time: 357.780 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 0.602
+Speedup (a @ b / grouped_gemm): 0.598
+Speedup (bmm / grouped_gemm): 0.780
+
+======================
+TFLOPS (grouped_gemm): 52.183
+TFLOPS (nn.Linear): 86.642
+TFLOPS (a @ b): 87.191
+TFLOPS (bmm): 66.869
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=256, hidden_size=4096, ffn_dim=8192
+Iterations: 100
+Max memory allocated: 2030.57 MB
+Max memory reserved: 2998.00 MB
+Average grouped_gemm time: 667.324 μs
+
+======================
+Average nn.Linear time: 509.040 μs
+Average a @ b time: 503.294 μs
+Average bmm time: 617.476 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 0.763
+Speedup (a @ b / grouped_gemm): 0.754
+Speedup (bmm / grouped_gemm): 0.925
+
+======================
+TFLOPS (grouped_gemm): 80.854
+TFLOPS (nn.Linear): 105.995
+TFLOPS (a @ b): 107.205
+TFLOPS (bmm): 87.381
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=256, hidden_size=4096, ffn_dim=14336
+Iterations: 100
+Max memory allocated: 2119.54 MB
+Max memory reserved: 2998.00 MB
+Average grouped_gemm time: 1107.605 μs
+
+======================
+Average nn.Linear time: 1024.222 μs
+Average a @ b time: 1027.195 μs
+Average bmm time: 1216.960 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 0.925
+Speedup (a @ b / grouped_gemm): 0.927
+Speedup (bmm / grouped_gemm): 1.099
+
+======================
+TFLOPS (grouped_gemm): 118.543
+TFLOPS (nn.Linear): 128.193
+TFLOPS (a @ b): 127.822
+TFLOPS (bmm): 107.891
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=512, hidden_size=128, ffn_dim=256
+Iterations: 100
+Max memory allocated: 2119.54 MB
+Max memory reserved: 2998.00 MB
+Average grouped_gemm time: 65.491 μs
+
+======================
+Average nn.Linear time: 152.073 μs
+Average a @ b time: 81.451 μs
+Average bmm time: 23.370 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 2.322
+Speedup (a @ b / grouped_gemm): 1.244
+Speedup (bmm / grouped_gemm): 0.357
+
+======================
+TFLOPS (grouped_gemm): 1.604
+TFLOPS (nn.Linear): 0.691
+TFLOPS (a @ b): 1.290
+TFLOPS (bmm): 4.495
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=512, hidden_size=128, ffn_dim=512
+Iterations: 100
+Max memory allocated: 2119.54 MB
+Max memory reserved: 2998.00 MB
+Average grouped_gemm time: 64.766 μs
+
+======================
+Average nn.Linear time: 148.935 μs
+Average a @ b time: 78.890 μs
+Average bmm time: 31.407 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 2.300
+Speedup (a @ b / grouped_gemm): 1.218
+Speedup (bmm / grouped_gemm): 0.485
+
+======================
+TFLOPS (grouped_gemm): 4.315
+TFLOPS (nn.Linear): 1.876
+TFLOPS (a @ b): 3.542
+TFLOPS (bmm): 8.898
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=512, hidden_size=128, ffn_dim=1024
+Iterations: 100
+Max memory allocated: 2119.54 MB
+Max memory reserved: 2998.00 MB
+Average grouped_gemm time: 65.007 μs
+
+======================
+Average nn.Linear time: 145.733 μs
+Average a @ b time: 78.561 μs
+Average bmm time: 44.196 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 2.242
+Speedup (a @ b / grouped_gemm): 1.209
+Speedup (bmm / grouped_gemm): 0.680
+
+======================
+TFLOPS (grouped_gemm): 9.460
+TFLOPS (nn.Linear): 4.220
+TFLOPS (a @ b): 7.828
+TFLOPS (bmm): 13.915
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=512, hidden_size=128, ffn_dim=2048
+Iterations: 100
+Max memory allocated: 2119.54 MB
+Max memory reserved: 2998.00 MB
+Average grouped_gemm time: 77.186 μs
+
+======================
+Average nn.Linear time: 145.946 μs
+Average a @ b time: 80.333 μs
+Average bmm time: 67.089 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 1.891
+Speedup (a @ b / grouped_gemm): 1.041
+Speedup (bmm / grouped_gemm): 0.869
+
+======================
+TFLOPS (grouped_gemm): 16.812
+TFLOPS (nn.Linear): 8.891
+TFLOPS (a @ b): 16.153
+TFLOPS (bmm): 19.342
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=512, hidden_size=128, ffn_dim=4096
+Iterations: 100
+Max memory allocated: 2119.54 MB
+Max memory reserved: 2998.00 MB
+Average grouped_gemm time: 78.878 μs
+
+======================
+Average nn.Linear time: 144.405 μs
+Average a @ b time: 79.401 μs
+Average bmm time: 100.200 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 1.831
+Speedup (a @ b / grouped_gemm): 1.007
+Speedup (bmm / grouped_gemm): 1.270
+
+======================
+TFLOPS (grouped_gemm): 19.302
+TFLOPS (nn.Linear): 10.543
+TFLOPS (a @ b): 19.175
+TFLOPS (bmm): 15.195
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=512, hidden_size=128, ffn_dim=8192
+Iterations: 100
+Max memory allocated: 2119.54 MB
+Max memory reserved: 2998.00 MB
+Average grouped_gemm time: 151.513 μs
+
+======================
+Average nn.Linear time: 150.719 μs
+Average a @ b time: 118.146 μs
+Average bmm time: 93.155 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 0.995
+Speedup (a @ b / grouped_gemm): 0.780
+Speedup (bmm / grouped_gemm): 0.615
+
+======================
+TFLOPS (grouped_gemm): 25.787
+TFLOPS (nn.Linear): 25.922
+TFLOPS (a @ b): 33.069
+TFLOPS (bmm): 41.941
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=512, hidden_size=128, ffn_dim=14336
+Iterations: 100
+Max memory allocated: 2119.54 MB
+Max memory reserved: 2998.00 MB
+Average grouped_gemm time: 136.738 μs
+
+======================
+Average nn.Linear time: 148.001 μs
+Average a @ b time: 145.042 μs
+Average bmm time: 150.356 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 1.082
+Speedup (a @ b / grouped_gemm): 1.061
+Speedup (bmm / grouped_gemm): 1.100
+
+======================
+TFLOPS (grouped_gemm): 44.420
+TFLOPS (nn.Linear): 41.040
+TFLOPS (a @ b): 41.877
+TFLOPS (bmm): 40.397
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=512, hidden_size=768, ffn_dim=256
+Iterations: 100
+Max memory allocated: 2119.54 MB
+Max memory reserved: 2998.00 MB
+Average grouped_gemm time: 94.125 μs
+
+======================
+Average nn.Linear time: 163.457 μs
+Average a @ b time: 93.169 μs
+Average bmm time: 30.787 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 1.737
+Speedup (a @ b / grouped_gemm): 0.990
+Speedup (bmm / grouped_gemm): 0.327
+
+======================
+TFLOPS (grouped_gemm): 9.128
+TFLOPS (nn.Linear): 5.256
+TFLOPS (a @ b): 9.222
+TFLOPS (bmm): 27.907
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=512, hidden_size=768, ffn_dim=512
+Iterations: 100
+Max memory allocated: 2119.54 MB
+Max memory reserved: 2998.00 MB
+Average grouped_gemm time: 96.991 μs
+
+======================
+Average nn.Linear time: 154.424 μs
+Average a @ b time: 85.227 μs
+Average bmm time: 38.366 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 1.592
+Speedup (a @ b / grouped_gemm): 0.879
+Speedup (bmm / grouped_gemm): 0.396
+
+======================
+TFLOPS (grouped_gemm): 22.517
+TFLOPS (nn.Linear): 14.142
+TFLOPS (a @ b): 25.625
+TFLOPS (bmm): 56.923
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=512, hidden_size=768, ffn_dim=1024
+Iterations: 100
+Max memory allocated: 2119.54 MB
+Max memory reserved: 2998.00 MB
+Average grouped_gemm time: 93.603 μs
+
+======================
+Average nn.Linear time: 141.258 μs
+Average a @ b time: 83.549 μs
+Average bmm time: 50.960 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 1.509
+Speedup (a @ b / grouped_gemm): 0.893
+Speedup (bmm / grouped_gemm): 0.544
+
+======================
+TFLOPS (grouped_gemm): 25.877
+TFLOPS (nn.Linear): 17.147
+TFLOPS (a @ b): 28.991
+TFLOPS (bmm): 47.532
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=512, hidden_size=768, ffn_dim=2048
+Iterations: 100
+Max memory allocated: 2119.54 MB
+Max memory reserved: 2998.00 MB
+Average grouped_gemm time: 95.730 μs
+
+======================
+Average nn.Linear time: 146.272 μs
+Average a @ b time: 99.130 μs
+Average bmm time: 78.528 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 1.528
+Speedup (a @ b / grouped_gemm): 1.036
+Speedup (bmm / grouped_gemm): 0.820
+
+======================
+TFLOPS (grouped_gemm): 52.577
+TFLOPS (nn.Linear): 34.410
+TFLOPS (a @ b): 50.774
+TFLOPS (bmm): 64.094
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=512, hidden_size=768, ffn_dim=4096
+Iterations: 100
+Max memory allocated: 2119.54 MB
+Max memory reserved: 2998.00 MB
+Average grouped_gemm time: 141.771 μs
+
+======================
+Average nn.Linear time: 180.118 μs
+Average a @ b time: 161.717 μs
+Average bmm time: 146.277 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 1.270
+Speedup (a @ b / grouped_gemm): 1.141
+Speedup (bmm / grouped_gemm): 1.032
+
+======================
+TFLOPS (grouped_gemm): 108.770
+TFLOPS (nn.Linear): 85.612
+TFLOPS (a @ b): 95.354
+TFLOPS (bmm): 105.419
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=512, hidden_size=768, ffn_dim=8192
+Iterations: 100
+Max memory allocated: 2119.54 MB
+Max memory reserved: 2998.00 MB
+Average grouped_gemm time: 235.465 μs
+
+======================
+Average nn.Linear time: 273.321 μs
+Average a @ b time: 284.057 μs
+Average bmm time: 230.327 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 1.161
+Speedup (a @ b / grouped_gemm): 1.206
+Speedup (bmm / grouped_gemm): 0.978
+
+======================
+TFLOPS (grouped_gemm): 118.901
+TFLOPS (nn.Linear): 102.433
+TFLOPS (a @ b): 98.561
+TFLOPS (bmm): 121.553
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=512, hidden_size=768, ffn_dim=14336
+Iterations: 100
+Max memory allocated: 2119.54 MB
+Max memory reserved: 2998.00 MB
+Average grouped_gemm time: 411.024 μs
+
+======================
+Average nn.Linear time: 370.014 μs
+Average a @ b time: 378.077 μs
+Average bmm time: 397.930 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 0.900
+Speedup (a @ b / grouped_gemm): 0.920
+Speedup (bmm / grouped_gemm): 0.968
+
+======================
+TFLOPS (grouped_gemm): 115.451
+TFLOPS (nn.Linear): 128.247
+TFLOPS (a @ b): 125.512
+TFLOPS (bmm): 119.250
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=512, hidden_size=4096, ffn_dim=256
+Iterations: 100
+Max memory allocated: 2119.54 MB
+Max memory reserved: 2998.00 MB
+Average grouped_gemm time: 254.772 μs
+
+======================
+Average nn.Linear time: 167.410 μs
+Average a @ b time: 120.459 μs
+Average bmm time: 50.881 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 0.657
+Speedup (a @ b / grouped_gemm): 0.473
+Speedup (bmm / grouped_gemm): 0.200
+
+======================
+TFLOPS (grouped_gemm): 10.322
+TFLOPS (nn.Linear): 15.709
+TFLOPS (a @ b): 21.832
+TFLOPS (bmm): 51.686
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=512, hidden_size=4096, ffn_dim=512
+Iterations: 100
+Max memory allocated: 2119.54 MB
+Max memory reserved: 2998.00 MB
+Average grouped_gemm time: 251.977 μs
+
+======================
+Average nn.Linear time: 166.337 μs
+Average a @ b time: 133.479 μs
+Average bmm time: 117.557 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 0.660
+Speedup (a @ b / grouped_gemm): 0.530
+Speedup (bmm / grouped_gemm): 0.467
+
+======================
+TFLOPS (grouped_gemm): 22.921
+TFLOPS (nn.Linear): 34.722
+TFLOPS (a @ b): 43.270
+TFLOPS (bmm): 49.130
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=512, hidden_size=4096, ffn_dim=1024
+Iterations: 100
+Max memory allocated: 2119.54 MB
+Max memory reserved: 2998.00 MB
+Average grouped_gemm time: 253.794 μs
+
+======================
+Average nn.Linear time: 220.609 μs
+Average a @ b time: 210.407 μs
+Average bmm time: 184.634 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 0.869
+Speedup (a @ b / grouped_gemm): 0.829
+Speedup (bmm / grouped_gemm): 0.727
+
+======================
+TFLOPS (grouped_gemm): 77.972
+TFLOPS (nn.Linear): 89.701
+TFLOPS (a @ b): 94.050
+TFLOPS (bmm): 107.178
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=512, hidden_size=4096, ffn_dim=2048
+Iterations: 100
+Max memory allocated: 2119.54 MB
+Max memory reserved: 2998.00 MB
+Average grouped_gemm time: 257.716 μs
+
+======================
+Average nn.Linear time: 276.659 μs
+Average a @ b time: 275.605 μs
+Average bmm time: 347.855 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 1.074
+Speedup (a @ b / grouped_gemm): 1.069
+Speedup (bmm / grouped_gemm): 1.350
+
+======================
+TFLOPS (grouped_gemm): 108.977
+TFLOPS (nn.Linear): 101.515
+TFLOPS (a @ b): 101.903
+TFLOPS (bmm): 80.738
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=512, hidden_size=4096, ffn_dim=4096
+Iterations: 100
+Max memory allocated: 2119.54 MB
+Max memory reserved: 2998.00 MB
+Average grouped_gemm time: 464.919 μs
+
+======================
+Average nn.Linear time: 419.714 μs
+Average a @ b time: 415.528 μs
+Average bmm time: 629.158 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 0.903
+Speedup (a @ b / grouped_gemm): 0.894
+Speedup (bmm / grouped_gemm): 1.353
+
+======================
+TFLOPS (grouped_gemm): 122.982
+TFLOPS (nn.Linear): 136.228
+TFLOPS (a @ b): 137.600
+TFLOPS (bmm): 90.878
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=512, hidden_size=4096, ffn_dim=8192
+Iterations: 100
+Max memory allocated: 2119.54 MB
+Max memory reserved: 2998.00 MB
+Average grouped_gemm time: 919.304 μs
+
+======================
+Average nn.Linear time: 973.344 μs
+Average a @ b time: 959.914 μs
+Average bmm time: 1229.084 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 1.059
+Speedup (a @ b / grouped_gemm): 1.044
+Speedup (bmm / grouped_gemm): 1.337
+
+======================
+TFLOPS (grouped_gemm): 165.782
+TFLOPS (nn.Linear): 156.578
+TFLOPS (a @ b): 158.769
+TFLOPS (bmm): 123.998
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=512, hidden_size=4096, ffn_dim=14336
+Iterations: 100
+Max memory allocated: 2294.60 MB
+Max memory reserved: 2998.00 MB
+Average grouped_gemm time: 1393.974 μs
+
+======================
+Average nn.Linear time: 1429.629 μs
+Average a @ b time: 1421.211 μs
+Average bmm time: 3739.851 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 1.026
+Speedup (a @ b / grouped_gemm): 1.020
+Speedup (bmm / grouped_gemm): 2.683
+
+======================
+TFLOPS (grouped_gemm): 156.871
+TFLOPS (nn.Linear): 152.959
+TFLOPS (a @ b): 153.865
+TFLOPS (bmm): 58.471
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=1024, hidden_size=128, ffn_dim=256
+Iterations: 100
+Max memory allocated: 2294.60 MB
+Max memory reserved: 2998.00 MB
+Average grouped_gemm time: 65.582 μs
+
+======================
+Average nn.Linear time: 154.047 μs
+Average a @ b time: 82.984 μs
+Average bmm time: 24.600 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 2.349
+Speedup (a @ b / grouped_gemm): 1.265
+Speedup (bmm / grouped_gemm): 0.375
+
+======================
+TFLOPS (grouped_gemm): 4.440
+TFLOPS (nn.Linear): 1.890
+TFLOPS (a @ b): 3.509
+TFLOPS (bmm): 11.836
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=1024, hidden_size=128, ffn_dim=512
+Iterations: 100
+Max memory allocated: 2294.60 MB
+Max memory reserved: 2998.00 MB
+Average grouped_gemm time: 64.979 μs
+
+======================
+Average nn.Linear time: 147.398 μs
+Average a @ b time: 79.825 μs
+Average bmm time: 29.004 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 2.268
+Speedup (a @ b / grouped_gemm): 1.228
+Speedup (bmm / grouped_gemm): 0.446
+
+======================
+TFLOPS (grouped_gemm): 4.377
+TFLOPS (nn.Linear): 1.930
+TFLOPS (a @ b): 3.563
+TFLOPS (bmm): 9.807
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=1024, hidden_size=128, ffn_dim=1024
+Iterations: 100
+Max memory allocated: 2294.60 MB
+Max memory reserved: 2998.00 MB
+Average grouped_gemm time: 64.709 μs
+
+======================
+Average nn.Linear time: 147.557 μs
+Average a @ b time: 77.934 μs
+Average bmm time: 36.583 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 2.280
+Speedup (a @ b / grouped_gemm): 1.204
+Speedup (bmm / grouped_gemm): 0.565
+
+======================
+TFLOPS (grouped_gemm): 16.626
+TFLOPS (nn.Linear): 7.291
+TFLOPS (a @ b): 13.804
+TFLOPS (bmm): 29.408
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=1024, hidden_size=128, ffn_dim=2048
+Iterations: 100
+Max memory allocated: 2294.60 MB
+Max memory reserved: 2998.00 MB
+Average grouped_gemm time: 82.629 μs
+
+======================
+Average nn.Linear time: 144.496 μs
+Average a @ b time: 86.501 μs
+Average bmm time: 63.879 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 1.749
+Speedup (a @ b / grouped_gemm): 1.047
+Speedup (bmm / grouped_gemm): 0.773
+
+======================
+TFLOPS (grouped_gemm): 34.714
+TFLOPS (nn.Linear): 19.851
+TFLOPS (a @ b): 33.160
+TFLOPS (bmm): 44.903
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=1024, hidden_size=128, ffn_dim=4096
+Iterations: 100
+Max memory allocated: 2294.60 MB
+Max memory reserved: 2998.00 MB
+Average grouped_gemm time: 96.343 μs
+
+======================
+Average nn.Linear time: 149.732 μs
+Average a @ b time: 106.542 μs
+Average bmm time: 104.616 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 1.554
+Speedup (a @ b / grouped_gemm): 1.106
+Speedup (bmm / grouped_gemm): 1.086
+
+======================
+TFLOPS (grouped_gemm): 42.958
+TFLOPS (nn.Linear): 27.641
+TFLOPS (a @ b): 38.846
+TFLOPS (bmm): 39.561
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=1024, hidden_size=128, ffn_dim=8192
+Iterations: 100
+Max memory allocated: 2294.60 MB
+Max memory reserved: 2998.00 MB
+Average grouped_gemm time: 142.438 μs
+
+======================
+Average nn.Linear time: 173.519 μs
+Average a @ b time: 168.114 μs
+Average bmm time: 158.038 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 1.218
+Speedup (a @ b / grouped_gemm): 1.180
+Speedup (bmm / grouped_gemm): 1.110
+
+======================
+TFLOPS (grouped_gemm): 61.543
+TFLOPS (nn.Linear): 50.520
+TFLOPS (a @ b): 52.144
+TFLOPS (bmm): 55.468
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=1024, hidden_size=128, ffn_dim=14336
+Iterations: 100
+Max memory allocated: 2294.60 MB
+Max memory reserved: 2998.00 MB
+Average grouped_gemm time: 213.282 μs
+
+======================
+Average nn.Linear time: 220.315 μs
+Average a @ b time: 227.296 μs
+Average bmm time: 292.943 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 1.033
+Speedup (a @ b / grouped_gemm): 1.066
+Speedup (bmm / grouped_gemm): 1.373
+
+======================
+TFLOPS (grouped_gemm): 66.971
+TFLOPS (nn.Linear): 64.833
+TFLOPS (a @ b): 62.842
+TFLOPS (bmm): 48.759
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=1024, hidden_size=768, ffn_dim=256
+Iterations: 100
+Max memory allocated: 2294.60 MB
+Max memory reserved: 2998.00 MB
+Average grouped_gemm time: 94.459 μs
+
+======================
+Average nn.Linear time: 157.638 μs
+Average a @ b time: 96.023 μs
+Average bmm time: 38.424 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 1.669
+Speedup (a @ b / grouped_gemm): 1.017
+Speedup (bmm / grouped_gemm): 0.407
+
+======================
+TFLOPS (grouped_gemm): 21.468
+TFLOPS (nn.Linear): 12.864
+TFLOPS (a @ b): 21.118
+TFLOPS (bmm): 52.775
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=1024, hidden_size=768, ffn_dim=512
+Iterations: 100
+Max memory allocated: 2294.60 MB
+Max memory reserved: 3006.00 MB
+Average grouped_gemm time: 95.718 μs
+
+======================
+Average nn.Linear time: 156.956 μs
+Average a @ b time: 102.084 μs
+Average bmm time: 52.683 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 1.640
+Speedup (a @ b / grouped_gemm): 1.067
+Speedup (bmm / grouped_gemm): 0.550
+
+======================
+TFLOPS (grouped_gemm): 42.001
+TFLOPS (nn.Linear): 25.614
+TFLOPS (a @ b): 39.382
+TFLOPS (bmm): 76.310
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=1024, hidden_size=768, ffn_dim=1024
+Iterations: 100
+Max memory allocated: 2294.60 MB
+Max memory reserved: 3006.00 MB
+Average grouped_gemm time: 96.917 μs
+
+======================
+Average nn.Linear time: 148.532 μs
+Average a @ b time: 98.922 μs
+Average bmm time: 66.714 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 1.533
+Speedup (a @ b / grouped_gemm): 1.021
+Speedup (bmm / grouped_gemm): 0.688
+
+======================
+TFLOPS (grouped_gemm): 57.191
+TFLOPS (nn.Linear): 37.317
+TFLOPS (a @ b): 56.032
+TFLOPS (bmm): 83.082
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=1024, hidden_size=768, ffn_dim=2048
+Iterations: 100
+Max memory allocated: 2294.60 MB
+Max memory reserved: 3006.00 MB
+Average grouped_gemm time: 143.256 μs
+
+======================
+Average nn.Linear time: 172.403 μs
+Average a @ b time: 164.211 μs
+Average bmm time: 138.025 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 1.203
+Speedup (a @ b / grouped_gemm): 1.146
+Speedup (bmm / grouped_gemm): 0.963
+
+======================
+TFLOPS (grouped_gemm): 102.503
+TFLOPS (nn.Linear): 85.174
+TFLOPS (a @ b): 89.423
+TFLOPS (bmm): 106.388
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=1024, hidden_size=768, ffn_dim=4096
+Iterations: 100
+Max memory allocated: 2294.60 MB
+Max memory reserved: 3006.00 MB
+Average grouped_gemm time: 231.447 μs
+
+======================
+Average nn.Linear time: 216.868 μs
+Average a @ b time: 207.651 μs
+Average bmm time: 266.638 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 0.937
+Speedup (a @ b / grouped_gemm): 0.897
+Speedup (bmm / grouped_gemm): 1.152
+
+======================
+TFLOPS (grouped_gemm): 113.734
+TFLOPS (nn.Linear): 121.380
+TFLOPS (a @ b): 126.768
+TFLOPS (bmm): 98.724
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=1024, hidden_size=768, ffn_dim=8192
+Iterations: 100
+Max memory allocated: 2294.60 MB
+Max memory reserved: 3006.00 MB
+Average grouped_gemm time: 374.262 μs
+
+======================
+Average nn.Linear time: 363.421 μs
+Average a @ b time: 362.651 μs
+Average bmm time: 431.895 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 0.971
+Speedup (a @ b / grouped_gemm): 0.969
+Speedup (bmm / grouped_gemm): 1.154
+
+======================
+TFLOPS (grouped_gemm): 150.956
+TFLOPS (nn.Linear): 155.459
+TFLOPS (a @ b): 155.790
+TFLOPS (bmm): 130.812
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=1024, hidden_size=768, ffn_dim=14336
+Iterations: 100
+Max memory allocated: 2294.60 MB
+Max memory reserved: 3006.00 MB
+Average grouped_gemm time: 571.129 μs
+
+======================
+Average nn.Linear time: 552.781 μs
+Average a @ b time: 554.085 μs
+Average bmm time: 689.912 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 0.968
+Speedup (a @ b / grouped_gemm): 0.970
+Speedup (bmm / grouped_gemm): 1.208
+
+======================
+TFLOPS (grouped_gemm): 157.923
+TFLOPS (nn.Linear): 163.165
+TFLOPS (a @ b): 162.781
+TFLOPS (bmm): 130.733
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=1024, hidden_size=4096, ffn_dim=256
+Iterations: 100
+Max memory allocated: 2294.60 MB
+Max memory reserved: 3006.00 MB
+Average grouped_gemm time: 261.619 μs
+
+======================
+Average nn.Linear time: 170.991 μs
+Average a @ b time: 146.701 μs
+Average bmm time: 120.225 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 0.654
+Speedup (a @ b / grouped_gemm): 0.561
+Speedup (bmm / grouped_gemm): 0.460
+
+======================
+TFLOPS (grouped_gemm): 30.068
+TFLOPS (nn.Linear): 46.005
+TFLOPS (a @ b): 53.622
+TFLOPS (bmm): 65.431
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=1024, hidden_size=4096, ffn_dim=512
+Iterations: 100
+Max memory allocated: 2294.60 MB
+Max memory reserved: 3006.00 MB
+Average grouped_gemm time: 254.278 μs
+
+======================
+Average nn.Linear time: 191.247 μs
+Average a @ b time: 184.674 μs
+Average bmm time: 179.300 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 0.752
+Speedup (a @ b / grouped_gemm): 0.726
+Speedup (bmm / grouped_gemm): 0.705
+
+======================
+TFLOPS (grouped_gemm): 64.083
+TFLOPS (nn.Linear): 85.203
+TFLOPS (a @ b): 88.236
+TFLOPS (bmm): 90.880
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=1024, hidden_size=4096, ffn_dim=1024
+Iterations: 100
+Max memory allocated: 2294.60 MB
+Max memory reserved: 3006.00 MB
+Average grouped_gemm time: 259.523 μs
+
+======================
+Average nn.Linear time: 298.202 μs
+Average a @ b time: 295.115 μs
+Average bmm time: 357.251 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 1.149
+Speedup (a @ b / grouped_gemm): 1.137
+Speedup (bmm / grouped_gemm): 1.377
+
+======================
+TFLOPS (grouped_gemm): 168.888
+TFLOPS (nn.Linear): 146.982
+TFLOPS (a @ b): 148.520
+TFLOPS (bmm): 122.688
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=1024, hidden_size=4096, ffn_dim=2048
+Iterations: 100
+Max memory allocated: 2294.60 MB
+Max memory reserved: 3006.00 MB
+Average grouped_gemm time: 467.191 μs
+
+======================
+Average nn.Linear time: 461.488 μs
+Average a @ b time: 466.499 μs
+Average bmm time: 609.224 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 0.988
+Speedup (a @ b / grouped_gemm): 0.999
+Speedup (bmm / grouped_gemm): 1.304
+
+======================
+TFLOPS (grouped_gemm): 159.696
+TFLOPS (nn.Linear): 161.669
+TFLOPS (a @ b): 159.932
+TFLOPS (bmm): 122.464
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=1024, hidden_size=4096, ffn_dim=4096
+Iterations: 100
+Max memory allocated: 2294.60 MB
+Max memory reserved: 3006.00 MB
+Average grouped_gemm time: 693.452 μs
+
+======================
+Average nn.Linear time: 686.686 μs
+Average a @ b time: 682.902 μs
+Average bmm time: 1282.332 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 0.990
+Speedup (a @ b / grouped_gemm): 0.985
+Speedup (bmm / grouped_gemm): 1.849
+
+======================
+TFLOPS (grouped_gemm): 175.598
+TFLOPS (nn.Linear): 177.329
+TFLOPS (a @ b): 178.311
+TFLOPS (bmm): 94.959
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=1024, hidden_size=4096, ffn_dim=8192
+Iterations: 100
+Max memory allocated: 2294.60 MB
+Max memory reserved: 3006.00 MB
+Average grouped_gemm time: 1607.132 μs
+
+======================
+Average nn.Linear time: 1707.308 μs
+Average a @ b time: 1694.717 μs
+Average bmm time: 2538.760 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 1.062
+Speedup (a @ b / grouped_gemm): 1.054
+Speedup (bmm / grouped_gemm): 1.580
+
+======================
+TFLOPS (grouped_gemm): 194.295
+TFLOPS (nn.Linear): 182.895
+TFLOPS (a @ b): 184.253
+TFLOPS (bmm): 122.996
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=1024, hidden_size=4096, ffn_dim=14336
+Iterations: 100
+Max memory allocated: 2863.36 MB
+Max memory reserved: 3228.00 MB
+Average grouped_gemm time: 2782.483 μs
+
+======================
+Average nn.Linear time: 2810.502 μs
+Average a @ b time: 2846.222 μs
+Average bmm time: 4942.672 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 1.010
+Speedup (a @ b / grouped_gemm): 1.023
+Speedup (bmm / grouped_gemm): 1.776
+
+======================
+TFLOPS (grouped_gemm): 207.490
+TFLOPS (nn.Linear): 205.422
+TFLOPS (a @ b): 202.843
+TFLOPS (bmm): 116.807
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=2048, hidden_size=128, ffn_dim=256
+Iterations: 100
+Max memory allocated: 2863.36 MB
+Max memory reserved: 3228.00 MB
+Average grouped_gemm time: 66.862 μs
+
+======================
+Average nn.Linear time: 160.532 μs
+Average a @ b time: 87.135 μs
+Average bmm time: 28.338 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 2.401
+Speedup (a @ b / grouped_gemm): 1.303
+Speedup (bmm / grouped_gemm): 0.424
+
+======================
+TFLOPS (grouped_gemm): 5.928
+TFLOPS (nn.Linear): 2.469
+TFLOPS (a @ b): 4.549
+TFLOPS (bmm): 13.987
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=2048, hidden_size=128, ffn_dim=512
+Iterations: 100
+Max memory allocated: 2863.36 MB
+Max memory reserved: 3228.00 MB
+Average grouped_gemm time: 65.427 μs
+
+======================
+Average nn.Linear time: 161.207 μs
+Average a @ b time: 87.295 μs
+Average bmm time: 38.059 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 2.464
+Speedup (a @ b / grouped_gemm): 1.334
+Speedup (bmm / grouped_gemm): 0.582
+
+======================
+TFLOPS (grouped_gemm): 14.518
+TFLOPS (nn.Linear): 5.892
+TFLOPS (a @ b): 10.881
+TFLOPS (bmm): 24.958
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=2048, hidden_size=128, ffn_dim=1024
+Iterations: 100
+Max memory allocated: 2863.36 MB
+Max memory reserved: 3228.00 MB
+Average grouped_gemm time: 81.143 μs
+
+======================
+Average nn.Linear time: 150.781 μs
+Average a @ b time: 82.319 μs
+Average bmm time: 63.131 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 1.858
+Speedup (a @ b / grouped_gemm): 1.014
+Speedup (bmm / grouped_gemm): 0.778
+
+======================
+TFLOPS (grouped_gemm): 22.404
+TFLOPS (nn.Linear): 12.057
+TFLOPS (a @ b): 22.084
+TFLOPS (bmm): 28.797
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=2048, hidden_size=128, ffn_dim=2048
+Iterations: 100
+Max memory allocated: 2863.36 MB
+Max memory reserved: 3228.00 MB
+Average grouped_gemm time: 99.177 μs
+
+======================
+Average nn.Linear time: 158.632 μs
+Average a @ b time: 105.629 μs
+Average bmm time: 107.329 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 1.599
+Speedup (a @ b / grouped_gemm): 1.065
+Speedup (bmm / grouped_gemm): 1.082
+
+======================
+TFLOPS (grouped_gemm): 47.382
+TFLOPS (nn.Linear): 29.623
+TFLOPS (a @ b): 44.488
+TFLOPS (bmm): 43.783
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=2048, hidden_size=128, ffn_dim=4096
+Iterations: 100
+Max memory allocated: 2863.36 MB
+Max memory reserved: 3228.00 MB
+Average grouped_gemm time: 144.701 μs
+
+======================
+Average nn.Linear time: 186.880 μs
+Average a @ b time: 174.274 μs
+Average bmm time: 190.213 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 1.291
+Speedup (a @ b / grouped_gemm): 1.204
+Speedup (bmm / grouped_gemm): 1.315
+
+======================
+TFLOPS (grouped_gemm): 63.501
+TFLOPS (nn.Linear): 49.169
+TFLOPS (a @ b): 52.725
+TFLOPS (bmm): 48.307
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=2048, hidden_size=128, ffn_dim=8192
+Iterations: 100
+Max memory allocated: 2863.36 MB
+Max memory reserved: 3228.00 MB
+Average grouped_gemm time: 232.019 μs
+
+======================
+Average nn.Linear time: 265.913 μs
+Average a @ b time: 267.303 μs
+Average bmm time: 291.278 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 1.146
+Speedup (a @ b / grouped_gemm): 1.152
+Speedup (bmm / grouped_gemm): 1.255
+
+======================
+TFLOPS (grouped_gemm): 82.089
+TFLOPS (nn.Linear): 71.626
+TFLOPS (a @ b): 71.254
+TFLOPS (bmm): 65.389
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=2048, hidden_size=128, ffn_dim=14336
+Iterations: 100
+Max memory allocated: 2863.36 MB
+Max memory reserved: 3228.00 MB
+Average grouped_gemm time: 282.631 μs
+
+======================
+Average nn.Linear time: 310.714 μs
+Average a @ b time: 321.350 μs
+Average bmm time: 328.150 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 1.099
+Speedup (a @ b / grouped_gemm): 1.137
+Speedup (bmm / grouped_gemm): 1.161
+
+======================
+TFLOPS (grouped_gemm): 82.949
+TFLOPS (nn.Linear): 75.452
+TFLOPS (a @ b): 72.955
+TFLOPS (bmm): 71.443
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=2048, hidden_size=768, ffn_dim=256
+Iterations: 100
+Max memory allocated: 2863.36 MB
+Max memory reserved: 3228.00 MB
+Average grouped_gemm time: 93.346 μs
+
+======================
+Average nn.Linear time: 146.389 μs
+Average a @ b time: 92.161 μs
+Average bmm time: 52.888 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 1.568
+Speedup (a @ b / grouped_gemm): 0.987
+Speedup (bmm / grouped_gemm): 0.567
+
+======================
+TFLOPS (grouped_gemm): 32.411
+TFLOPS (nn.Linear): 20.667
+TFLOPS (a @ b): 32.827
+TFLOPS (bmm): 57.204
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=2048, hidden_size=768, ffn_dim=512
+Iterations: 100
+Max memory allocated: 2863.36 MB
+Max memory reserved: 3228.00 MB
+Average grouped_gemm time: 97.651 μs
+
+======================
+Average nn.Linear time: 155.036 μs
+Average a @ b time: 133.166 μs
+Average bmm time: 76.144 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 1.588
+Speedup (a @ b / grouped_gemm): 1.364
+Speedup (bmm / grouped_gemm): 0.780
+
+======================
+TFLOPS (grouped_gemm): 87.839
+TFLOPS (nn.Linear): 55.326
+TFLOPS (a @ b): 64.413
+TFLOPS (bmm): 112.650
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=2048, hidden_size=768, ffn_dim=1024
+Iterations: 100
+Max memory allocated: 2863.36 MB
+Max memory reserved: 3228.00 MB
+Average grouped_gemm time: 139.325 μs
+
+======================
+Average nn.Linear time: 150.199 μs
+Average a @ b time: 120.695 μs
+Average bmm time: 107.238 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 1.078
+Speedup (a @ b / grouped_gemm): 0.866
+Speedup (bmm / grouped_gemm): 0.770
+
+======================
+TFLOPS (grouped_gemm): 72.522
+TFLOPS (nn.Linear): 67.271
+TFLOPS (a @ b): 83.716
+TFLOPS (bmm): 94.221
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=2048, hidden_size=768, ffn_dim=2048
+Iterations: 100
+Max memory allocated: 2863.36 MB
+Max memory reserved: 3228.00 MB
+Average grouped_gemm time: 143.905 μs
+
+======================
+Average nn.Linear time: 187.826 μs
+Average a @ b time: 168.178 μs
+Average bmm time: 204.363 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 1.305
+Speedup (a @ b / grouped_gemm): 1.169
+Speedup (bmm / grouped_gemm): 1.420
+
+======================
+TFLOPS (grouped_gemm): 131.356
+TFLOPS (nn.Linear): 100.639
+TFLOPS (a @ b): 112.397
+TFLOPS (bmm): 92.496
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=2048, hidden_size=768, ffn_dim=4096
+Iterations: 100
+Max memory allocated: 2863.36 MB
+Max memory reserved: 3228.00 MB
+Average grouped_gemm time: 325.725 μs
+
+======================
+Average nn.Linear time: 333.049 μs
+Average a @ b time: 328.705 μs
+Average bmm time: 413.840 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 1.022
+Speedup (a @ b / grouped_gemm): 1.009
+Speedup (bmm / grouped_gemm): 1.271
+
+======================
+TFLOPS (grouped_gemm): 156.318
+TFLOPS (nn.Linear): 152.881
+TFLOPS (a @ b): 154.901
+TFLOPS (bmm): 123.035
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=2048, hidden_size=768, ffn_dim=8192
+Iterations: 100
+Max memory allocated: 2863.36 MB
+Max memory reserved: 3228.00 MB
+Average grouped_gemm time: 622.580 μs
+
+======================
+Average nn.Linear time: 592.091 μs
+Average a @ b time: 606.678 μs
+Average bmm time: 720.961 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 0.951
+Speedup (a @ b / grouped_gemm): 0.974
+Speedup (bmm / grouped_gemm): 1.158
+
+======================
+TFLOPS (grouped_gemm): 178.462
+TFLOPS (nn.Linear): 187.652
+TFLOPS (a @ b): 183.140
+TFLOPS (bmm): 154.110
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=2048, hidden_size=768, ffn_dim=14336
+Iterations: 100
+Max memory allocated: 2863.36 MB
+Max memory reserved: 3228.00 MB
+Average grouped_gemm time: 1076.984 μs
+
+======================
+Average nn.Linear time: 1015.265 μs
+Average a @ b time: 1023.870 μs
+Average bmm time: 1550.391 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 0.943
+Speedup (a @ b / grouped_gemm): 0.951
+Speedup (bmm / grouped_gemm): 1.440
+
+======================
+TFLOPS (grouped_gemm): 184.710
+TFLOPS (nn.Linear): 195.939
+TFLOPS (a @ b): 194.292
+TFLOPS (bmm): 128.309
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=2048, hidden_size=4096, ffn_dim=256
+Iterations: 100
+Max memory allocated: 2863.36 MB
+Max memory reserved: 3228.00 MB
+Average grouped_gemm time: 261.598 μs
+
+======================
+Average nn.Linear time: 214.891 μs
+Average a @ b time: 207.007 μs
+Average bmm time: 174.339 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 0.821
+Speedup (a @ b / grouped_gemm): 0.791
+Speedup (bmm / grouped_gemm): 0.666
+
+======================
+TFLOPS (grouped_gemm): 74.772
+TFLOPS (nn.Linear): 91.023
+TFLOPS (a @ b): 94.490
+TFLOPS (bmm): 112.196
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=2048, hidden_size=4096, ffn_dim=512
+Iterations: 100
+Max memory allocated: 2863.36 MB
+Max memory reserved: 3228.00 MB
+Average grouped_gemm time: 258.319 μs
+
+======================
+Average nn.Linear time: 317.359 μs
+Average a @ b time: 311.108 μs
+Average bmm time: 275.838 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 1.229
+Speedup (a @ b / grouped_gemm): 1.204
+Speedup (bmm / grouped_gemm): 1.068
+
+======================
+TFLOPS (grouped_gemm): 149.607
+TFLOPS (nn.Linear): 121.775
+TFLOPS (a @ b): 124.222
+TFLOPS (bmm): 140.105
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=2048, hidden_size=4096, ffn_dim=1024
+Iterations: 100
+Max memory allocated: 2863.36 MB
+Max memory reserved: 3228.00 MB
+Average grouped_gemm time: 471.489 μs
+
+======================
+Average nn.Linear time: 514.107 μs
+Average a @ b time: 510.476 μs
+Average bmm time: 547.912 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 1.090
+Speedup (a @ b / grouped_gemm): 1.083
+Speedup (bmm / grouped_gemm): 1.162
+
+======================
+TFLOPS (grouped_gemm): 183.468
+TFLOPS (nn.Linear): 168.259
+TFLOPS (a @ b): 169.456
+TFLOPS (bmm): 157.878
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=2048, hidden_size=4096, ffn_dim=2048
+Iterations: 100
+Max memory allocated: 2863.36 MB
+Max memory reserved: 3228.00 MB
+Average grouped_gemm time: 917.342 μs
+
+======================
+Average nn.Linear time: 888.767 μs
+Average a @ b time: 888.891 μs
+Average bmm time: 1073.403 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 0.969
+Speedup (a @ b / grouped_gemm): 0.969
+Speedup (bmm / grouped_gemm): 1.170
+
+======================
+TFLOPS (grouped_gemm): 205.897
+TFLOPS (nn.Linear): 212.517
+TFLOPS (a @ b): 212.487
+TFLOPS (bmm): 175.962
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=2048, hidden_size=4096, ffn_dim=4096
+Iterations: 100
+Max memory allocated: 2863.36 MB
+Max memory reserved: 3228.00 MB
+Average grouped_gemm time: 917.020 μs
+
+======================
+Average nn.Linear time: 864.830 μs
+Average a @ b time: 885.723 μs
+Average bmm time: 1684.186 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 0.943
+Speedup (a @ b / grouped_gemm): 0.966
+Speedup (bmm / grouped_gemm): 1.837
+
+======================
+TFLOPS (grouped_gemm): 183.942
+TFLOPS (nn.Linear): 195.042
+TFLOPS (a @ b): 190.441
+TFLOPS (bmm): 100.154
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=2048, hidden_size=4096, ffn_dim=8192
+Iterations: 100
+Max memory allocated: 2863.36 MB
+Max memory reserved: 3228.00 MB
+Average grouped_gemm time: 2575.457 μs
+
+======================
+Average nn.Linear time: 2780.638 μs
+Average a @ b time: 2808.819 μs
+Average bmm time: 5068.595 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 1.080
+Speedup (a @ b / grouped_gemm): 1.091
+Speedup (bmm / grouped_gemm): 1.968
+
+======================
+TFLOPS (grouped_gemm): 224.065
+TFLOPS (nn.Linear): 207.531
+TFLOPS (a @ b): 205.449
+TFLOPS (bmm): 113.852
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=2048, hidden_size=4096, ffn_dim=14336
+Iterations: 100
+Max memory allocated: 3783.49 MB
+Max memory reserved: 4548.00 MB
+Average grouped_gemm time: 5124.273 μs
+
+======================
+Average nn.Linear time: 5021.405 μs
+Average a @ b time: 5040.016 μs
+Average bmm time: 9869.933 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 0.980
+Speedup (a @ b / grouped_gemm): 0.984
+Speedup (bmm / grouped_gemm): 1.926
+
+======================
+TFLOPS (grouped_gemm): 219.674
+TFLOPS (nn.Linear): 224.174
+TFLOPS (a @ b): 223.346
+TFLOPS (bmm): 114.050
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=4096, hidden_size=128, ffn_dim=256
+Iterations: 100
+Max memory allocated: 3783.49 MB
+Max memory reserved: 4548.00 MB
+Average grouped_gemm time: 68.624 μs
+
+======================
+Average nn.Linear time: 158.944 μs
+Average a @ b time: 89.672 μs
+Average bmm time: 44.050 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 2.316
+Speedup (a @ b / grouped_gemm): 1.307
+Speedup (bmm / grouped_gemm): 0.642
+
+======================
+TFLOPS (grouped_gemm): 19.288
+TFLOPS (nn.Linear): 8.328
+TFLOPS (a @ b): 14.761
+TFLOPS (bmm): 30.048
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=4096, hidden_size=128, ffn_dim=512
+Iterations: 100
+Max memory allocated: 3783.49 MB
+Max memory reserved: 4548.00 MB
+Average grouped_gemm time: 84.043 μs
+
+======================
+Average nn.Linear time: 151.227 μs
+Average a @ b time: 94.130 μs
+Average bmm time: 66.004 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 1.799
+Speedup (a @ b / grouped_gemm): 1.120
+Speedup (bmm / grouped_gemm): 0.785
+
+======================
+TFLOPS (grouped_gemm): 32.082
+TFLOPS (nn.Linear): 17.829
+TFLOPS (a @ b): 28.644
+TFLOPS (bmm): 40.850
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=4096, hidden_size=128, ffn_dim=1024
+Iterations: 100
+Max memory allocated: 3783.49 MB
+Max memory reserved: 4548.00 MB
+Average grouped_gemm time: 101.364 μs
+
+======================
+Average nn.Linear time: 157.101 μs
+Average a @ b time: 115.166 μs
+Average bmm time: 103.226 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 1.550
+Speedup (a @ b / grouped_gemm): 1.136
+Speedup (bmm / grouped_gemm): 1.018
+
+======================
+TFLOPS (grouped_gemm): 47.555
+TFLOPS (nn.Linear): 30.683
+TFLOPS (a @ b): 41.855
+TFLOPS (bmm): 46.697
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=4096, hidden_size=128, ffn_dim=2048
+Iterations: 100
+Max memory allocated: 3783.49 MB
+Max memory reserved: 4548.00 MB
+Average grouped_gemm time: 132.320 μs
+
+======================
+Average nn.Linear time: 175.393 μs
+Average a @ b time: 145.099 μs
+Average bmm time: 182.538 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 1.326
+Speedup (a @ b / grouped_gemm): 1.097
+Speedup (bmm / grouped_gemm): 1.380
+
+======================
+TFLOPS (grouped_gemm): 60.393
+TFLOPS (nn.Linear): 45.562
+TFLOPS (a @ b): 55.074
+TFLOPS (bmm): 43.778
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=4096, hidden_size=128, ffn_dim=4096
+Iterations: 100
+Max memory allocated: 3783.49 MB
+Max memory reserved: 4548.00 MB
+Average grouped_gemm time: 235.105 μs
+
+======================
+Average nn.Linear time: 269.935 μs
+Average a @ b time: 271.654 μs
+Average bmm time: 340.583 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 1.148
+Speedup (a @ b / grouped_gemm): 1.155
+Speedup (bmm / grouped_gemm): 1.449
+
+======================
+TFLOPS (grouped_gemm): 84.576
+TFLOPS (nn.Linear): 73.663
+TFLOPS (a @ b): 73.197
+TFLOPS (bmm): 58.383
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=4096, hidden_size=128, ffn_dim=8192
+Iterations: 100
+Max memory allocated: 3783.49 MB
+Max memory reserved: 4548.00 MB
+Average grouped_gemm time: 261.447 μs
+
+======================
+Average nn.Linear time: 293.849 μs
+Average a @ b time: 297.813 μs
+Average bmm time: 357.723 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 1.124
+Speedup (a @ b / grouped_gemm): 1.139
+Speedup (bmm / grouped_gemm): 1.368
+
+======================
+TFLOPS (grouped_gemm): 83.895
+TFLOPS (nn.Linear): 74.644
+TFLOPS (a @ b): 73.651
+TFLOPS (bmm): 61.316
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=4096, hidden_size=128, ffn_dim=14336
+Iterations: 100
+Max memory allocated: 3783.49 MB
+Max memory reserved: 5324.00 MB
+Average grouped_gemm time: 580.683 μs
+
+======================
+Average nn.Linear time: 631.545 μs
+Average a @ b time: 650.027 μs
+Average bmm time: 857.484 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 1.088
+Speedup (a @ b / grouped_gemm): 1.119
+Speedup (bmm / grouped_gemm): 1.477
+
+======================
+TFLOPS (grouped_gemm): 99.985
+TFLOPS (nn.Linear): 91.933
+TFLOPS (a @ b): 89.319
+TFLOPS (bmm): 67.709
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=4096, hidden_size=768, ffn_dim=256
+Iterations: 100
+Max memory allocated: 3783.49 MB
+Max memory reserved: 5324.00 MB
+Average grouped_gemm time: 99.924 μs
+
+======================
+Average nn.Linear time: 154.488 μs
+Average a @ b time: 109.079 μs
+Average bmm time: 72.665 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 1.546
+Speedup (a @ b / grouped_gemm): 1.092
+Speedup (bmm / grouped_gemm): 0.727
+
+======================
+TFLOPS (grouped_gemm): 60.523
+TFLOPS (nn.Linear): 39.146
+TFLOPS (a @ b): 55.443
+TFLOPS (bmm): 83.226
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=4096, hidden_size=768, ffn_dim=512
+Iterations: 100
+Max memory allocated: 3783.49 MB
+Max memory reserved: 5324.00 MB
+Average grouped_gemm time: 142.927 μs
+
+======================
+Average nn.Linear time: 159.490 μs
+Average a @ b time: 145.795 μs
+Average bmm time: 122.514 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 1.116
+Speedup (a @ b / grouped_gemm): 1.020
+Speedup (bmm / grouped_gemm): 0.857
+
+======================
+TFLOPS (grouped_gemm): 84.296
+TFLOPS (nn.Linear): 75.542
+TFLOPS (a @ b): 82.637
+TFLOPS (bmm): 98.341
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=4096, hidden_size=768, ffn_dim=1024
+Iterations: 100
+Max memory allocated: 3783.49 MB
+Max memory reserved: 5324.00 MB
+Average grouped_gemm time: 189.464 μs
+
+======================
+Average nn.Linear time: 217.891 μs
+Average a @ b time: 208.848 μs
+Average bmm time: 225.623 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 1.150
+Speedup (a @ b / grouped_gemm): 1.102
+Speedup (bmm / grouped_gemm): 1.191
+
+======================
+TFLOPS (grouped_gemm): 126.451
+TFLOPS (nn.Linear): 109.954
+TFLOPS (a @ b): 114.715
+TFLOPS (bmm): 106.186
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=4096, hidden_size=768, ffn_dim=2048
+Iterations: 100
+Max memory allocated: 3783.49 MB
+Max memory reserved: 5324.00 MB
+Average grouped_gemm time: 335.088 μs
+
+======================
+Average nn.Linear time: 357.752 μs
+Average a @ b time: 351.927 μs
+Average bmm time: 407.970 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 1.068
+Speedup (a @ b / grouped_gemm): 1.050
+Speedup (bmm / grouped_gemm): 1.218
+
+======================
+TFLOPS (grouped_gemm): 180.471
+TFLOPS (nn.Linear): 169.037
+TFLOPS (a @ b): 171.835
+TFLOPS (bmm): 148.230
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=4096, hidden_size=768, ffn_dim=4096
+Iterations: 100
+Max memory allocated: 3783.49 MB
+Max memory reserved: 5324.00 MB
+Average grouped_gemm time: 434.678 μs
+
+======================
+Average nn.Linear time: 458.052 μs
+Average a @ b time: 456.555 μs
+Average bmm time: 653.744 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 1.054
+Speedup (a @ b / grouped_gemm): 1.050
+Speedup (bmm / grouped_gemm): 1.504
+
+======================
+TFLOPS (grouped_gemm): 184.353
+TFLOPS (nn.Linear): 174.946
+TFLOPS (a @ b): 175.519
+TFLOPS (bmm): 122.578
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=4096, hidden_size=768, ffn_dim=8192
+Iterations: 100
+Max memory allocated: 3783.49 MB
+Max memory reserved: 5324.00 MB
+Average grouped_gemm time: 1125.915 μs
+
+======================
+Average nn.Linear time: 1088.912 μs
+Average a @ b time: 1110.859 μs
+Average bmm time: 1677.861 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 0.967
+Speedup (a @ b / grouped_gemm): 0.987
+Speedup (bmm / grouped_gemm): 1.490
+
+======================
+TFLOPS (grouped_gemm): 192.938
+TFLOPS (nn.Linear): 199.494
+TFLOPS (a @ b): 195.553
+TFLOPS (bmm): 129.469
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=4096, hidden_size=768, ffn_dim=14336
+Iterations: 100
+Max memory allocated: 3783.49 MB
+Max memory reserved: 6140.00 MB
+Average grouped_gemm time: 1849.048 μs
+
+======================
+Average nn.Linear time: 1774.869 μs
+Average a @ b time: 1780.612 μs
+Average bmm time: 4271.805 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 0.960
+Speedup (a @ b / grouped_gemm): 0.963
+Speedup (bmm / grouped_gemm): 2.310
+
+======================
+TFLOPS (grouped_gemm): 196.556
+TFLOPS (nn.Linear): 204.771
+TFLOPS (a @ b): 204.110
+TFLOPS (bmm): 85.079
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=4096, hidden_size=4096, ffn_dim=256
+Iterations: 100
+Max memory allocated: 3783.49 MB
+Max memory reserved: 6140.00 MB
+Average grouped_gemm time: 265.453 μs
+
+======================
+Average nn.Linear time: 331.080 μs
+Average a @ b time: 316.794 μs
+Average bmm time: 311.649 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 1.247
+Speedup (a @ b / grouped_gemm): 1.193
+Speedup (bmm / grouped_gemm): 1.174
+
+======================
+TFLOPS (grouped_gemm): 161.964
+TFLOPS (nn.Linear): 129.859
+TFLOPS (a @ b): 135.715
+TFLOPS (bmm): 137.956
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=4096, hidden_size=4096, ffn_dim=512
+Iterations: 100
+Max memory allocated: 3783.49 MB
+Max memory reserved: 6140.00 MB
+Average grouped_gemm time: 481.553 μs
+
+======================
+Average nn.Linear time: 575.738 μs
+Average a @ b time: 568.304 μs
+Average bmm time: 512.314 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 1.196
+Speedup (a @ b / grouped_gemm): 1.180
+Speedup (bmm / grouped_gemm): 1.064
+
+======================
+TFLOPS (grouped_gemm): 202.559
+TFLOPS (nn.Linear): 169.422
+TFLOPS (a @ b): 171.638
+TFLOPS (bmm): 190.396
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=4096, hidden_size=4096, ffn_dim=1024
+Iterations: 100
+Max memory allocated: 3783.49 MB
+Max memory reserved: 6140.00 MB
+Average grouped_gemm time: 714.059 μs
+
+======================
+Average nn.Linear time: 771.866 μs
+Average a @ b time: 765.495 μs
+Average bmm time: 1065.743 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 1.081
+Speedup (a @ b / grouped_gemm): 1.072
+Speedup (bmm / grouped_gemm): 1.493
+
+======================
+TFLOPS (grouped_gemm): 224.371
+TFLOPS (nn.Linear): 207.567
+TFLOPS (a @ b): 209.295
+TFLOPS (bmm): 150.331
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=4096, hidden_size=4096, ffn_dim=2048
+Iterations: 100
+Max memory allocated: 3783.49 MB
+Max memory reserved: 6140.00 MB
+Average grouped_gemm time: 1156.242 μs
+
+======================
+Average nn.Linear time: 1201.835 μs
+Average a @ b time: 1198.761 μs
+Average bmm time: 1919.096 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 1.039
+Speedup (a @ b / grouped_gemm): 1.037
+Speedup (bmm / grouped_gemm): 1.660
+
+======================
+TFLOPS (grouped_gemm): 218.073
+TFLOPS (nn.Linear): 209.800
+TFLOPS (a @ b): 210.338
+TFLOPS (bmm): 131.387
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=4096, hidden_size=4096, ffn_dim=4096
+Iterations: 100
+Max memory allocated: 3783.49 MB
+Max memory reserved: 6140.00 MB
+Average grouped_gemm time: 2284.713 μs
+
+======================
+Average nn.Linear time: 2329.402 μs
+Average a @ b time: 2359.898 μs
+Average bmm time: 4112.251 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 1.020
+Speedup (a @ b / grouped_gemm): 1.033
+Speedup (bmm / grouped_gemm): 1.800
+
+======================
+TFLOPS (grouped_gemm): 222.045
+TFLOPS (nn.Linear): 217.785
+TFLOPS (a @ b): 214.971
+TFLOPS (bmm): 123.365
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=4096, hidden_size=4096, ffn_dim=8192
+Iterations: 100
+Max memory allocated: 3783.49 MB
+Max memory reserved: 6140.00 MB
+Average grouped_gemm time: 3956.439 μs
+
+======================
+Average nn.Linear time: 4030.199 μs
+Average a @ b time: 4020.686 μs
+Average bmm time: 8782.041 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 1.019
+Speedup (a @ b / grouped_gemm): 1.016
+Speedup (bmm / grouped_gemm): 2.220
+
+======================
+TFLOPS (grouped_gemm): 229.274
+TFLOPS (nn.Linear): 225.078
+TFLOPS (a @ b): 225.611
+TFLOPS (bmm): 103.292
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=4096, hidden_size=4096, ffn_dim=14336
+Iterations: 100
+Max memory allocated: 5390.06 MB
+Max memory reserved: 7860.00 MB
+Average grouped_gemm time: 8501.143 μs
+
+======================
+Average nn.Linear time: 8778.834 μs
+Average a @ b time: 8787.835 μs
+Average bmm time: 19224.892 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 1.033
+Speedup (a @ b / grouped_gemm): 1.034
+Speedup (bmm / grouped_gemm): 2.261
+
+======================
+TFLOPS (grouped_gemm): 232.059
+TFLOPS (nn.Linear): 224.718
+TFLOPS (a @ b): 224.488
+TFLOPS (bmm): 102.615
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=8192, hidden_size=128, ffn_dim=256
+Iterations: 100
+Max memory allocated: 5390.06 MB
+Max memory reserved: 7860.00 MB
+Average grouped_gemm time: 84.708 μs
+
+======================
+Average nn.Linear time: 151.227 μs
+Average a @ b time: 92.180 μs
+Average bmm time: 57.304 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 1.785
+Speedup (a @ b / grouped_gemm): 1.088
+Speedup (bmm / grouped_gemm): 0.676
+
+======================
+TFLOPS (grouped_gemm): 27.639
+TFLOPS (nn.Linear): 15.482
+TFLOPS (a @ b): 25.399
+TFLOPS (bmm): 40.857
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=8192, hidden_size=128, ffn_dim=512
+Iterations: 100
+Max memory allocated: 5390.06 MB
+Max memory reserved: 7860.00 MB
+Average grouped_gemm time: 99.115 μs
+
+======================
+Average nn.Linear time: 154.994 μs
+Average a @ b time: 102.491 μs
+Average bmm time: 84.567 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 1.564
+Speedup (a @ b / grouped_gemm): 1.034
+Speedup (bmm / grouped_gemm): 0.853
+
+======================
+TFLOPS (grouped_gemm): 40.199
+TFLOPS (nn.Linear): 25.706
+TFLOPS (a @ b): 38.875
+TFLOPS (bmm): 47.114
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=8192, hidden_size=128, ffn_dim=1024
+Iterations: 100
+Max memory allocated: 5390.06 MB
+Max memory reserved: 7860.00 MB
+Average grouped_gemm time: 114.398 μs
+
+======================
+Average nn.Linear time: 156.267 μs
+Average a @ b time: 133.514 μs
+Average bmm time: 114.856 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 1.366
+Speedup (a @ b / grouped_gemm): 1.167
+Speedup (bmm / grouped_gemm): 1.004
+
+======================
+TFLOPS (grouped_gemm): 49.976
+TFLOPS (nn.Linear): 36.586
+TFLOPS (a @ b): 42.820
+TFLOPS (bmm): 49.776
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=8192, hidden_size=128, ffn_dim=2048
+Iterations: 100
+Max memory allocated: 5390.06 MB
+Max memory reserved: 7860.00 MB
+Average grouped_gemm time: 234.833 μs
+
+======================
+Average nn.Linear time: 285.599 μs
+Average a @ b time: 279.562 μs
+Average bmm time: 284.874 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 1.216
+Speedup (a @ b / grouped_gemm): 1.190
+Speedup (bmm / grouped_gemm): 1.213
+
+======================
+TFLOPS (grouped_gemm): 86.589
+TFLOPS (nn.Linear): 71.198
+TFLOPS (a @ b): 72.735
+TFLOPS (bmm): 71.379
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=8192, hidden_size=128, ffn_dim=4096
+Iterations: 100
+Max memory allocated: 5390.06 MB
+Max memory reserved: 7860.00 MB
+Average grouped_gemm time: 369.740 μs
+
+======================
+Average nn.Linear time: 443.578 μs
+Average a @ b time: 441.422 μs
+Average bmm time: 561.130 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 1.200
+Speedup (a @ b / grouped_gemm): 1.194
+Speedup (bmm / grouped_gemm): 1.518
+
+======================
+TFLOPS (grouped_gemm): 100.139
+TFLOPS (nn.Linear): 83.470
+TFLOPS (a @ b): 83.877
+TFLOPS (bmm): 65.983
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=8192, hidden_size=128, ffn_dim=8192
+Iterations: 100
+Max memory allocated: 5390.06 MB
+Max memory reserved: 7860.00 MB
+Average grouped_gemm time: 612.597 μs
+
+======================
+Average nn.Linear time: 708.070 μs
+Average a @ b time: 719.104 μs
+Average bmm time: 942.297 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 1.156
+Speedup (a @ b / grouped_gemm): 1.174
+Speedup (bmm / grouped_gemm): 1.538
+
+======================
+TFLOPS (grouped_gemm): 105.105
+TFLOPS (nn.Linear): 90.933
+TFLOPS (a @ b): 89.538
+TFLOPS (bmm): 68.330
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=8192, hidden_size=128, ffn_dim=14336
+Iterations: 100
+Max memory allocated: 6551.29 MB
+Max memory reserved: 11328.00 MB
+Average grouped_gemm time: 1223.142 μs
+
+======================
+Average nn.Linear time: 1392.796 μs
+Average a @ b time: 1419.146 μs
+Average bmm time: 1880.445 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 1.139
+Speedup (a @ b / grouped_gemm): 1.160
+Speedup (bmm / grouped_gemm): 1.537
+
+======================
+TFLOPS (grouped_gemm): 109.464
+TFLOPS (nn.Linear): 96.130
+TFLOPS (a @ b): 94.345
+TFLOPS (bmm): 71.201
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=8192, hidden_size=768, ffn_dim=256
+Iterations: 100
+Max memory allocated: 6551.29 MB
+Max memory reserved: 11328.00 MB
+Average grouped_gemm time: 150.023 μs
+
+======================
+Average nn.Linear time: 193.508 μs
+Average a @ b time: 180.225 μs
+Average bmm time: 123.339 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 1.290
+Speedup (a @ b / grouped_gemm): 1.201
+Speedup (bmm / grouped_gemm): 0.822
+
+======================
+TFLOPS (grouped_gemm): 87.218
+TFLOPS (nn.Linear): 67.618
+TFLOPS (a @ b): 72.602
+TFLOPS (bmm): 106.087
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=8192, hidden_size=768, ffn_dim=512
+Iterations: 100
+Max memory allocated: 6551.29 MB
+Max memory reserved: 11328.00 MB
+Average grouped_gemm time: 233.536 μs
+
+======================
+Average nn.Linear time: 248.086 μs
+Average a @ b time: 243.182 μs
+Average bmm time: 232.713 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 1.062
+Speedup (a @ b / grouped_gemm): 1.041
+Speedup (bmm / grouped_gemm): 0.996
+
+======================
+TFLOPS (grouped_gemm): 137.222
+TFLOPS (nn.Linear): 129.174
+TFLOPS (a @ b): 131.779
+TFLOPS (bmm): 137.707
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=8192, hidden_size=768, ffn_dim=1024
+Iterations: 100
+Max memory allocated: 6551.29 MB
+Max memory reserved: 11328.00 MB
+Average grouped_gemm time: 239.983 μs
+
+======================
+Average nn.Linear time: 247.586 μs
+Average a @ b time: 240.955 μs
+Average bmm time: 372.603 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 1.032
+Speedup (a @ b / grouped_gemm): 1.004
+Speedup (bmm / grouped_gemm): 1.553
+
+======================
+TFLOPS (grouped_gemm): 158.327
+TFLOPS (nn.Linear): 153.465
+TFLOPS (a @ b): 157.688
+TFLOPS (bmm): 101.974
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=8192, hidden_size=768, ffn_dim=2048
+Iterations: 100
+Max memory allocated: 6551.29 MB
+Max memory reserved: 11328.00 MB
+Average grouped_gemm time: 527.859 μs
+
+======================
+Average nn.Linear time: 537.457 μs
+Average a @ b time: 537.245 μs
+Average bmm time: 858.734 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 1.018
+Speedup (a @ b / grouped_gemm): 1.018
+Speedup (bmm / grouped_gemm): 1.627
+
+======================
+TFLOPS (grouped_gemm): 189.861
+TFLOPS (nn.Linear): 186.470
+TFLOPS (a @ b): 186.544
+TFLOPS (bmm): 116.706
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=8192, hidden_size=768, ffn_dim=4096
+Iterations: 100
+Max memory allocated: 6551.29 MB
+Max memory reserved: 11328.00 MB
+Average grouped_gemm time: 985.496 μs
+
+======================
+Average nn.Linear time: 953.231 μs
+Average a @ b time: 963.538 μs
+Average bmm time: 1656.897 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 0.967
+Speedup (a @ b / grouped_gemm): 0.978
+Speedup (bmm / grouped_gemm): 1.681
+
+======================
+TFLOPS (grouped_gemm): 195.180
+TFLOPS (nn.Linear): 201.786
+TFLOPS (a @ b): 199.628
+TFLOPS (bmm): 116.090
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=8192, hidden_size=768, ffn_dim=8192
+Iterations: 100
+Max memory allocated: 6551.29 MB
+Max memory reserved: 11328.00 MB
+Average grouped_gemm time: 1886.318 μs
+
+======================
+Average nn.Linear time: 1838.367 μs
+Average a @ b time: 1856.461 μs
+Average bmm time: 2413.611 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 0.975
+Speedup (a @ b / grouped_gemm): 0.984
+Speedup (bmm / grouped_gemm): 1.280
+
+======================
+TFLOPS (grouped_gemm): 204.108
+TFLOPS (nn.Linear): 209.431
+TFLOPS (a @ b): 207.390
+TFLOPS (bmm): 159.517
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=8192, hidden_size=768, ffn_dim=14336
+Iterations: 100
+Max memory allocated: 6747.82 MB
+Max memory reserved: 14840.00 MB
+Average grouped_gemm time: 3581.431 μs
+
+======================
+Average nn.Linear time: 3474.579 μs
+Average a @ b time: 3438.265 μs
+Average bmm time: 6027.355 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 0.970
+Speedup (a @ b / grouped_gemm): 0.960
+Speedup (bmm / grouped_gemm): 1.683
+
+======================
+TFLOPS (grouped_gemm): 204.410
+TFLOPS (nn.Linear): 210.696
+TFLOPS (a @ b): 212.921
+TFLOPS (bmm): 121.460
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=8192, hidden_size=4096, ffn_dim=256
+Iterations: 100
+Max memory allocated: 6747.82 MB
+Max memory reserved: 14840.00 MB
+Average grouped_gemm time: 475.705 μs
+
+======================
+Average nn.Linear time: 397.794 μs
+Average a @ b time: 399.263 μs
+Average bmm time: 485.365 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 0.836
+Speedup (a @ b / grouped_gemm): 0.839
+Speedup (bmm / grouped_gemm): 1.020
+
+======================
+TFLOPS (grouped_gemm): 134.954
+TFLOPS (nn.Linear): 161.385
+TFLOPS (a @ b): 160.791
+TFLOPS (bmm): 132.267
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=8192, hidden_size=4096, ffn_dim=512
+Iterations: 100
+Max memory allocated: 6747.82 MB
+Max memory reserved: 14840.00 MB
+Average grouped_gemm time: 715.146 μs
+
+======================
+Average nn.Linear time: 810.730 μs
+Average a @ b time: 807.431 μs
+Average bmm time: 970.070 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 1.134
+Speedup (a @ b / grouped_gemm): 1.129
+Speedup (bmm / grouped_gemm): 1.356
+
+======================
+TFLOPS (grouped_gemm): 216.159
+TFLOPS (nn.Linear): 190.674
+TFLOPS (a @ b): 191.453
+TFLOPS (bmm): 159.355
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=8192, hidden_size=4096, ffn_dim=1024
+Iterations: 100
+Max memory allocated: 6747.82 MB
+Max memory reserved: 14840.00 MB
+Average grouped_gemm time: 1182.163 μs
+
+======================
+Average nn.Linear time: 1320.429 μs
+Average a @ b time: 1320.271 μs
+Average bmm time: 2076.876 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 1.117
+Speedup (a @ b / grouped_gemm): 1.117
+Speedup (bmm / grouped_gemm): 1.757
+
+======================
+TFLOPS (grouped_gemm): 237.779
+TFLOPS (nn.Linear): 212.881
+TFLOPS (a @ b): 212.906
+TFLOPS (bmm): 135.345
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=8192, hidden_size=4096, ffn_dim=2048
+Iterations: 100
+Max memory allocated: 6747.82 MB
+Max memory reserved: 14840.00 MB
+Average grouped_gemm time: 1408.072 μs
+
+======================
+Average nn.Linear time: 1461.833 μs
+Average a @ b time: 1484.706 μs
+Average bmm time: 3227.220 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 1.038
+Speedup (a @ b / grouped_gemm): 1.054
+Speedup (bmm / grouped_gemm): 2.292
+
+======================
+TFLOPS (grouped_gemm): 229.674
+TFLOPS (nn.Linear): 221.228
+TFLOPS (a @ b): 217.819
+TFLOPS (bmm): 100.209
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=8192, hidden_size=4096, ffn_dim=4096
+Iterations: 100
+Max memory allocated: 6747.82 MB
+Max memory reserved: 14840.00 MB
+Average grouped_gemm time: 2538.698 μs
+
+======================
+Average nn.Linear time: 2566.118 μs
+Average a @ b time: 2599.847 μs
+Average bmm time: 5405.684 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 1.011
+Speedup (a @ b / grouped_gemm): 1.024
+Speedup (bmm / grouped_gemm): 2.129
+
+======================
+TFLOPS (grouped_gemm): 224.904
+TFLOPS (nn.Linear): 222.500
+TFLOPS (a @ b): 219.614
+TFLOPS (bmm): 105.623
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=8192, hidden_size=4096, ffn_dim=8192
+Iterations: 100
+Max memory allocated: 6747.82 MB
+Max memory reserved: 14840.00 MB
+Average grouped_gemm time: 7478.642 μs
+
+======================
+Average nn.Linear time: 7425.199 μs
+Average a @ b time: 7422.044 μs
+Average bmm time: 20221.612 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 0.993
+Speedup (a @ b / grouped_gemm): 0.992
+Speedup (bmm / grouped_gemm): 2.704
+
+======================
+TFLOPS (grouped_gemm): 235.785
+TFLOPS (nn.Linear): 237.482
+TFLOPS (a @ b): 237.583
+TFLOPS (bmm): 87.201
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=8192, hidden_size=4096, ffn_dim=14336
+Iterations: 100
+Max memory allocated: 9682.64 MB
+Max memory reserved: 14840.00 MB
+Average grouped_gemm time: 20842.855 μs
+
+======================
+Average nn.Linear time: 21425.405 μs
+Average a @ b time: 21427.188 μs
+Average bmm time: 38675.790 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 1.028
+Speedup (a @ b / grouped_gemm): 1.028
+Speedup (bmm / grouped_gemm): 1.856
+
+======================
+TFLOPS (grouped_gemm): 238.618
+TFLOPS (nn.Linear): 232.130
+TFLOPS (a @ b): 232.111
+TFLOPS (bmm): 128.594
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=16384, hidden_size=128, ffn_dim=256
+Iterations: 100
+Max memory allocated: 9682.64 MB
+Max memory reserved: 14840.00 MB
+Average grouped_gemm time: 107.269 μs
+
+======================
+Average nn.Linear time: 155.649 μs
+Average a @ b time: 116.460 μs
+Average bmm time: 93.250 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 1.451
+Speedup (a @ b / grouped_gemm): 1.086
+Speedup (bmm / grouped_gemm): 0.869
+
+======================
+TFLOPS (grouped_gemm): 45.832
+TFLOPS (nn.Linear): 31.586
+TFLOPS (a @ b): 42.215
+TFLOPS (bmm): 52.722
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=16384, hidden_size=128, ffn_dim=512
+Iterations: 100
+Max memory allocated: 9682.64 MB
+Max memory reserved: 14840.00 MB
+Average grouped_gemm time: 131.094 μs
+
+======================
+Average nn.Linear time: 162.261 μs
+Average a @ b time: 137.711 μs
+Average bmm time: 126.550 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 1.238
+Speedup (a @ b / grouped_gemm): 1.050
+Speedup (bmm / grouped_gemm): 0.965
+
+======================
+TFLOPS (grouped_gemm): 54.645
+TFLOPS (nn.Linear): 44.149
+TFLOPS (a @ b): 52.019
+TFLOPS (bmm): 56.607
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=16384, hidden_size=128, ffn_dim=1024
+Iterations: 100
+Max memory allocated: 9682.64 MB
+Max memory reserved: 14840.00 MB
+Average grouped_gemm time: 211.275 μs
+
+======================
+Average nn.Linear time: 246.489 μs
+Average a @ b time: 236.051 μs
+Average bmm time: 280.941 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 1.167
+Speedup (a @ b / grouped_gemm): 1.117
+Speedup (bmm / grouped_gemm): 1.330
+
+======================
+TFLOPS (grouped_gemm): 81.077
+TFLOPS (nn.Linear): 69.494
+TFLOPS (a @ b): 72.567
+TFLOPS (bmm): 60.972
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=16384, hidden_size=128, ffn_dim=2048
+Iterations: 100
+Max memory allocated: 9682.64 MB
+Max memory reserved: 14840.00 MB
+Average grouped_gemm time: 308.051 μs
+
+======================
+Average nn.Linear time: 378.301 μs
+Average a @ b time: 373.495 μs
+Average bmm time: 478.866 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 1.228
+Speedup (a @ b / grouped_gemm): 1.212
+Speedup (bmm / grouped_gemm): 1.555
+
+======================
+TFLOPS (grouped_gemm): 97.849
+TFLOPS (nn.Linear): 79.678
+TFLOPS (a @ b): 80.704
+TFLOPS (bmm): 62.945
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=16384, hidden_size=128, ffn_dim=4096
+Iterations: 100
+Max memory allocated: 9682.64 MB
+Max memory reserved: 14840.00 MB
+Average grouped_gemm time: 562.599 μs
+
+======================
+Average nn.Linear time: 678.952 μs
+Average a @ b time: 681.927 μs
+Average bmm time: 909.445 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 1.207
+Speedup (a @ b / grouped_gemm): 1.212
+Speedup (bmm / grouped_gemm): 1.617
+
+======================
+TFLOPS (grouped_gemm): 105.695
+TFLOPS (nn.Linear): 87.582
+TFLOPS (a @ b): 87.199
+TFLOPS (bmm): 65.385
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=16384, hidden_size=128, ffn_dim=8192
+Iterations: 100
+Max memory allocated: 9682.64 MB
+Max memory reserved: 14840.00 MB
+Average grouped_gemm time: 1083.713 μs
+
+======================
+Average nn.Linear time: 1279.984 μs
+Average a @ b time: 1297.243 μs
+Average bmm time: 1901.252 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 1.181
+Speedup (a @ b / grouped_gemm): 1.197
+Speedup (bmm / grouped_gemm): 1.754
+
+======================
+TFLOPS (grouped_gemm): 111.395
+TFLOPS (nn.Linear): 94.314
+TFLOPS (a @ b): 93.059
+TFLOPS (bmm): 63.495
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=16384, hidden_size=128, ffn_dim=14336
+Iterations: 100
+Max memory allocated: 13946.06 MB
+Max memory reserved: 21908.00 MB
+Average grouped_gemm time: 2679.095 μs
+
+======================
+Average nn.Linear time: 3070.908 μs
+Average a @ b time: 3104.062 μs
+Average bmm time: 4543.061 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 1.146
+Speedup (a @ b / grouped_gemm): 1.159
+Speedup (bmm / grouped_gemm): 1.696
+
+======================
+TFLOPS (grouped_gemm): 112.901
+TFLOPS (nn.Linear): 98.496
+TFLOPS (a @ b): 97.444
+TFLOPS (bmm): 66.579
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=16384, hidden_size=768, ffn_dim=256
+Iterations: 100
+Max memory allocated: 13946.06 MB
+Max memory reserved: 21908.00 MB
+Average grouped_gemm time: 203.364 μs
+
+======================
+Average nn.Linear time: 239.961 μs
+Average a @ b time: 232.675 μs
+Average bmm time: 223.837 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 1.180
+Speedup (a @ b / grouped_gemm): 1.144
+Speedup (bmm / grouped_gemm): 1.101
+
+======================
+TFLOPS (grouped_gemm): 146.065
+TFLOPS (nn.Linear): 123.788
+TFLOPS (a @ b): 127.664
+TFLOPS (bmm): 132.705
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=16384, hidden_size=768, ffn_dim=512
+Iterations: 100
+Max memory allocated: 13946.06 MB
+Max memory reserved: 21908.00 MB
+Average grouped_gemm time: 245.924 μs
+
+======================
+Average nn.Linear time: 264.030 μs
+Average a @ b time: 256.760 μs
+Average bmm time: 444.505 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 1.074
+Speedup (a @ b / grouped_gemm): 1.044
+Speedup (bmm / grouped_gemm): 1.807
+
+======================
+TFLOPS (grouped_gemm): 161.675
+TFLOPS (nn.Linear): 150.588
+TFLOPS (a @ b): 154.851
+TFLOPS (bmm): 89.447
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=16384, hidden_size=768, ffn_dim=1024
+Iterations: 100
+Max memory allocated: 13946.06 MB
+Max memory reserved: 21908.00 MB
+Average grouped_gemm time: 537.386 μs
+
+======================
+Average nn.Linear time: 575.933 μs
+Average a @ b time: 570.083 μs
+Average bmm time: 817.869 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 1.072
+Speedup (a @ b / grouped_gemm): 1.061
+Speedup (bmm / grouped_gemm): 1.522
+
+======================
+TFLOPS (grouped_gemm): 190.274
+TFLOPS (nn.Linear): 177.538
+TFLOPS (a @ b): 179.361
+TFLOPS (bmm): 125.020
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=16384, hidden_size=768, ffn_dim=2048
+Iterations: 100
+Max memory allocated: 13946.06 MB
+Max memory reserved: 21908.00 MB
+Average grouped_gemm time: 1282.125 μs
+
+======================
+Average nn.Linear time: 1259.263 μs
+Average a @ b time: 1313.753 μs
+Average bmm time: 1729.219 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 0.982
+Speedup (a @ b / grouped_gemm): 1.025
+Speedup (bmm / grouped_gemm): 1.349
+
+======================
+TFLOPS (grouped_gemm): 207.232
+TFLOPS (nn.Linear): 210.995
+TFLOPS (a @ b): 202.243
+TFLOPS (bmm): 153.652
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=16384, hidden_size=768, ffn_dim=4096
+Iterations: 100
+Max memory allocated: 13946.06 MB
+Max memory reserved: 21908.00 MB
+Average grouped_gemm time: 1743.040 μs
+
+======================
+Average nn.Linear time: 1680.758 μs
+Average a @ b time: 1697.440 μs
+Average bmm time: 2860.751 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 0.964
+Speedup (a @ b / grouped_gemm): 0.974
+Speedup (bmm / grouped_gemm): 1.641
+
+======================
+TFLOPS (grouped_gemm): 205.848
+TFLOPS (nn.Linear): 213.476
+TFLOPS (a @ b): 211.378
+TFLOPS (bmm): 125.422
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=16384, hidden_size=768, ffn_dim=8192
+Iterations: 100
+Max memory allocated: 13946.06 MB
+Max memory reserved: 21908.00 MB
+Average grouped_gemm time: 5569.012 μs
+
+======================
+Average nn.Linear time: 5383.337 μs
+Average a @ b time: 5406.532 μs
+Average bmm time: 6983.869 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 0.967
+Speedup (a @ b / grouped_gemm): 0.971
+Speedup (bmm / grouped_gemm): 1.254
+
+======================
+TFLOPS (grouped_gemm): 213.218
+TFLOPS (nn.Linear): 220.572
+TFLOPS (a @ b): 219.625
+TFLOPS (bmm): 170.022
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=16384, hidden_size=768, ffn_dim=14336
+Iterations: 100
+Max memory allocated: 13946.06 MB
+Max memory reserved: 21908.00 MB
+Average grouped_gemm time: 6288.092 μs
+
+======================
+Average nn.Linear time: 5983.334 μs
+Average a @ b time: 6001.718 μs
+Average bmm time: 15728.872 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 0.952
+Speedup (a @ b / grouped_gemm): 0.954
+Speedup (bmm / grouped_gemm): 2.501
+
+======================
+TFLOPS (grouped_gemm): 205.893
+TFLOPS (nn.Linear): 216.380
+TFLOPS (a @ b): 215.717
+TFLOPS (bmm): 82.312
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=16384, hidden_size=4096, ffn_dim=256
+Iterations: 100
+Max memory allocated: 13946.06 MB
+Max memory reserved: 21908.00 MB
+Average grouped_gemm time: 718.653 μs
+
+======================
+Average nn.Linear time: 767.531 μs
+Average a @ b time: 769.923 μs
+Average bmm time: 948.608 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 1.068
+Speedup (a @ b / grouped_gemm): 1.071
+Speedup (bmm / grouped_gemm): 1.320
+
+======================
+TFLOPS (grouped_gemm): 187.338
+TFLOPS (nn.Linear): 175.408
+TFLOPS (a @ b): 174.863
+TFLOPS (bmm): 141.925
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=16384, hidden_size=4096, ffn_dim=512
+Iterations: 100
+Max memory allocated: 13946.06 MB
+Max memory reserved: 21908.00 MB
+Average grouped_gemm time: 937.943 μs
+
+======================
+Average nn.Linear time: 951.445 μs
+Average a @ b time: 946.236 μs
+Average bmm time: 2084.956 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 1.014
+Speedup (a @ b / grouped_gemm): 1.009
+Speedup (bmm / grouped_gemm): 2.223
+
+======================
+TFLOPS (grouped_gemm): 197.824
+TFLOPS (nn.Linear): 195.017
+TFLOPS (a @ b): 196.090
+TFLOPS (bmm): 88.994
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=16384, hidden_size=4096, ffn_dim=1024
+Iterations: 100
+Max memory allocated: 13946.06 MB
+Max memory reserved: 21908.00 MB
+Average grouped_gemm time: 2757.380 μs
+
+======================
+Average nn.Linear time: 2905.109 μs
+Average a @ b time: 2952.781 μs
+Average bmm time: 4220.288 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 1.054
+Speedup (a @ b / grouped_gemm): 1.071
+Speedup (bmm / grouped_gemm): 1.531
+
+======================
+TFLOPS (grouped_gemm): 236.312
+TFLOPS (nn.Linear): 224.295
+TFLOPS (a @ b): 220.674
+TFLOPS (bmm): 154.398
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=16384, hidden_size=4096, ffn_dim=2048
+Iterations: 100
+Max memory allocated: 13946.06 MB
+Max memory reserved: 21908.00 MB
+Average grouped_gemm time: 3645.229 μs
+
+======================
+Average nn.Linear time: 3851.001 μs
+Average a @ b time: 3794.808 μs
+Average bmm time: 8106.284 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 1.056
+Speedup (a @ b / grouped_gemm): 1.041
+Speedup (bmm / grouped_gemm): 2.224
+
+======================
+TFLOPS (grouped_gemm): 239.114
+TFLOPS (nn.Linear): 226.338
+TFLOPS (a @ b): 229.689
+TFLOPS (bmm): 107.525
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=16384, hidden_size=4096, ffn_dim=4096
+Iterations: 100
+Max memory allocated: 13946.06 MB
+Max memory reserved: 21908.00 MB
+Average grouped_gemm time: 11629.453 μs
+
+======================
+Average nn.Linear time: 11942.742 μs
+Average a @ b time: 11939.018 μs
+Average bmm time: 16624.289 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 1.027
+Speedup (a @ b / grouped_gemm): 1.027
+Speedup (bmm / grouped_gemm): 1.429
+
+======================
+TFLOPS (grouped_gemm): 246.427
+TFLOPS (nn.Linear): 239.963
+TFLOPS (a @ b): 240.038
+TFLOPS (bmm): 172.387
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=16384, hidden_size=4096, ffn_dim=8192
+Iterations: 100
+Max memory allocated: 13946.06 MB
+Max memory reserved: 21908.00 MB
+Average grouped_gemm time: 20976.517 μs
+
+======================
+Average nn.Linear time: 21013.153 μs
+Average a @ b time: 20997.968 μs
+Average bmm time: 40381.565 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 1.002
+Speedup (a @ b / grouped_gemm): 1.001
+Speedup (bmm / grouped_gemm): 1.925
+
+======================
+TFLOPS (grouped_gemm): 243.392
+TFLOPS (nn.Linear): 242.967
+TFLOPS (a @ b): 243.143
+TFLOPS (bmm): 126.432
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=16384, hidden_size=4096, ffn_dim=14336
+Iterations: 100
+Max memory allocated: 13946.06 MB
+Max memory reserved: 21908.00 MB
+Average grouped_gemm time: 27070.022 μs
+
+======================
+Average nn.Linear time: 27903.588 μs
+Average a @ b time: 27879.968 μs
+Average bmm time: 50546.162 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 1.031
+Speedup (a @ b / grouped_gemm): 1.030
+Speedup (bmm / grouped_gemm): 1.867
+
+======================
+TFLOPS (grouped_gemm): 237.232
+TFLOPS (nn.Linear): 230.145
+TFLOPS (a @ b): 230.340
+TFLOPS (bmm): 127.050
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=32768, hidden_size=128, ffn_dim=256
+Iterations: 100
+Max memory allocated: 13946.06 MB
+Max memory reserved: 21908.00 MB
+Average grouped_gemm time: 126.956 μs
+
+======================
+Average nn.Linear time: 152.252 μs
+Average a @ b time: 129.340 μs
+Average bmm time: 138.018 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 1.199
+Speedup (a @ b / grouped_gemm): 1.019
+Speedup (bmm / grouped_gemm): 1.087
+
+======================
+TFLOPS (grouped_gemm): 50.228
+TFLOPS (nn.Linear): 41.883
+TFLOPS (a @ b): 49.303
+TFLOPS (bmm): 46.203
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=32768, hidden_size=128, ffn_dim=512
+Iterations: 100
+Max memory allocated: 13946.06 MB
+Max memory reserved: 21908.00 MB
+Average grouped_gemm time: 230.350 μs
+
+======================
+Average nn.Linear time: 266.242 μs
+Average a @ b time: 252.981 μs
+Average bmm time: 288.956 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 1.156
+Speedup (a @ b / grouped_gemm): 1.098
+Speedup (bmm / grouped_gemm): 1.254
+
+======================
+TFLOPS (grouped_gemm): 79.733
+TFLOPS (nn.Linear): 68.985
+TFLOPS (a @ b): 72.601
+TFLOPS (bmm): 63.562
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=32768, hidden_size=128, ffn_dim=1024
+Iterations: 100
+Max memory allocated: 13946.06 MB
+Max memory reserved: 21908.00 MB
+Average grouped_gemm time: 299.399 μs
+
+======================
+Average nn.Linear time: 364.592 μs
+Average a @ b time: 360.413 μs
+Average bmm time: 445.998 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 1.218
+Speedup (a @ b / grouped_gemm): 1.204
+Speedup (bmm / grouped_gemm): 1.490
+
+======================
+TFLOPS (grouped_gemm): 93.456
+TFLOPS (nn.Linear): 76.745
+TFLOPS (a @ b): 77.635
+TFLOPS (bmm): 62.737
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=32768, hidden_size=128, ffn_dim=2048
+Iterations: 100
+Max memory allocated: 13946.06 MB
+Max memory reserved: 21908.00 MB
+Average grouped_gemm time: 718.260 μs
+
+======================
+Average nn.Linear time: 911.794 μs
+Average a @ b time: 912.580 μs
+Average bmm time: 1019.046 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 1.269
+Speedup (a @ b / grouped_gemm): 1.271
+Speedup (bmm / grouped_gemm): 1.419
+
+======================
+TFLOPS (grouped_gemm): 112.699
+TFLOPS (nn.Linear): 88.778
+TFLOPS (a @ b): 88.702
+TFLOPS (bmm): 79.435
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=32768, hidden_size=128, ffn_dim=4096
+Iterations: 100
+Max memory allocated: 13946.06 MB
+Max memory reserved: 21908.00 MB
+Average grouped_gemm time: 1399.834 μs
+
+======================
+Average nn.Linear time: 1729.054 μs
+Average a @ b time: 1721.635 μs
+Average bmm time: 1961.770 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 1.235
+Speedup (a @ b / grouped_gemm): 1.230
+Speedup (bmm / grouped_gemm): 1.401
+
+======================
+TFLOPS (grouped_gemm): 115.311
+TFLOPS (nn.Linear): 93.355
+TFLOPS (a @ b): 93.758
+TFLOPS (bmm): 82.281
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=32768, hidden_size=128, ffn_dim=8192
+Iterations: 100
+Max memory allocated: 14396.97 MB
+Max memory reserved: 29876.00 MB
+Average grouped_gemm time: 2425.284 μs
+
+======================
+Average nn.Linear time: 2908.399 μs
+Average a @ b time: 2916.236 μs
+Average bmm time: 4365.611 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 1.199
+Speedup (a @ b / grouped_gemm): 1.202
+Speedup (bmm / grouped_gemm): 1.800
+
+======================
+TFLOPS (grouped_gemm): 116.119
+TFLOPS (nn.Linear): 96.831
+TFLOPS (a @ b): 96.570
+TFLOPS (bmm): 64.509
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=32768, hidden_size=128, ffn_dim=14336
+Iterations: 100
+Max memory allocated: 27430.74 MB
+Max memory reserved: 43612.00 MB
+Average grouped_gemm time: 5318.317 μs
+
+======================
+Average nn.Linear time: 6097.562 μs
+Average a @ b time: 6096.506 μs
+Average bmm time: 8753.521 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 1.147
+Speedup (a @ b / grouped_gemm): 1.146
+Speedup (bmm / grouped_gemm): 1.646
+
+======================
+TFLOPS (grouped_gemm): 113.764
+TFLOPS (nn.Linear): 99.226
+TFLOPS (a @ b): 99.243
+TFLOPS (bmm): 69.119
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=32768, hidden_size=768, ffn_dim=256
+Iterations: 100
+Max memory allocated: 27430.74 MB
+Max memory reserved: 43612.00 MB
+Average grouped_gemm time: 253.880 μs
+
+======================
+Average nn.Linear time: 297.499 μs
+Average a @ b time: 290.744 μs
+Average bmm time: 339.179 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 1.172
+Speedup (a @ b / grouped_gemm): 1.145
+Speedup (bmm / grouped_gemm): 1.336
+
+======================
+TFLOPS (grouped_gemm): 156.335
+TFLOPS (nn.Linear): 133.414
+TFLOPS (a @ b): 136.513
+TFLOPS (bmm): 117.019
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=32768, hidden_size=768, ffn_dim=512
+Iterations: 100
+Max memory allocated: 27430.74 MB
+Max memory reserved: 43612.00 MB
+Average grouped_gemm time: 700.030 μs
+
+======================
+Average nn.Linear time: 729.692 μs
+Average a @ b time: 727.911 μs
+Average bmm time: 917.897 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 1.042
+Speedup (a @ b / grouped_gemm): 1.040
+Speedup (bmm / grouped_gemm): 1.311
+
+======================
+TFLOPS (grouped_gemm): 194.014
+TFLOPS (nn.Linear): 186.128
+TFLOPS (a @ b): 186.583
+TFLOPS (bmm): 147.964
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=32768, hidden_size=768, ffn_dim=1024
+Iterations: 100
+Max memory allocated: 27430.74 MB
+Max memory reserved: 43612.00 MB
+Average grouped_gemm time: 846.322 μs
+
+======================
+Average nn.Linear time: 919.139 μs
+Average a @ b time: 904.820 μs
+Average bmm time: 1716.313 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 1.086
+Speedup (a @ b / grouped_gemm): 1.069
+Speedup (bmm / grouped_gemm): 2.028
+
+======================
+TFLOPS (grouped_gemm): 202.854
+TFLOPS (nn.Linear): 186.783
+TFLOPS (a @ b): 189.739
+TFLOPS (bmm): 100.028
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=32768, hidden_size=768, ffn_dim=2048
+Iterations: 100
+Max memory allocated: 27430.74 MB
+Max memory reserved: 43612.00 MB
+Average grouped_gemm time: 1980.147 μs
+
+======================
+Average nn.Linear time: 1949.391 μs
+Average a @ b time: 1955.993 μs
+Average bmm time: 2912.095 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 0.984
+Speedup (a @ b / grouped_gemm): 0.988
+Speedup (bmm / grouped_gemm): 1.471
+
+======================
+TFLOPS (grouped_gemm): 208.707
+TFLOPS (nn.Linear): 212.000
+TFLOPS (a @ b): 211.284
+TFLOPS (bmm): 141.915
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=32768, hidden_size=768, ffn_dim=4096
+Iterations: 100
+Max memory allocated: 27430.74 MB
+Max memory reserved: 43612.00 MB
+Average grouped_gemm time: 4909.296 μs
+
+======================
+Average nn.Linear time: 4783.909 μs
+Average a @ b time: 4776.652 μs
+Average bmm time: 6411.574 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 0.974
+Speedup (a @ b / grouped_gemm): 0.973
+Speedup (bmm / grouped_gemm): 1.306
+
+======================
+TFLOPS (grouped_gemm): 213.667
+TFLOPS (nn.Linear): 219.267
+TFLOPS (a @ b): 219.601
+TFLOPS (bmm): 163.603
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=32768, hidden_size=768, ffn_dim=8192
+Iterations: 100
+Max memory allocated: 27430.74 MB
+Max memory reserved: 43612.00 MB
+Average grouped_gemm time: 7320.786 μs
+
+======================
+Average nn.Linear time: 7121.339 μs
+Average a @ b time: 7077.191 μs
+Average bmm time: 12064.850 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 0.973
+Speedup (a @ b / grouped_gemm): 0.967
+Speedup (bmm / grouped_gemm): 1.648
+
+======================
+TFLOPS (grouped_gemm): 214.543
+TFLOPS (nn.Linear): 220.552
+TFLOPS (a @ b): 221.928
+TFLOPS (bmm): 130.182
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=32768, hidden_size=768, ffn_dim=14336
+Iterations: 100
+Max memory allocated: 27430.74 MB
+Max memory reserved: 43612.00 MB
+Average grouped_gemm time: 13704.240 μs
+
+======================
+Average nn.Linear time: 13130.469 μs
+Average a @ b time: 13166.468 μs
+Average bmm time: 33469.770 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 0.958
+Speedup (a @ b / grouped_gemm): 0.961
+Speedup (bmm / grouped_gemm): 2.442
+
+======================
+TFLOPS (grouped_gemm): 208.742
+TFLOPS (nn.Linear): 217.864
+TFLOPS (a @ b): 217.268
+TFLOPS (bmm): 85.470
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=32768, hidden_size=4096, ffn_dim=256
+Iterations: 100
+Max memory allocated: 27430.74 MB
+Max memory reserved: 43612.00 MB
+Average grouped_gemm time: 939.744 μs
+
+======================
+Average nn.Linear time: 882.761 μs
+Average a @ b time: 896.130 μs
+Average bmm time: 1827.409 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 0.939
+Speedup (a @ b / grouped_gemm): 0.954
+Speedup (bmm / grouped_gemm): 1.945
+
+======================
+TFLOPS (grouped_gemm): 183.111
+TFLOPS (nn.Linear): 194.931
+TFLOPS (a @ b): 192.023
+TFLOPS (bmm): 94.165
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=32768, hidden_size=4096, ffn_dim=512
+Iterations: 100
+Max memory allocated: 27430.74 MB
+Max memory reserved: 43612.00 MB
+Average grouped_gemm time: 3035.851 μs
+
+======================
+Average nn.Linear time: 3067.999 μs
+Average a @ b time: 3096.983 μs
+Average bmm time: 3794.382 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 1.011
+Speedup (a @ b / grouped_gemm): 1.020
+Speedup (bmm / grouped_gemm): 1.250
+
+======================
+TFLOPS (grouped_gemm): 231.041
+TFLOPS (nn.Linear): 228.620
+TFLOPS (a @ b): 226.480
+TFLOPS (bmm): 184.854
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=32768, hidden_size=4096, ffn_dim=1024
+Iterations: 100
+Max memory allocated: 27430.74 MB
+Max memory reserved: 43612.00 MB
+Average grouped_gemm time: 5081.539 μs
+
+======================
+Average nn.Linear time: 5310.907 μs
+Average a @ b time: 5298.345 μs
+Average bmm time: 7100.959 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 1.045
+Speedup (a @ b / grouped_gemm): 1.043
+Speedup (bmm / grouped_gemm): 1.397
+
+======================
+TFLOPS (grouped_gemm): 241.832
+TFLOPS (nn.Linear): 231.388
+TFLOPS (a @ b): 231.937
+TFLOPS (bmm): 173.058
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=32768, hidden_size=4096, ffn_dim=2048
+Iterations: 100
+Max memory allocated: 27430.74 MB
+Max memory reserved: 43612.00 MB
+Average grouped_gemm time: 11659.477 μs
+
+======================
+Average nn.Linear time: 12119.260 μs
+Average a @ b time: 12105.498 μs
+Average bmm time: 16587.048 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 1.039
+Speedup (a @ b / grouped_gemm): 1.038
+Speedup (bmm / grouped_gemm): 1.423
+
+======================
+TFLOPS (grouped_gemm): 251.844
+TFLOPS (nn.Linear): 242.289
+TFLOPS (a @ b): 242.565
+TFLOPS (bmm): 177.028
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=32768, hidden_size=4096, ffn_dim=4096
+Iterations: 100
+Max memory allocated: 27430.74 MB
+Max memory reserved: 43612.00 MB
+Average grouped_gemm time: 9271.238 μs
+
+======================
+Average nn.Linear time: 9540.236 μs
+Average a @ b time: 9540.160 μs
+Average bmm time: 23071.001 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 1.029
+Speedup (a @ b / grouped_gemm): 1.029
+Speedup (bmm / grouped_gemm): 2.488
+
+======================
+TFLOPS (grouped_gemm): 244.213
+TFLOPS (nn.Linear): 237.327
+TFLOPS (a @ b): 237.329
+TFLOPS (bmm): 98.138
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=32768, hidden_size=4096, ffn_dim=8192
+Iterations: 100
+Max memory allocated: 27430.74 MB
+Max memory reserved: 43612.00 MB
+Average grouped_gemm time: 38732.817 μs
+
+======================
+Average nn.Linear time: 38133.025 μs
+Average a @ b time: 38113.918 μs
+Average bmm time: 82672.651 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 0.985
+Speedup (a @ b / grouped_gemm): 0.984
+Speedup (bmm / grouped_gemm): 2.134
+
+======================
+TFLOPS (grouped_gemm): 242.453
+TFLOPS (nn.Linear): 246.266
+TFLOPS (a @ b): 246.390
+TFLOPS (bmm): 113.591
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=32768, hidden_size=4096, ffn_dim=14336
+Iterations: 100
+Max memory allocated: 31697.97 MB
+Max memory reserved: 43612.00 MB
+Average grouped_gemm time: 82891.731 μs
+
+======================
+Average nn.Linear time: 83426.600 μs
+Average a @ b time: 83500.884 μs
+Average bmm time: 277411.752 μs
+
+======================
+Speedup (nn.Linear / grouped_gemm): 1.006
+Speedup (a @ b / grouped_gemm): 1.007
+Speedup (bmm / grouped_gemm): 3.347
+
+======================
+TFLOPS (grouped_gemm): 236.265
+TFLOPS (nn.Linear): 234.750
+TFLOPS (a @ b): 234.541
+TFLOPS (bmm): 70.597
+
+--------------------------------------------------
+
