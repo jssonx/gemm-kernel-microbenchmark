@@ -1,4 +1,4 @@
-# MoE Kernel
+# GEMM Kernel Microbenchmark
 
 ## Requirements
 - NVIDIA GPU with Ampere Architecture (sm_80)
