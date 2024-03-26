@@ -1,0 +1,2184 @@
+Parameters: batch_size=1, sequence_length=128, hidden_size=128, ffn_dim=256
+TFLOPS (grouped_gemm): 0.521
+TFLOPS (nn.Linear): 0.224
+TFLOPS (a @ b): 0.411
+TFLOPS (bmm): 1.613
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=128, hidden_size=128, ffn_dim=512
+TFLOPS (grouped_gemm): 1.050
+TFLOPS (nn.Linear): 0.449
+TFLOPS (a @ b): 0.812
+TFLOPS (bmm): 3.054
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=128, hidden_size=128, ffn_dim=1024
+TFLOPS (grouped_gemm): 2.230
+TFLOPS (nn.Linear): 0.966
+TFLOPS (a @ b): 1.797
+TFLOPS (bmm): 5.389
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=128, hidden_size=128, ffn_dim=2048
+TFLOPS (grouped_gemm): 3.791
+TFLOPS (nn.Linear): 1.608
+TFLOPS (a @ b): 2.979
+TFLOPS (bmm): 7.373
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=128, hidden_size=128, ffn_dim=4096
+TFLOPS (grouped_gemm): 7.062
+TFLOPS (nn.Linear): 3.676
+TFLOPS (a @ b): 6.792
+TFLOPS (bmm): 12.045
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=128, hidden_size=128, ffn_dim=8192
+TFLOPS (grouped_gemm): 12.949
+TFLOPS (nn.Linear): 7.596
+TFLOPS (a @ b): 13.945
+TFLOPS (bmm): 29.833
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=128, hidden_size=128, ffn_dim=14336
+TFLOPS (grouped_gemm): 17.887
+TFLOPS (nn.Linear): 13.988
+TFLOPS (a @ b): 20.381
+TFLOPS (bmm): 34.027
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=128, hidden_size=768, ffn_dim=256
+TFLOPS (grouped_gemm): 2.280
+TFLOPS (nn.Linear): 1.205
+TFLOPS (a @ b): 2.046
+TFLOPS (bmm): 9.708
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=128, hidden_size=768, ffn_dim=512
+TFLOPS (grouped_gemm): 4.730
+TFLOPS (nn.Linear): 2.496
+TFLOPS (a @ b): 4.275
+TFLOPS (bmm): 16.818
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=128, hidden_size=768, ffn_dim=1024
+TFLOPS (grouped_gemm): 8.289
+TFLOPS (nn.Linear): 5.217
+TFLOPS (a @ b): 9.539
+TFLOPS (bmm): 22.070
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=128, hidden_size=768, ffn_dim=2048
+TFLOPS (grouped_gemm): 17.718
+TFLOPS (nn.Linear): 11.181
+TFLOPS (a @ b): 20.181
+TFLOPS (bmm): 34.367
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=128, hidden_size=768, ffn_dim=4096
+TFLOPS (grouped_gemm): 26.061
+TFLOPS (nn.Linear): 24.794
+TFLOPS (a @ b): 37.074
+TFLOPS (bmm): 47.688
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=128, hidden_size=768, ffn_dim=8192
+TFLOPS (grouped_gemm): 36.708
+TFLOPS (nn.Linear): 41.073
+TFLOPS (a @ b): 37.316
+TFLOPS (bmm): 67.793
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=128, hidden_size=768, ffn_dim=14336
+TFLOPS (grouped_gemm): 39.835
+TFLOPS (nn.Linear): 56.861
+TFLOPS (a @ b): 50.361
+TFLOPS (bmm): 66.283
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=128, hidden_size=4096, ffn_dim=256
+TFLOPS (grouped_gemm): 4.051
+TFLOPS (nn.Linear): 5.714
+TFLOPS (a @ b): 9.671
+TFLOPS (bmm): 28.412
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=128, hidden_size=4096, ffn_dim=512
+TFLOPS (grouped_gemm): 8.848
+TFLOPS (nn.Linear): 12.791
+TFLOPS (a @ b): 18.793
+TFLOPS (bmm): 42.363
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=128, hidden_size=4096, ffn_dim=1024
+TFLOPS (grouped_gemm): 16.935
+TFLOPS (nn.Linear): 24.705
+TFLOPS (a @ b): 31.035
+TFLOPS (bmm): 46.886
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=128, hidden_size=4096, ffn_dim=2048
+TFLOPS (grouped_gemm): 37.401
+TFLOPS (nn.Linear): 53.967
+TFLOPS (a @ b): 51.556
+TFLOPS (bmm): 64.755
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=128, hidden_size=4096, ffn_dim=4096
+TFLOPS (grouped_gemm): 42.479
+TFLOPS (nn.Linear): 76.026
+TFLOPS (a @ b): 77.064
+TFLOPS (bmm): 76.225
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=128, hidden_size=4096, ffn_dim=8192
+TFLOPS (grouped_gemm): 51.832
+TFLOPS (nn.Linear): 77.135
+TFLOPS (a @ b): 78.141
+TFLOPS (bmm): 90.799
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=128, hidden_size=4096, ffn_dim=14336
+TFLOPS (grouped_gemm): 57.614
+TFLOPS (nn.Linear): 81.111
+TFLOPS (a @ b): 82.100
+TFLOPS (bmm): 93.392
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=256, hidden_size=128, ffn_dim=256
+TFLOPS (grouped_gemm): 1.028
+TFLOPS (nn.Linear): 0.432
+TFLOPS (a @ b): 0.796
+TFLOPS (bmm): 3.172
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=256, hidden_size=128, ffn_dim=512
+TFLOPS (grouped_gemm): 2.025
+TFLOPS (nn.Linear): 0.831
+TFLOPS (a @ b): 1.524
+TFLOPS (bmm): 5.309
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=256, hidden_size=128, ffn_dim=1024
+TFLOPS (grouped_gemm): 4.048
+TFLOPS (nn.Linear): 1.688
+TFLOPS (a @ b): 3.158
+TFLOPS (bmm): 8.510
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=256, hidden_size=128, ffn_dim=2048
+TFLOPS (grouped_gemm): 8.269
+TFLOPS (nn.Linear): 3.563
+TFLOPS (a @ b): 6.629
+TFLOPS (bmm): 12.821
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=256, hidden_size=128, ffn_dim=4096
+TFLOPS (grouped_gemm): 13.705
+TFLOPS (nn.Linear): 7.098
+TFLOPS (a @ b): 13.147
+TFLOPS (bmm): 15.071
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=256, hidden_size=128, ffn_dim=8192
+TFLOPS (grouped_gemm): 22.133
+TFLOPS (nn.Linear): 13.822
+TFLOPS (a @ b): 22.641
+TFLOPS (bmm): 35.449
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=256, hidden_size=128, ffn_dim=14336
+TFLOPS (grouped_gemm): 29.398
+TFLOPS (nn.Linear): 23.478
+TFLOPS (a @ b): 29.842
+TFLOPS (bmm): 39.045
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=256, hidden_size=768, ffn_dim=256
+TFLOPS (grouped_gemm): 4.420
+TFLOPS (nn.Linear): 2.357
+TFLOPS (a @ b): 4.009
+TFLOPS (bmm): 16.587
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=256, hidden_size=768, ffn_dim=512
+TFLOPS (grouped_gemm): 8.854
+TFLOPS (nn.Linear): 4.744
+TFLOPS (a @ b): 8.047
+TFLOPS (bmm): 25.880
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=256, hidden_size=768, ffn_dim=1024
+TFLOPS (grouped_gemm): 17.307
+TFLOPS (nn.Linear): 10.939
+TFLOPS (a @ b): 19.862
+TFLOPS (bmm): 40.201
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=256, hidden_size=768, ffn_dim=2048
+TFLOPS (grouped_gemm): 33.407
+TFLOPS (nn.Linear): 21.576
+TFLOPS (a @ b): 35.699
+TFLOPS (bmm): 55.537
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=256, hidden_size=768, ffn_dim=4096
+TFLOPS (grouped_gemm): 48.616
+TFLOPS (nn.Linear): 44.802
+TFLOPS (a @ b): 60.603
+TFLOPS (bmm): 72.153
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=256, hidden_size=768, ffn_dim=8192
+TFLOPS (grouped_gemm): 66.949
+TFLOPS (nn.Linear): 60.830
+TFLOPS (a @ b): 58.445
+TFLOPS (bmm): 94.257
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=256, hidden_size=768, ffn_dim=14336
+TFLOPS (grouped_gemm): 74.173
+TFLOPS (nn.Linear): 85.462
+TFLOPS (a @ b): 80.460
+TFLOPS (bmm): 90.247
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=256, hidden_size=4096, ffn_dim=256
+TFLOPS (grouped_gemm): 9.018
+TFLOPS (nn.Linear): 12.846
+TFLOPS (a @ b): 19.953
+TFLOPS (bmm): 47.319
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=256, hidden_size=4096, ffn_dim=512
+TFLOPS (grouped_gemm): 15.882
+TFLOPS (nn.Linear): 22.759
+TFLOPS (a @ b): 31.485
+TFLOPS (bmm): 54.110
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=256, hidden_size=4096, ffn_dim=1024
+TFLOPS (grouped_gemm): 32.875
+TFLOPS (nn.Linear): 49.012
+TFLOPS (a @ b): 53.666
+TFLOPS (bmm): 71.462
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=256, hidden_size=4096, ffn_dim=2048
+TFLOPS (grouped_gemm): 64.194
+TFLOPS (nn.Linear): 80.151
+TFLOPS (a @ b): 77.610
+TFLOPS (bmm): 87.085
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=256, hidden_size=4096, ffn_dim=4096
+TFLOPS (grouped_gemm): 76.864
+TFLOPS (nn.Linear): 103.793
+TFLOPS (a @ b): 105.304
+TFLOPS (bmm): 100.658
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=256, hidden_size=4096, ffn_dim=8192
+TFLOPS (grouped_gemm): 99.960
+TFLOPS (nn.Linear): 116.970
+TFLOPS (a @ b): 118.700
+TFLOPS (bmm): 106.245
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=256, hidden_size=4096, ffn_dim=14336
+TFLOPS (grouped_gemm): 100.565
+TFLOPS (nn.Linear): 119.406
+TFLOPS (a @ b): 120.601
+TFLOPS (bmm): 89.193
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=512, hidden_size=128, ffn_dim=256
+TFLOPS (grouped_gemm): 1.749
+TFLOPS (nn.Linear): 0.688
+TFLOPS (a @ b): 1.291
+TFLOPS (bmm): 4.937
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=512, hidden_size=128, ffn_dim=512
+TFLOPS (grouped_gemm): 3.290
+TFLOPS (nn.Linear): 1.263
+TFLOPS (a @ b): 2.358
+TFLOPS (bmm): 7.637
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=512, hidden_size=128, ffn_dim=1024
+TFLOPS (grouped_gemm): 7.175
+TFLOPS (nn.Linear): 2.888
+TFLOPS (a @ b): 5.455
+TFLOPS (bmm): 12.470
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=512, hidden_size=128, ffn_dim=2048
+TFLOPS (grouped_gemm): 14.689
+TFLOPS (nn.Linear): 6.182
+TFLOPS (a @ b): 11.668
+TFLOPS (bmm): 16.381
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=512, hidden_size=128, ffn_dim=4096
+TFLOPS (grouped_gemm): 22.469
+TFLOPS (nn.Linear): 11.222
+TFLOPS (a @ b): 20.764
+TFLOPS (bmm): 17.487
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=512, hidden_size=128, ffn_dim=8192
+TFLOPS (grouped_gemm): 34.709
+TFLOPS (nn.Linear): 21.934
+TFLOPS (a @ b): 33.962
+TFLOPS (bmm): 44.220
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=512, hidden_size=128, ffn_dim=14336
+TFLOPS (grouped_gemm): 50.851
+TFLOPS (nn.Linear): 43.756
+TFLOPS (a @ b): 48.700
+TFLOPS (bmm): 55.187
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=512, hidden_size=768, ffn_dim=256
+TFLOPS (grouped_gemm): 6.319
+TFLOPS (nn.Linear): 3.264
+TFLOPS (a @ b): 5.761
+TFLOPS (bmm): 21.828
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=512, hidden_size=768, ffn_dim=512
+TFLOPS (grouped_gemm): 15.499
+TFLOPS (nn.Linear): 8.145
+TFLOPS (a @ b): 14.588
+TFLOPS (bmm): 40.112
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=512, hidden_size=768, ffn_dim=1024
+TFLOPS (grouped_gemm): 33.885
+TFLOPS (nn.Linear): 19.673
+TFLOPS (a @ b): 36.443
+TFLOPS (bmm): 65.153
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=512, hidden_size=768, ffn_dim=2048
+TFLOPS (grouped_gemm): 56.729
+TFLOPS (nn.Linear): 35.067
+TFLOPS (a @ b): 56.616
+TFLOPS (bmm): 73.296
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=512, hidden_size=768, ffn_dim=4096
+TFLOPS (grouped_gemm): 84.984
+TFLOPS (nn.Linear): 68.462
+TFLOPS (a @ b): 87.314
+TFLOPS (bmm): 87.899
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=512, hidden_size=768, ffn_dim=8192
+TFLOPS (grouped_gemm): 99.908
+TFLOPS (nn.Linear): 90.888
+TFLOPS (a @ b): 90.272
+TFLOPS (bmm): 105.785
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=512, hidden_size=768, ffn_dim=14336
+TFLOPS (grouped_gemm): 117.631
+TFLOPS (nn.Linear): 120.966
+TFLOPS (a @ b): 120.025
+TFLOPS (bmm): 96.608
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=512, hidden_size=4096, ffn_dim=256
+TFLOPS (grouped_gemm): 17.527
+TFLOPS (nn.Linear): 21.840
+TFLOPS (a @ b): 34.659
+TFLOPS (bmm): 54.238
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=512, hidden_size=4096, ffn_dim=512
+TFLOPS (grouped_gemm): 32.987
+TFLOPS (nn.Linear): 41.644
+TFLOPS (a @ b): 56.956
+TFLOPS (bmm): 73.340
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=512, hidden_size=4096, ffn_dim=1024
+TFLOPS (grouped_gemm): 63.773
+TFLOPS (nn.Linear): 77.791
+TFLOPS (a @ b): 83.943
+TFLOPS (bmm): 92.335
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=512, hidden_size=4096, ffn_dim=2048
+TFLOPS (grouped_gemm): 102.563
+TFLOPS (nn.Linear): 114.200
+TFLOPS (a @ b): 116.114
+TFLOPS (bmm): 108.718
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=512, hidden_size=4096, ffn_dim=4096
+TFLOPS (grouped_gemm): 129.555
+TFLOPS (nn.Linear): 140.637
+TFLOPS (a @ b): 142.379
+TFLOPS (bmm): 96.353
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=512, hidden_size=4096, ffn_dim=8192
+TFLOPS (grouped_gemm): 154.042
+TFLOPS (nn.Linear): 149.742
+TFLOPS (a @ b): 151.325
+TFLOPS (bmm): 112.656
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=512, hidden_size=4096, ffn_dim=14336
+TFLOPS (grouped_gemm): 158.347
+TFLOPS (nn.Linear): 161.525
+TFLOPS (a @ b): 162.305
+TFLOPS (bmm): 88.076
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=1024, hidden_size=128, ffn_dim=256
+TFLOPS (grouped_gemm): 4.222
+TFLOPS (nn.Linear): 1.763
+TFLOPS (a @ b): 3.273
+TFLOPS (bmm): 11.090
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=1024, hidden_size=128, ffn_dim=512
+TFLOPS (grouped_gemm): 7.734
+TFLOPS (nn.Linear): 3.219
+TFLOPS (a @ b): 5.947
+TFLOPS (bmm): 16.796
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=1024, hidden_size=128, ffn_dim=1024
+TFLOPS (grouped_gemm): 15.685
+TFLOPS (nn.Linear): 6.801
+TFLOPS (a @ b): 12.540
+TFLOPS (bmm): 26.381
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=1024, hidden_size=128, ffn_dim=2048
+TFLOPS (grouped_gemm): 26.122
+TFLOPS (nn.Linear): 13.864
+TFLOPS (a @ b): 24.567
+TFLOPS (bmm): 35.073
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=1024, hidden_size=128, ffn_dim=4096
+TFLOPS (grouped_gemm): 40.950
+TFLOPS (nn.Linear): 26.608
+TFLOPS (a @ b): 38.500
+TFLOPS (bmm): 41.869
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=1024, hidden_size=128, ffn_dim=8192
+TFLOPS (grouped_gemm): 52.550
+TFLOPS (nn.Linear): 41.866
+TFLOPS (a @ b): 48.438
+TFLOPS (bmm): 51.138
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=1024, hidden_size=128, ffn_dim=14336
+TFLOPS (grouped_gemm): 71.433
+TFLOPS (nn.Linear): 65.758
+TFLOPS (a @ b): 65.104
+TFLOPS (bmm): 62.657
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=1024, hidden_size=768, ffn_dim=256
+TFLOPS (grouped_gemm): 15.758
+TFLOPS (nn.Linear): 8.844
+TFLOPS (a @ b): 15.667
+TFLOPS (bmm): 39.810
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=1024, hidden_size=768, ffn_dim=512
+TFLOPS (grouped_gemm): 32.099
+TFLOPS (nn.Linear): 17.280
+TFLOPS (a @ b): 30.667
+TFLOPS (bmm): 61.748
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=1024, hidden_size=768, ffn_dim=1024
+TFLOPS (grouped_gemm): 67.824
+TFLOPS (nn.Linear): 40.818
+TFLOPS (a @ b): 62.671
+TFLOPS (bmm): 84.828
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=1024, hidden_size=768, ffn_dim=2048
+TFLOPS (grouped_gemm): 87.310
+TFLOPS (nn.Linear): 70.978
+TFLOPS (a @ b): 89.872
+TFLOPS (bmm): 101.290
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=1024, hidden_size=768, ffn_dim=4096
+TFLOPS (grouped_gemm): 115.794
+TFLOPS (nn.Linear): 112.662
+TFLOPS (a @ b): 121.231
+TFLOPS (bmm): 98.593
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=1024, hidden_size=768, ffn_dim=8192
+TFLOPS (grouped_gemm): 141.372
+TFLOPS (nn.Linear): 134.349
+TFLOPS (a @ b): 134.992
+TFLOPS (bmm): 114.157
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=1024, hidden_size=768, ffn_dim=14336
+TFLOPS (grouped_gemm): 162.104
+TFLOPS (nn.Linear): 163.153
+TFLOPS (a @ b): 163.523
+TFLOPS (bmm): 113.065
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=1024, hidden_size=4096, ffn_dim=256
+TFLOPS (grouped_gemm): 36.026
+TFLOPS (nn.Linear): 46.285
+TFLOPS (a @ b): 59.010
+TFLOPS (bmm): 79.229
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=1024, hidden_size=4096, ffn_dim=512
+TFLOPS (grouped_gemm): 61.495
+TFLOPS (nn.Linear): 75.171
+TFLOPS (a @ b): 85.990
+TFLOPS (bmm): 90.115
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=1024, hidden_size=4096, ffn_dim=1024
+TFLOPS (grouped_gemm): 126.211
+TFLOPS (nn.Linear): 121.129
+TFLOPS (a @ b): 125.741
+TFLOPS (bmm): 101.664
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=1024, hidden_size=4096, ffn_dim=2048
+TFLOPS (grouped_gemm): 139.851
+TFLOPS (nn.Linear): 149.089
+TFLOPS (a @ b): 150.206
+TFLOPS (bmm): 101.017
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=1024, hidden_size=4096, ffn_dim=4096
+TFLOPS (grouped_gemm): 182.505
+TFLOPS (nn.Linear): 182.607
+TFLOPS (a @ b): 182.513
+TFLOPS (bmm): 112.949
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=1024, hidden_size=4096, ffn_dim=8192
+TFLOPS (grouped_gemm): 187.515
+TFLOPS (nn.Linear): 189.231
+TFLOPS (a @ b): 189.845
+TFLOPS (bmm): 118.836
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=1024, hidden_size=4096, ffn_dim=14336
+TFLOPS (grouped_gemm): 186.176
+TFLOPS (nn.Linear): 187.731
+TFLOPS (a @ b): 186.497
+TFLOPS (bmm): 72.679
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=2048, hidden_size=128, ffn_dim=256
+TFLOPS (grouped_gemm): 8.240
+TFLOPS (nn.Linear): 3.459
+TFLOPS (a @ b): 6.439
+TFLOPS (bmm): 17.794
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=2048, hidden_size=128, ffn_dim=512
+TFLOPS (grouped_gemm): 18.734
+TFLOPS (nn.Linear): 7.871
+TFLOPS (a @ b): 14.349
+TFLOPS (bmm): 31.371
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=2048, hidden_size=128, ffn_dim=1024
+TFLOPS (grouped_gemm): 27.157
+TFLOPS (nn.Linear): 14.394
+TFLOPS (a @ b): 26.279
+TFLOPS (bmm): 36.782
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=2048, hidden_size=128, ffn_dim=2048
+TFLOPS (grouped_gemm): 42.833
+TFLOPS (nn.Linear): 26.704
+TFLOPS (a @ b): 40.275
+TFLOPS (bmm): 41.967
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=2048, hidden_size=128, ffn_dim=4096
+TFLOPS (grouped_gemm): 53.159
+TFLOPS (nn.Linear): 40.599
+TFLOPS (a @ b): 49.747
+TFLOPS (bmm): 40.492
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=2048, hidden_size=128, ffn_dim=8192
+TFLOPS (grouped_gemm): 80.959
+TFLOPS (nn.Linear): 70.244
+TFLOPS (a @ b): 69.481
+TFLOPS (bmm): 65.702
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=2048, hidden_size=128, ffn_dim=14336
+TFLOPS (grouped_gemm): 87.367
+TFLOPS (nn.Linear): 79.824
+TFLOPS (a @ b): 77.652
+TFLOPS (bmm): 60.905
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=2048, hidden_size=768, ffn_dim=256
+TFLOPS (grouped_gemm): 30.309
+TFLOPS (nn.Linear): 18.610
+TFLOPS (a @ b): 30.331
+TFLOPS (bmm): 56.361
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=2048, hidden_size=768, ffn_dim=512
+TFLOPS (grouped_gemm): 73.341
+TFLOPS (nn.Linear): 45.156
+TFLOPS (a @ b): 59.604
+TFLOPS (bmm): 95.154
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=2048, hidden_size=768, ffn_dim=1024
+TFLOPS (grouped_gemm): 94.600
+TFLOPS (nn.Linear): 78.435
+TFLOPS (a @ b): 90.470
+TFLOPS (bmm): 114.218
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=2048, hidden_size=768, ffn_dim=2048
+TFLOPS (grouped_gemm): 127.659
+TFLOPS (nn.Linear): 116.758
+TFLOPS (a @ b): 122.747
+TFLOPS (bmm): 116.849
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=2048, hidden_size=768, ffn_dim=4096
+TFLOPS (grouped_gemm): 162.879
+TFLOPS (nn.Linear): 151.158
+TFLOPS (a @ b): 153.995
+TFLOPS (bmm): 132.289
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=2048, hidden_size=768, ffn_dim=8192
+TFLOPS (grouped_gemm): 172.484
+TFLOPS (nn.Linear): 177.672
+TFLOPS (a @ b): 175.835
+TFLOPS (bmm): 129.682
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=2048, hidden_size=768, ffn_dim=14336
+TFLOPS (grouped_gemm): 177.707
+TFLOPS (nn.Linear): 184.361
+TFLOPS (a @ b): 182.561
+TFLOPS (bmm): 92.283
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=2048, hidden_size=4096, ffn_dim=256
+TFLOPS (grouped_gemm): 65.930
+TFLOPS (nn.Linear): 82.759
+TFLOPS (a @ b): 87.024
+TFLOPS (bmm): 108.547
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=2048, hidden_size=4096, ffn_dim=512
+TFLOPS (grouped_gemm): 140.973
+TFLOPS (nn.Linear): 122.194
+TFLOPS (a @ b): 125.317
+TFLOPS (bmm): 134.714
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=2048, hidden_size=4096, ffn_dim=1024
+TFLOPS (grouped_gemm): 158.084
+TFLOPS (nn.Linear): 164.534
+TFLOPS (a @ b): 165.093
+TFLOPS (bmm): 129.743
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=2048, hidden_size=4096, ffn_dim=2048
+TFLOPS (grouped_gemm): 182.868
+TFLOPS (nn.Linear): 190.810
+TFLOPS (a @ b): 190.408
+TFLOPS (bmm): 136.849
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=2048, hidden_size=4096, ffn_dim=4096
+TFLOPS (grouped_gemm): 202.363
+TFLOPS (nn.Linear): 202.981
+TFLOPS (a @ b): 202.394
+TFLOPS (bmm): 134.387
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=2048, hidden_size=4096, ffn_dim=8192
+TFLOPS (grouped_gemm): 213.392
+TFLOPS (nn.Linear): 205.482
+TFLOPS (a @ b): 204.738
+TFLOPS (bmm): 124.773
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=2048, hidden_size=4096, ffn_dim=14336
+TFLOPS (grouped_gemm): 213.776
+TFLOPS (nn.Linear): 210.467
+TFLOPS (a @ b): 211.451
+TFLOPS (bmm): 89.489
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=4096, hidden_size=128, ffn_dim=256
+TFLOPS (grouped_gemm): 16.343
+TFLOPS (nn.Linear): 7.021
+TFLOPS (a @ b): 12.964
+TFLOPS (bmm): 26.538
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=4096, hidden_size=128, ffn_dim=512
+TFLOPS (grouped_gemm): 23.851
+TFLOPS (nn.Linear): 11.701
+TFLOPS (a @ b): 21.245
+TFLOPS (bmm): 32.956
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=4096, hidden_size=128, ffn_dim=1024
+TFLOPS (grouped_gemm): 45.751
+TFLOPS (nn.Linear): 30.289
+TFLOPS (a @ b): 40.589
+TFLOPS (bmm): 44.919
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=4096, hidden_size=128, ffn_dim=2048
+TFLOPS (grouped_gemm): 62.552
+TFLOPS (nn.Linear): 51.432
+TFLOPS (a @ b): 55.833
+TFLOPS (bmm): 48.713
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=4096, hidden_size=128, ffn_dim=4096
+TFLOPS (grouped_gemm): 83.391
+TFLOPS (nn.Linear): 71.395
+TFLOPS (a @ b): 71.801
+TFLOPS (bmm): 55.524
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=4096, hidden_size=128, ffn_dim=8192
+TFLOPS (grouped_gemm): 95.519
+TFLOPS (nn.Linear): 82.012
+TFLOPS (a @ b): 81.658
+TFLOPS (bmm): 68.219
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=4096, hidden_size=128, ffn_dim=14336
+TFLOPS (grouped_gemm): 100.254
+TFLOPS (nn.Linear): 91.423
+TFLOPS (a @ b): 89.159
+TFLOPS (bmm): 58.794
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=4096, hidden_size=768, ffn_dim=256
+TFLOPS (grouped_gemm): 71.505
+TFLOPS (nn.Linear): 43.903
+TFLOPS (a @ b): 51.286
+TFLOPS (bmm): 87.739
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=4096, hidden_size=768, ffn_dim=512
+TFLOPS (grouped_gemm): 97.576
+TFLOPS (nn.Linear): 72.560
+TFLOPS (a @ b): 81.440
+TFLOPS (bmm): 108.576
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=4096, hidden_size=768, ffn_dim=1024
+TFLOPS (grouped_gemm): 131.981
+TFLOPS (nn.Linear): 117.006
+TFLOPS (a @ b): 122.643
+TFLOPS (bmm): 123.162
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=4096, hidden_size=768, ffn_dim=2048
+TFLOPS (grouped_gemm): 158.318
+TFLOPS (nn.Linear): 151.709
+TFLOPS (a @ b): 155.052
+TFLOPS (bmm): 122.531
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=4096, hidden_size=768, ffn_dim=4096
+TFLOPS (grouped_gemm): 184.103
+TFLOPS (nn.Linear): 183.795
+TFLOPS (a @ b): 183.701
+TFLOPS (bmm): 133.577
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=4096, hidden_size=768, ffn_dim=8192
+TFLOPS (grouped_gemm): 191.376
+TFLOPS (nn.Linear): 195.604
+TFLOPS (a @ b): 194.169
+TFLOPS (bmm): 130.259
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=4096, hidden_size=768, ffn_dim=14336
+TFLOPS (grouped_gemm): 195.006
+TFLOPS (nn.Linear): 202.876
+TFLOPS (a @ b): 201.310
+TFLOPS (bmm): 99.700
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=4096, hidden_size=4096, ffn_dim=256
+TFLOPS (grouped_gemm): 144.402
+TFLOPS (nn.Linear): 123.827
+TFLOPS (a @ b): 127.142
+TFLOPS (bmm): 125.963
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=4096, hidden_size=4096, ffn_dim=512
+TFLOPS (grouped_gemm): 144.989
+TFLOPS (nn.Linear): 150.980
+TFLOPS (a @ b): 153.578
+TFLOPS (bmm): 132.167
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=4096, hidden_size=4096, ffn_dim=1024
+TFLOPS (grouped_gemm): 197.871
+TFLOPS (nn.Linear): 196.062
+TFLOPS (a @ b): 196.296
+TFLOPS (bmm): 145.502
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=4096, hidden_size=4096, ffn_dim=2048
+TFLOPS (grouped_gemm): 217.248
+TFLOPS (nn.Linear): 208.670
+TFLOPS (a @ b): 208.417
+TFLOPS (bmm): 143.908
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=4096, hidden_size=4096, ffn_dim=4096
+TFLOPS (grouped_gemm): 219.360
+TFLOPS (nn.Linear): 220.225
+TFLOPS (a @ b): 218.371
+TFLOPS (bmm): 130.740
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=4096, hidden_size=4096, ffn_dim=8192
+TFLOPS (grouped_gemm): 230.235
+TFLOPS (nn.Linear): 224.608
+TFLOPS (a @ b): 223.711
+TFLOPS (bmm): 122.901
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=4096, hidden_size=4096, ffn_dim=14336
+TFLOPS (grouped_gemm): 221.702
+TFLOPS (nn.Linear): 223.622
+TFLOPS (a @ b): 223.906
+TFLOPS (bmm): 63.286
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=8192, hidden_size=128, ffn_dim=256
+TFLOPS (grouped_gemm): 26.366
+TFLOPS (nn.Linear): 13.385
+TFLOPS (a @ b): 23.170
+TFLOPS (bmm): 40.576
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=8192, hidden_size=128, ffn_dim=512
+TFLOPS (grouped_gemm): 42.500
+TFLOPS (nn.Linear): 26.706
+TFLOPS (a @ b): 40.082
+TFLOPS (bmm): 50.081
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=8192, hidden_size=128, ffn_dim=1024
+TFLOPS (grouped_gemm): 62.526
+TFLOPS (nn.Linear): 51.490
+TFLOPS (a @ b): 55.885
+TFLOPS (bmm): 59.845
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=8192, hidden_size=128, ffn_dim=2048
+TFLOPS (grouped_gemm): 80.151
+TFLOPS (nn.Linear): 67.419
+TFLOPS (a @ b): 69.759
+TFLOPS (bmm): 62.815
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=8192, hidden_size=128, ffn_dim=4096
+TFLOPS (grouped_gemm): 96.577
+TFLOPS (nn.Linear): 82.655
+TFLOPS (a @ b): 82.978
+TFLOPS (bmm): 64.522
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=8192, hidden_size=128, ffn_dim=8192
+TFLOPS (grouped_gemm): 106.966
+TFLOPS (nn.Linear): 90.460
+TFLOPS (a @ b): 88.952
+TFLOPS (bmm): 70.047
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=8192, hidden_size=128, ffn_dim=14336
+TFLOPS (grouped_gemm): 107.266
+TFLOPS (nn.Linear): 96.481
+TFLOPS (a @ b): 95.011
+TFLOPS (bmm): 58.877
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=8192, hidden_size=768, ffn_dim=256
+TFLOPS (grouped_gemm): 92.518
+TFLOPS (nn.Linear): 74.996
+TFLOPS (a @ b): 80.273
+TFLOPS (bmm): 107.745
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=8192, hidden_size=768, ffn_dim=512
+TFLOPS (grouped_gemm): 135.478
+TFLOPS (nn.Linear): 117.668
+TFLOPS (a @ b): 122.792
+TFLOPS (bmm): 124.931
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=8192, hidden_size=768, ffn_dim=1024
+TFLOPS (grouped_gemm): 169.762
+TFLOPS (nn.Linear): 151.390
+TFLOPS (a @ b): 155.512
+TFLOPS (bmm): 123.287
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=8192, hidden_size=768, ffn_dim=2048
+TFLOPS (grouped_gemm): 186.257
+TFLOPS (nn.Linear): 183.470
+TFLOPS (a @ b): 183.222
+TFLOPS (bmm): 128.120
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=8192, hidden_size=768, ffn_dim=4096
+TFLOPS (grouped_gemm): 194.588
+TFLOPS (nn.Linear): 199.540
+TFLOPS (a @ b): 198.034
+TFLOPS (bmm): 115.659
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=8192, hidden_size=768, ffn_dim=8192
+TFLOPS (grouped_gemm): 202.984
+TFLOPS (nn.Linear): 209.605
+TFLOPS (a @ b): 207.343
+TFLOPS (bmm): 133.637
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=8192, hidden_size=768, ffn_dim=14336
+TFLOPS (grouped_gemm): 202.736
+TFLOPS (nn.Linear): 208.904
+TFLOPS (a @ b): 209.621
+TFLOPS (bmm): 100.180
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=8192, hidden_size=4096, ffn_dim=256
+TFLOPS (grouped_gemm): 165.817
+TFLOPS (nn.Linear): 151.874
+TFLOPS (a @ b): 153.905
+TFLOPS (bmm): 131.941
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=8192, hidden_size=4096, ffn_dim=512
+TFLOPS (grouped_gemm): 192.480
+TFLOPS (nn.Linear): 179.210
+TFLOPS (a @ b): 179.915
+TFLOPS (bmm): 130.079
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=8192, hidden_size=4096, ffn_dim=1024
+TFLOPS (grouped_gemm): 225.740
+TFLOPS (nn.Linear): 211.275
+TFLOPS (a @ b): 210.367
+TFLOPS (bmm): 149.235
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=8192, hidden_size=4096, ffn_dim=2048
+TFLOPS (grouped_gemm): 230.495
+TFLOPS (nn.Linear): 223.671
+TFLOPS (a @ b): 221.272
+TFLOPS (bmm): 135.931
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=8192, hidden_size=4096, ffn_dim=4096
+TFLOPS (grouped_gemm): 237.509
+TFLOPS (nn.Linear): 230.326
+TFLOPS (a @ b): 230.860
+TFLOPS (bmm): 142.451
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=8192, hidden_size=4096, ffn_dim=8192
+TFLOPS (grouped_gemm): 238.109
+TFLOPS (nn.Linear): 236.593
+TFLOPS (a @ b): 236.623
+TFLOPS (bmm): 115.686
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=8192, hidden_size=4096, ffn_dim=14336
+TFLOPS (grouped_gemm): 232.223
+TFLOPS (nn.Linear): 228.914
+TFLOPS (a @ b): 229.139
+TFLOPS (bmm): 72.914
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=12288, hidden_size=128, ffn_dim=256
+TFLOPS (grouped_gemm): 35.522
+TFLOPS (nn.Linear): 21.353
+TFLOPS (a @ b): 34.003
+TFLOPS (bmm): 44.241
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=12288, hidden_size=128, ffn_dim=512
+TFLOPS (grouped_gemm): 56.837
+TFLOPS (nn.Linear): 44.757
+TFLOPS (a @ b): 51.593
+TFLOPS (bmm): 59.435
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=12288, hidden_size=128, ffn_dim=1024
+TFLOPS (grouped_gemm): 75.828
+TFLOPS (nn.Linear): 64.430
+TFLOPS (a @ b): 66.798
+TFLOPS (bmm): 66.957
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=12288, hidden_size=128, ffn_dim=2048
+TFLOPS (grouped_gemm): 94.270
+TFLOPS (nn.Linear): 78.383
+TFLOPS (a @ b): 80.096
+TFLOPS (bmm): 67.758
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=12288, hidden_size=128, ffn_dim=4096
+TFLOPS (grouped_gemm): 105.146
+TFLOPS (nn.Linear): 88.070
+TFLOPS (a @ b): 87.603
+TFLOPS (bmm): 69.485
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=12288, hidden_size=128, ffn_dim=8192
+TFLOPS (grouped_gemm): 110.072
+TFLOPS (nn.Linear): 91.917
+TFLOPS (a @ b): 90.765
+TFLOPS (bmm): 64.329
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=12288, hidden_size=128, ffn_dim=14336
+TFLOPS (grouped_gemm): 110.778
+TFLOPS (nn.Linear): 96.852
+TFLOPS (a @ b): 96.066
+TFLOPS (bmm): 60.738
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=12288, hidden_size=768, ffn_dim=256
+TFLOPS (grouped_gemm): 114.472
+TFLOPS (nn.Linear): 93.352
+TFLOPS (a @ b): 99.306
+TFLOPS (bmm): 111.358
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=12288, hidden_size=768, ffn_dim=512
+TFLOPS (grouped_gemm): 154.539
+TFLOPS (nn.Linear): 137.812
+TFLOPS (a @ b): 141.222
+TFLOPS (bmm): 117.101
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=12288, hidden_size=768, ffn_dim=1024
+TFLOPS (grouped_gemm): 177.376
+TFLOPS (nn.Linear): 162.258
+TFLOPS (a @ b): 165.572
+TFLOPS (bmm): 122.920
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=12288, hidden_size=768, ffn_dim=2048
+TFLOPS (grouped_gemm): 195.928
+TFLOPS (nn.Linear): 196.646
+TFLOPS (a @ b): 195.689
+TFLOPS (bmm): 122.194
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=12288, hidden_size=768, ffn_dim=4096
+TFLOPS (grouped_gemm): 203.523
+TFLOPS (nn.Linear): 209.332
+TFLOPS (a @ b): 208.455
+TFLOPS (bmm): 134.057
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=12288, hidden_size=768, ffn_dim=8192
+TFLOPS (grouped_gemm): 207.385
+TFLOPS (nn.Linear): 213.547
+TFLOPS (a @ b): 211.129
+TFLOPS (bmm): 127.159
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=12288, hidden_size=768, ffn_dim=14336
+TFLOPS (grouped_gemm): 205.017
+TFLOPS (nn.Linear): 215.262
+TFLOPS (a @ b): 214.265
+TFLOPS (bmm): 108.410
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=12288, hidden_size=4096, ffn_dim=256
+TFLOPS (grouped_gemm): 189.177
+TFLOPS (nn.Linear): 171.883
+TFLOPS (a @ b): 172.048
+TFLOPS (bmm): 140.245
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=12288, hidden_size=4096, ffn_dim=512
+TFLOPS (grouped_gemm): 219.501
+TFLOPS (nn.Linear): 198.012
+TFLOPS (a @ b): 197.033
+TFLOPS (bmm): 138.238
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=12288, hidden_size=4096, ffn_dim=1024
+TFLOPS (grouped_gemm): 225.449
+TFLOPS (nn.Linear): 215.767
+TFLOPS (a @ b): 215.022
+TFLOPS (bmm): 135.427
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=12288, hidden_size=4096, ffn_dim=2048
+TFLOPS (grouped_gemm): 240.102
+TFLOPS (nn.Linear): 229.012
+TFLOPS (a @ b): 229.267
+TFLOPS (bmm): 149.920
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=12288, hidden_size=4096, ffn_dim=4096
+TFLOPS (grouped_gemm): 240.508
+TFLOPS (nn.Linear): 233.293
+TFLOPS (a @ b): 234.079
+TFLOPS (bmm): 141.021
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=12288, hidden_size=4096, ffn_dim=8192
+TFLOPS (grouped_gemm): 241.681
+TFLOPS (nn.Linear): 240.353
+TFLOPS (a @ b): 240.470
+TFLOPS (bmm): 112.707
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=12288, hidden_size=4096, ffn_dim=14336
+TFLOPS (grouped_gemm): 233.179
+TFLOPS (nn.Linear): 230.874
+TFLOPS (a @ b): 230.907
+TFLOPS (bmm): 63.568
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=16384, hidden_size=128, ffn_dim=256
+TFLOPS (grouped_gemm): 40.220
+TFLOPS (nn.Linear): 26.274
+TFLOPS (a @ b): 38.266
+TFLOPS (bmm): 47.325
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=16384, hidden_size=128, ffn_dim=512
+TFLOPS (grouped_gemm): 60.981
+TFLOPS (nn.Linear): 51.375
+TFLOPS (a @ b): 57.425
+TFLOPS (bmm): 55.911
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=16384, hidden_size=128, ffn_dim=1024
+TFLOPS (grouped_gemm): 78.201
+TFLOPS (nn.Linear): 68.589
+TFLOPS (a @ b): 70.744
+TFLOPS (bmm): 60.907
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=16384, hidden_size=128, ffn_dim=2048
+TFLOPS (grouped_gemm): 97.319
+TFLOPS (nn.Linear): 79.510
+TFLOPS (a @ b): 80.754
+TFLOPS (bmm): 64.256
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=16384, hidden_size=128, ffn_dim=4096
+TFLOPS (grouped_gemm): 107.448
+TFLOPS (nn.Linear): 89.970
+TFLOPS (a @ b): 89.561
+TFLOPS (bmm): 69.530
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=16384, hidden_size=128, ffn_dim=8192
+TFLOPS (grouped_gemm): 111.389
+TFLOPS (nn.Linear): 92.707
+TFLOPS (a @ b): 91.907
+TFLOPS (bmm): 62.790
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=16384, hidden_size=128, ffn_dim=14336
+TFLOPS (grouped_gemm): 112.088
+TFLOPS (nn.Linear): 97.092
+TFLOPS (a @ b): 96.141
+TFLOPS (bmm): 68.116
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=16384, hidden_size=768, ffn_dim=256
+TFLOPS (grouped_gemm): 134.975
+TFLOPS (nn.Linear): 114.199
+TFLOPS (a @ b): 118.563
+TFLOPS (bmm): 115.580
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=16384, hidden_size=768, ffn_dim=512
+TFLOPS (grouped_gemm): 161.144
+TFLOPS (nn.Linear): 150.146
+TFLOPS (a @ b): 152.321
+TFLOPS (bmm): 111.425
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=16384, hidden_size=768, ffn_dim=1024
+TFLOPS (grouped_gemm): 187.860
+TFLOPS (nn.Linear): 171.319
+TFLOPS (a @ b): 174.174
+TFLOPS (bmm): 118.319
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=16384, hidden_size=768, ffn_dim=2048
+TFLOPS (grouped_gemm): 201.357
+TFLOPS (nn.Linear): 202.960
+TFLOPS (a @ b): 201.348
+TFLOPS (bmm): 135.397
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=16384, hidden_size=768, ffn_dim=4096
+TFLOPS (grouped_gemm): 205.987
+TFLOPS (nn.Linear): 211.595
+TFLOPS (a @ b): 209.563
+TFLOPS (bmm): 126.808
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=16384, hidden_size=768, ffn_dim=8192
+TFLOPS (grouped_gemm): 208.881
+TFLOPS (nn.Linear): 214.526
+TFLOPS (a @ b): 214.093
+TFLOPS (bmm): 119.841
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=16384, hidden_size=768, ffn_dim=14336
+TFLOPS (grouped_gemm): 206.370
+TFLOPS (nn.Linear): 215.253
+TFLOPS (a @ b): 215.318
+TFLOPS (bmm): 115.460
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=16384, hidden_size=4096, ffn_dim=256
+TFLOPS (grouped_gemm): 190.772
+TFLOPS (nn.Linear): 175.669
+TFLOPS (a @ b): 175.022
+TFLOPS (bmm): 133.026
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=16384, hidden_size=4096, ffn_dim=512
+TFLOPS (grouped_gemm): 215.768
+TFLOPS (nn.Linear): 202.486
+TFLOPS (a @ b): 202.444
+TFLOPS (bmm): 141.385
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=16384, hidden_size=4096, ffn_dim=1024
+TFLOPS (grouped_gemm): 233.003
+TFLOPS (nn.Linear): 216.897
+TFLOPS (a @ b): 215.823
+TFLOPS (bmm): 142.577
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=16384, hidden_size=4096, ffn_dim=2048
+TFLOPS (grouped_gemm): 243.202
+TFLOPS (nn.Linear): 231.309
+TFLOPS (a @ b): 232.649
+TFLOPS (bmm): 145.597
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=16384, hidden_size=4096, ffn_dim=4096
+TFLOPS (grouped_gemm): 245.841
+TFLOPS (nn.Linear): 239.023
+TFLOPS (a @ b): 239.131
+TFLOPS (bmm): 153.533
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=16384, hidden_size=4096, ffn_dim=8192
+TFLOPS (grouped_gemm): 241.277
+TFLOPS (nn.Linear): 241.888
+TFLOPS (a @ b): 241.950
+TFLOPS (bmm): 108.262
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=16384, hidden_size=4096, ffn_dim=14336
+TFLOPS (grouped_gemm): 235.827
+TFLOPS (nn.Linear): 231.664
+TFLOPS (a @ b): 231.730
+TFLOPS (bmm): 77.852
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=20480, hidden_size=128, ffn_dim=256
+TFLOPS (grouped_gemm): 48.474
+TFLOPS (nn.Linear): 34.867
+TFLOPS (a @ b): 45.028
+TFLOPS (bmm): 51.637
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=20480, hidden_size=128, ffn_dim=512
+TFLOPS (grouped_gemm): 69.230
+TFLOPS (nn.Linear): 61.364
+TFLOPS (a @ b): 64.310
+TFLOPS (bmm): 63.663
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=20480, hidden_size=128, ffn_dim=1024
+TFLOPS (grouped_gemm): 86.641
+TFLOPS (nn.Linear): 74.017
+TFLOPS (a @ b): 76.919
+TFLOPS (bmm): 64.927
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=20480, hidden_size=128, ffn_dim=2048
+TFLOPS (grouped_gemm): 103.426
+TFLOPS (nn.Linear): 84.175
+TFLOPS (a @ b): 84.819
+TFLOPS (bmm): 68.779
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=20480, hidden_size=128, ffn_dim=4096
+TFLOPS (grouped_gemm): 109.380
+TFLOPS (nn.Linear): 90.830
+TFLOPS (a @ b): 90.178
+TFLOPS (bmm): 64.413
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=20480, hidden_size=128, ffn_dim=8192
+TFLOPS (grouped_gemm): 113.174
+TFLOPS (nn.Linear): 94.359
+TFLOPS (a @ b): 93.560
+TFLOPS (bmm): 71.928
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=20480, hidden_size=128, ffn_dim=14336
+TFLOPS (grouped_gemm): 112.770
+TFLOPS (nn.Linear): 97.957
+TFLOPS (a @ b): 97.540
+TFLOPS (bmm): 62.278
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=20480, hidden_size=768, ffn_dim=256
+TFLOPS (grouped_gemm): 146.407
+TFLOPS (nn.Linear): 129.801
+TFLOPS (a @ b): 134.003
+TFLOPS (bmm): 125.937
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=20480, hidden_size=768, ffn_dim=512
+TFLOPS (grouped_gemm): 174.428
+TFLOPS (nn.Linear): 162.975
+TFLOPS (a @ b): 164.509
+TFLOPS (bmm): 119.024
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=20480, hidden_size=768, ffn_dim=1024
+TFLOPS (grouped_gemm): 194.325
+TFLOPS (nn.Linear): 176.421
+TFLOPS (a @ b): 179.208
+TFLOPS (bmm): 126.721
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=20480, hidden_size=768, ffn_dim=2048
+TFLOPS (grouped_gemm): 203.349
+TFLOPS (nn.Linear): 206.257
+TFLOPS (a @ b): 203.981
+TFLOPS (bmm): 125.839
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=20480, hidden_size=768, ffn_dim=4096
+TFLOPS (grouped_gemm): 209.708
+TFLOPS (nn.Linear): 214.885
+TFLOPS (a @ b): 213.669
+TFLOPS (bmm): 138.270
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=20480, hidden_size=768, ffn_dim=8192
+TFLOPS (grouped_gemm): 212.105
+TFLOPS (nn.Linear): 218.242
+TFLOPS (a @ b): 218.398
+TFLOPS (bmm): 132.575
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=20480, hidden_size=768, ffn_dim=14336
+TFLOPS (grouped_gemm): 207.525
+TFLOPS (nn.Linear): 215.997
+TFLOPS (a @ b): 215.891
+TFLOPS (bmm): 102.679
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=20480, hidden_size=4096, ffn_dim=256
+TFLOPS (grouped_gemm): 198.291
+TFLOPS (nn.Linear): 180.134
+TFLOPS (a @ b): 179.193
+TFLOPS (bmm): 131.065
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=20480, hidden_size=4096, ffn_dim=512
+TFLOPS (grouped_gemm): 222.035
+TFLOPS (nn.Linear): 209.229
+TFLOPS (a @ b): 208.157
+TFLOPS (bmm): 151.888
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=20480, hidden_size=4096, ffn_dim=1024
+TFLOPS (grouped_gemm): 240.084
+TFLOPS (nn.Linear): 220.399
+TFLOPS (a @ b): 220.699
+TFLOPS (bmm): 158.882
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=20480, hidden_size=4096, ffn_dim=2048
+TFLOPS (grouped_gemm): 244.718
+TFLOPS (nn.Linear): 234.023
+TFLOPS (a @ b): 234.346
+TFLOPS (bmm): 148.423
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=20480, hidden_size=4096, ffn_dim=4096
+TFLOPS (grouped_gemm): 247.038
+TFLOPS (nn.Linear): 239.959
+TFLOPS (a @ b): 240.023
+TFLOPS (bmm): 142.577
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=20480, hidden_size=4096, ffn_dim=8192
+TFLOPS (grouped_gemm): 243.398
+TFLOPS (nn.Linear): 244.704
+TFLOPS (a @ b): 244.735
+TFLOPS (bmm): 119.294
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=20480, hidden_size=4096, ffn_dim=14336
+TFLOPS (grouped_gemm): 236.193
+TFLOPS (nn.Linear): 232.850
+TFLOPS (a @ b): 232.863
+TFLOPS (bmm): 76.436
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=24576, hidden_size=128, ffn_dim=256
+TFLOPS (grouped_gemm): 50.195
+TFLOPS (nn.Linear): 38.460
+TFLOPS (a @ b): 47.338
+TFLOPS (bmm): 51.980
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=24576, hidden_size=128, ffn_dim=512
+TFLOPS (grouped_gemm): 72.436
+TFLOPS (nn.Linear): 62.497
+TFLOPS (a @ b): 66.001
+TFLOPS (bmm): 63.112
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=24576, hidden_size=128, ffn_dim=1024
+TFLOPS (grouped_gemm): 89.901
+TFLOPS (nn.Linear): 76.535
+TFLOPS (a @ b): 78.062
+TFLOPS (bmm): 65.159
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=24576, hidden_size=128, ffn_dim=2048
+TFLOPS (grouped_gemm): 104.576
+TFLOPS (nn.Linear): 84.641
+TFLOPS (a @ b): 84.922
+TFLOPS (bmm): 63.550
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=24576, hidden_size=128, ffn_dim=4096
+TFLOPS (grouped_gemm): 111.703
+TFLOPS (nn.Linear): 92.666
+TFLOPS (a @ b): 91.880
+TFLOPS (bmm): 71.030
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=24576, hidden_size=128, ffn_dim=8192
+TFLOPS (grouped_gemm): 113.523
+TFLOPS (nn.Linear): 95.116
+TFLOPS (a @ b): 94.114
+TFLOPS (bmm): 67.766
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=24576, hidden_size=128, ffn_dim=14336
+TFLOPS (grouped_gemm): 113.093
+TFLOPS (nn.Linear): 98.332
+TFLOPS (a @ b): 98.021
+TFLOPS (bmm): 62.020
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=24576, hidden_size=768, ffn_dim=256
+TFLOPS (grouped_gemm): 145.461
+TFLOPS (nn.Linear): 129.771
+TFLOPS (a @ b): 134.164
+TFLOPS (bmm): 117.901
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=24576, hidden_size=768, ffn_dim=512
+TFLOPS (grouped_gemm): 185.954
+TFLOPS (nn.Linear): 173.651
+TFLOPS (a @ b): 173.077
+TFLOPS (bmm): 135.057
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=24576, hidden_size=768, ffn_dim=1024
+TFLOPS (grouped_gemm): 200.196
+TFLOPS (nn.Linear): 185.632
+TFLOPS (a @ b): 187.113
+TFLOPS (bmm): 133.268
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=24576, hidden_size=768, ffn_dim=2048
+TFLOPS (grouped_gemm): 208.187
+TFLOPS (nn.Linear): 209.674
+TFLOPS (a @ b): 208.866
+TFLOPS (bmm): 139.269
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=24576, hidden_size=768, ffn_dim=4096
+TFLOPS (grouped_gemm): 210.514
+TFLOPS (nn.Linear): 216.186
+TFLOPS (a @ b): 214.871
+TFLOPS (bmm): 134.432
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=24576, hidden_size=768, ffn_dim=8192
+TFLOPS (grouped_gemm): 211.665
+TFLOPS (nn.Linear): 217.889
+TFLOPS (a @ b): 218.482
+TFLOPS (bmm): 118.618
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=24576, hidden_size=768, ffn_dim=14336
+TFLOPS (grouped_gemm): 208.498
+TFLOPS (nn.Linear): 216.242
+TFLOPS (a @ b): 216.173
+TFLOPS (bmm): 112.268
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=24576, hidden_size=4096, ffn_dim=256
+TFLOPS (grouped_gemm): 202.363
+TFLOPS (nn.Linear): 182.012
+TFLOPS (a @ b): 181.952
+TFLOPS (bmm): 122.990
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=24576, hidden_size=4096, ffn_dim=512
+TFLOPS (grouped_gemm): 227.911
+TFLOPS (nn.Linear): 212.005
+TFLOPS (a @ b): 211.406
+TFLOPS (bmm): 139.102
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=24576, hidden_size=4096, ffn_dim=1024
+TFLOPS (grouped_gemm): 238.752
+TFLOPS (nn.Linear): 222.665
+TFLOPS (a @ b): 223.449
+TFLOPS (bmm): 152.558
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=24576, hidden_size=4096, ffn_dim=2048
+TFLOPS (grouped_gemm): 245.842
+TFLOPS (nn.Linear): 235.832
+TFLOPS (a @ b): 236.256
+TFLOPS (bmm): 148.008
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=24576, hidden_size=4096, ffn_dim=4096
+TFLOPS (grouped_gemm): 249.726
+TFLOPS (nn.Linear): 242.587
+TFLOPS (a @ b): 242.628
+TFLOPS (bmm): 162.425
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=24576, hidden_size=4096, ffn_dim=8192
+TFLOPS (grouped_gemm): 242.656
+TFLOPS (nn.Linear): 245.096
+TFLOPS (a @ b): 245.140
+TFLOPS (bmm): 104.729
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=24576, hidden_size=4096, ffn_dim=14336
+TFLOPS (grouped_gemm): 236.055
+TFLOPS (nn.Linear): 233.515
+TFLOPS (a @ b): 233.566
+TFLOPS (bmm): 72.427
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=28672, hidden_size=128, ffn_dim=256
+TFLOPS (grouped_gemm): 53.776
+TFLOPS (nn.Linear): 42.178
+TFLOPS (a @ b): 51.300
+TFLOPS (bmm): 52.817
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=28672, hidden_size=128, ffn_dim=512
+TFLOPS (grouped_gemm): 75.217
+TFLOPS (nn.Linear): 64.712
+TFLOPS (a @ b): 68.040
+TFLOPS (bmm): 65.896
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=28672, hidden_size=128, ffn_dim=1024
+TFLOPS (grouped_gemm): 93.552
+TFLOPS (nn.Linear): 78.938
+TFLOPS (a @ b): 80.243
+TFLOPS (bmm): 67.752
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=28672, hidden_size=128, ffn_dim=2048
+TFLOPS (grouped_gemm): 107.518
+TFLOPS (nn.Linear): 86.985
+TFLOPS (a @ b): 87.027
+TFLOPS (bmm): 64.007
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=28672, hidden_size=128, ffn_dim=4096
+TFLOPS (grouped_gemm): 112.269
+TFLOPS (nn.Linear): 93.034
+TFLOPS (a @ b): 92.433
+TFLOPS (bmm): 72.353
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=28672, hidden_size=128, ffn_dim=8192
+TFLOPS (grouped_gemm): 114.495
+TFLOPS (nn.Linear): 95.285
+TFLOPS (a @ b): 94.766
+TFLOPS (bmm): 70.819
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=28672, hidden_size=128, ffn_dim=14336
+TFLOPS (grouped_gemm): 113.606
+TFLOPS (nn.Linear): 98.788
+TFLOPS (a @ b): 98.640
+TFLOPS (bmm): 63.611
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=28672, hidden_size=768, ffn_dim=256
+TFLOPS (grouped_gemm): 157.205
+TFLOPS (nn.Linear): 143.364
+TFLOPS (a @ b): 146.200
+TFLOPS (bmm): 123.677
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=28672, hidden_size=768, ffn_dim=512
+TFLOPS (grouped_gemm): 186.068
+TFLOPS (nn.Linear): 176.422
+TFLOPS (a @ b): 175.789
+TFLOPS (bmm): 128.596
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=28672, hidden_size=768, ffn_dim=1024
+TFLOPS (grouped_gemm): 199.948
+TFLOPS (nn.Linear): 186.426
+TFLOPS (a @ b): 187.470
+TFLOPS (bmm): 130.437
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=28672, hidden_size=768, ffn_dim=2048
+TFLOPS (grouped_gemm): 206.843
+TFLOPS (nn.Linear): 209.810
+TFLOPS (a @ b): 208.494
+TFLOPS (bmm): 121.958
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=28672, hidden_size=768, ffn_dim=4096
+TFLOPS (grouped_gemm): 209.917
+TFLOPS (nn.Linear): 216.129
+TFLOPS (a @ b): 214.774
+TFLOPS (bmm): 118.776
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=28672, hidden_size=768, ffn_dim=8192
+TFLOPS (grouped_gemm): 212.784
+TFLOPS (nn.Linear): 219.779
+TFLOPS (a @ b): 220.220
+TFLOPS (bmm): 131.234
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=28672, hidden_size=768, ffn_dim=14336
+TFLOPS (grouped_gemm): 209.202
+TFLOPS (nn.Linear): 217.105
+TFLOPS (a @ b): 217.021
+TFLOPS (bmm): 105.623
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=28672, hidden_size=4096, ffn_dim=256
+TFLOPS (grouped_gemm): 208.431
+TFLOPS (nn.Linear): 188.187
+TFLOPS (a @ b): 188.415
+TFLOPS (bmm): 126.408
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=28672, hidden_size=4096, ffn_dim=512
+TFLOPS (grouped_gemm): 229.761
+TFLOPS (nn.Linear): 215.250
+TFLOPS (a @ b): 215.742
+TFLOPS (bmm): 146.493
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=28672, hidden_size=4096, ffn_dim=1024
+TFLOPS (grouped_gemm): 239.367
+TFLOPS (nn.Linear): 225.962
+TFLOPS (a @ b): 227.354
+TFLOPS (bmm): 144.455
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=28672, hidden_size=4096, ffn_dim=2048
+TFLOPS (grouped_gemm): 245.600
+TFLOPS (nn.Linear): 237.214
+TFLOPS (a @ b): 237.489
+TFLOPS (bmm): 139.306
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=28672, hidden_size=4096, ffn_dim=4096
+TFLOPS (grouped_gemm): 247.715
+TFLOPS (nn.Linear): 242.986
+TFLOPS (a @ b): 243.154
+TFLOPS (bmm): 138.677
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=28672, hidden_size=4096, ffn_dim=8192
+TFLOPS (grouped_gemm): 243.328
+TFLOPS (nn.Linear): 245.812
+TFLOPS (a @ b): 245.931
+TFLOPS (bmm): 122.136
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=28672, hidden_size=4096, ffn_dim=14336
+TFLOPS (grouped_gemm): 235.087
+TFLOPS (nn.Linear): 233.986
+TFLOPS (a @ b): 233.967
+TFLOPS (bmm): 61.466
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=32768, hidden_size=128, ffn_dim=256
+TFLOPS (grouped_gemm): 59.178
+TFLOPS (nn.Linear): 48.774
+TFLOPS (a @ b): 55.388
+TFLOPS (bmm): 53.607
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=32768, hidden_size=128, ffn_dim=512
+TFLOPS (grouped_gemm): 77.838
+TFLOPS (nn.Linear): 66.810
+TFLOPS (a @ b): 69.751
+TFLOPS (bmm): 57.274
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=32768, hidden_size=128, ffn_dim=1024
+TFLOPS (grouped_gemm): 95.513
+TFLOPS (nn.Linear): 81.140
+TFLOPS (a @ b): 82.483
+TFLOPS (bmm): 65.258
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=32768, hidden_size=128, ffn_dim=2048
+TFLOPS (grouped_gemm): 108.252
+TFLOPS (nn.Linear): 87.629
+TFLOPS (a @ b): 87.630
+TFLOPS (bmm): 65.642
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=32768, hidden_size=128, ffn_dim=4096
+TFLOPS (grouped_gemm): 112.406
+TFLOPS (nn.Linear): 93.275
+TFLOPS (a @ b): 92.832
+TFLOPS (bmm): 66.687
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=32768, hidden_size=128, ffn_dim=8192
+TFLOPS (grouped_gemm): 113.928
+TFLOPS (nn.Linear): 95.591
+TFLOPS (a @ b): 95.246
+TFLOPS (bmm): 64.407
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=32768, hidden_size=128, ffn_dim=14336
+TFLOPS (grouped_gemm): 113.290
+TFLOPS (nn.Linear): 98.614
+TFLOPS (a @ b): 98.650
+TFLOPS (bmm): 60.664
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=32768, hidden_size=768, ffn_dim=256
+TFLOPS (grouped_gemm): 157.682
+TFLOPS (nn.Linear): 141.669
+TFLOPS (a @ b): 144.498
+TFLOPS (bmm): 120.060
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=32768, hidden_size=768, ffn_dim=512
+TFLOPS (grouped_gemm): 189.122
+TFLOPS (nn.Linear): 178.957
+TFLOPS (a @ b): 177.456
+TFLOPS (bmm): 123.136
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=32768, hidden_size=768, ffn_dim=1024
+TFLOPS (grouped_gemm): 199.886
+TFLOPS (nn.Linear): 187.890
+TFLOPS (a @ b): 189.224
+TFLOPS (bmm): 121.324
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=32768, hidden_size=768, ffn_dim=2048
+TFLOPS (grouped_gemm): 210.949
+TFLOPS (nn.Linear): 212.441
+TFLOPS (a @ b): 211.232
+TFLOPS (bmm): 145.858
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=32768, hidden_size=768, ffn_dim=4096
+TFLOPS (grouped_gemm): 212.599
+TFLOPS (nn.Linear): 218.306
+TFLOPS (a @ b): 218.318
+TFLOPS (bmm): 136.725
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=32768, hidden_size=768, ffn_dim=8192
+TFLOPS (grouped_gemm): 213.674
+TFLOPS (nn.Linear): 221.155
+TFLOPS (a @ b): 221.518
+TFLOPS (bmm): 127.519
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=32768, hidden_size=768, ffn_dim=14336
+TFLOPS (grouped_gemm): 211.328
+TFLOPS (nn.Linear): 217.953
+TFLOPS (a @ b): 217.933
+TFLOPS (bmm): 127.695
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=32768, hidden_size=4096, ffn_dim=256
+TFLOPS (grouped_gemm): 210.678
+TFLOPS (nn.Linear): 192.332
+TFLOPS (a @ b): 192.660
+TFLOPS (bmm): 128.383
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=32768, hidden_size=4096, ffn_dim=512
+TFLOPS (grouped_gemm): 231.953
+TFLOPS (nn.Linear): 219.545
+TFLOPS (a @ b): 218.659
+TFLOPS (bmm): 141.718
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=32768, hidden_size=4096, ffn_dim=1024
+TFLOPS (grouped_gemm): 241.506
+TFLOPS (nn.Linear): 227.440
+TFLOPS (a @ b): 227.661
+TFLOPS (bmm): 141.968
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=32768, hidden_size=4096, ffn_dim=2048
+TFLOPS (grouped_gemm): 247.694
+TFLOPS (nn.Linear): 240.005
+TFLOPS (a @ b): 240.114
+TFLOPS (bmm): 146.321
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=32768, hidden_size=4096, ffn_dim=4096
+TFLOPS (grouped_gemm): 249.315
+TFLOPS (nn.Linear): 243.166
+TFLOPS (a @ b): 243.285
+TFLOPS (bmm): 146.506
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=32768, hidden_size=4096, ffn_dim=8192
+TFLOPS (grouped_gemm): 242.864
+TFLOPS (nn.Linear): 246.832
+TFLOPS (a @ b): 246.907
+TFLOPS (bmm): 111.618
+
+--------------------------------------------------
+
+Parameters: batch_size=1, sequence_length=32768, hidden_size=4096, ffn_dim=14336
+TFLOPS (grouped_gemm): 237.656
+TFLOPS (nn.Linear): 234.255
+TFLOPS (a @ b): 234.308
+TFLOPS (bmm): 83.590
+
+--------------------------------------------------
+

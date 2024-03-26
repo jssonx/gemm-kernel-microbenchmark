@@ -68,33 +68,9 @@ class TestModule(torch.nn.Module):
             bmm_end_time = time.time()
             bmm_avg_time = (bmm_end_time - bmm_start_time) / iterations
             
-            print(f"Iterations: {iterations}")
-            print(f"Max memory allocated: {torch.cuda.max_memory_allocated() / 1024**2:.2f} MB")
-            print(f"Max memory reserved: {torch.cuda.max_memory_reserved() / 1024**2:.2f} MB")
-            print(f"Average grouped_gemm time: {grouped_avg_time * 1e6:.3f} μs")
-            print("\n======================")
-            print(f"Average nn.Linear time: {linear_avg_time * 1e6:.3f} μs")
-            print(f"Average a @ b time: {a_b_avg_time * 1e6:.3f} μs")
-            print(f"Average bmm time: {bmm_avg_time * 1e6:.3f} μs")
-            print("\n======================")
-            print(f"Speedup (nn.Linear / grouped_gemm): {linear_avg_time / grouped_avg_time:.3f}")
-            print(f"Speedup (a @ b / grouped_gemm): {a_b_avg_time / grouped_avg_time:.3f}")
-            print(f"Speedup (bmm / grouped_gemm): {bmm_avg_time / grouped_avg_time:.3f}")
-            # compute flops for each gemm operation
-            print("\n======================")
-            
             total_flops = sum(2 * h.shape[0] * h.shape[1] * w.shape[1] for h, w in zip(hidden_states_list, weights))
-            tflops_grouped_gemm = total_flops / (grouped_avg_time * 1e12)
-            tflops_linear = total_flops / (linear_avg_time * 1e12)
-            tflops_a_b = total_flops / (a_b_avg_time * 1e12)
-            tflops_bmm = total_flops / (bmm_avg_time * 1e12)
             
-            print(f"TFLOPS (grouped_gemm): {tflops_grouped_gemm:.3f}")
-            print(f"TFLOPS (nn.Linear): {tflops_linear:.3f}")
-            print(f"TFLOPS (a @ b): {tflops_a_b:.3f}")
-            print(f"TFLOPS (bmm): {tflops_bmm:.3f}")
-        
-            return C1, C2, C3, C4
+            return total_flops, grouped_avg_time, linear_avg_time, a_b_avg_time, bmm_avg_time
 
 def benchmark(batch_size, sequence_length, hidden_size, ffn_dim):
     num_hidden_states = 8
@@ -106,21 +82,46 @@ def benchmark(batch_size, sequence_length, hidden_size, ffn_dim):
 
     test_module = TestModule(hidden_size, ffn_dim).to('cuda').half()
     test_module.wi.weight.data = initial_weight.t()
-    test_module(hidden_states_list, weights, iterations)
+    total_flops, grouped_avg_time, linear_avg_time, a_b_avg_time, bmm_avg_time = test_module(hidden_states_list, weights, iterations)
+    return total_flops, grouped_avg_time, linear_avg_time, a_b_avg_time, bmm_avg_time
 
 def search_space():
 
     batch_sizes = [1]
-    sequence_lengths = [32, 64, 128, 256, 512, 1024, 2048, 4096, 8192, 16384, 32768]
+    sequence_lengths = [128, 256, 512, 1024, 2048, 4096, 8192, 12288, 16384, 20480, 24576, 28672, 32768]
     hidden_sizes = [128, 768, 4096]
     ffn_dims = [256, 512, 1024, 2048, 4096, 8192, 14336]
+    iterations = 10
     
     for batch_size in batch_sizes:
         for sequence_length in sequence_lengths:
             for hidden_size in hidden_sizes:
                 for ffn_dim in ffn_dims:
                     print(f"Parameters: batch_size={batch_size}, sequence_length={sequence_length}, hidden_size={hidden_size}, ffn_dim={ffn_dim}")
-                    benchmark(batch_size, sequence_length, hidden_size, ffn_dim)
+                    total_flops_list = []
+                    grouped_avg_time_list = []
+                    linear_avg_time_list = []
+                    a_b_avg_time_list = []
+                    bmm_avg_time_list = []
+                    
+                    for _ in range(iterations):
+                        total_flops, grouped_avg_time, linear_avg_time, a_b_avg_time, bmm_avg_time = benchmark(batch_size, sequence_length, hidden_size, ffn_dim)
+                        total_flops_list.append(total_flops)
+                        grouped_avg_time_list.append(grouped_avg_time)
+                        linear_avg_time_list.append(linear_avg_time)
+                        a_b_avg_time_list.append(a_b_avg_time)
+                        bmm_avg_time_list.append(bmm_avg_time)
+                    
+                    tflops_grouped_gemm = sum(total_flops_list) / (sum(grouped_avg_time_list) * 1e12)
+                    tflops_linear = sum(total_flops_list) / (sum(linear_avg_time_list) * 1e12)
+                    tflops_a_b = sum(total_flops_list) / (sum(a_b_avg_time_list) * 1e12)
+                    tflops_bmm = sum(total_flops_list) / (sum(bmm_avg_time_list) * 1e12)
+                    
+                    print(f"TFLOPS (grouped_gemm): {tflops_grouped_gemm:.3f}")
+                    print(f"TFLOPS (nn.Linear): {tflops_linear:.3f}")
+                    print(f"TFLOPS (a @ b): {tflops_a_b:.3f}")
+                    print(f"TFLOPS (bmm): {tflops_bmm:.3f}")
+                    
                     print("\n" + "-" * 50 + "\n")
 
 search_space()
